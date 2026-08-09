@@ -1125,7 +1125,7 @@
       <string>gitcommand</string>
     </key>
     <value>
-      <string>Gitx64\cmd\git.exe</string>
+      <string>Gitx64\bin\git.exe</string>
     </value>
   </item>
   <item>
