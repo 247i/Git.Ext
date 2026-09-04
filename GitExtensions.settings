@@ -693,7 +693,7 @@
       <string>FormBrowse.fileTree.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>263</string>
+      <string>279</string>
     </value>
   </item>
   <item>
@@ -741,7 +741,7 @@
       <string>FormBrowse.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>520</string>
+      <string>536</string>
     </value>
   </item>
   <item>
@@ -981,7 +981,7 @@
       <string>FormBrowse.revisionDiff.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>263</string>
+      <string>279</string>
     </value>
   </item>
   <item>
@@ -1029,7 +1029,7 @@
       <string>FormBrowse.RevisionsSplitContainer_Distance</string>
     </key>
     <value>
-      <string>623</string>
+      <string>639</string>
     </value>
   </item>
   <item>
@@ -1125,7 +1125,7 @@
       <string>gitcommand</string>
     </key>
     <value>
-      <string>git</string>
+      <string>Git-64\bin\git.exe</string>
     </value>
   </item>
   <item>
@@ -1173,7 +1173,7 @@
       <string>LinuxToolsDir</string>
     </key>
     <value>
-      <string>..\Git-64\bin\</string>
+      <string>Git-64\bin\</string>
     </value>
   </item>
   <item>
