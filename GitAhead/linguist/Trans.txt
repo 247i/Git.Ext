@@ -1,0 +1,4211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ta_IN">
+<context>
+<name>Location</name>
+<message>
+<source>NC</source>
+<translation>NC</translation>
+</message>
+<message>
+<source>Not Committed</source>
+<translation>உறுதிப்படுத்தப்படவில்லை</translation>
+</message>
+<message>
+<source>%1 | %2</source>
+<translation>%1 | %2</translation>
+</message>
+</context>
+<context>
+<name>LocationPage</name>
+<message>
+<source>...</source>
+<translation>...</translation>
+</message>
+<message>
+<source>Clone</source>
+<translation>நகலெடு</translation>
+</message>
+<message>
+<source>Name:</source>
+<translation>பெயர்:</translation>
+</message>
+<message>
+<source>Repository Location</source>
+<translation>களஞ்சியத்தின் இருப்பிடம்</translation>
+</message>
+<message>
+<source>Choose the name and location of the new repository. A new directory will be created if it doesn&apos;t already exist.</source>
+<translation>புதிய களஞ்சியத்திற்கான பெயரையும் இருப்பிடத்தையும் தேர்ந்தெடுக்கவும். அது ஏற்கனவே இல்லையெனில், ஒரு புதிய அடைவு உருவாக்கப்படும்.</translation>
+</message>
+</context>
+</TS> அடைவு (directory) இல்லையெனில், புதிய அடைவு ஒன்று உருவாக்கப்படும்.
+தொடக்க அமைப்பை ஏற்படுத்து (Initialize)
+அடைவு:
+மேம்பட்டவை:
+வெற்று களஞ்சியத்தை (bare repository) உருவாக்கு
+அடைவைத் தேர்ந்தெடு
+புதிய களஞ்சியம் இங்கு உருவாக்கப்படும்:&lt;p style=&apos;text-indent: 12px&apos;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/p&gt;
+தொலைநிலை (Remote) பக்கம்
+...
+URL:
+தொலைநிலை அமைப்போடு அங்கீகரிக்க நெறிமுறையைத் (protocol) தேர்ந்தெடுக்கவும்.
+நெறிமுறை:
+செல்லுபடியாகும் URL-களுக்கான எடுத்துக்காட்டுகள்:&lt;table cellspacing=&apos;8&apos;&gt;&lt;tr&gt;&lt;td align=>right>><b>HTTPS</b>></td>><td>https://hostname/path/to/repo.git</td>></tr>><tr>><td align=>right>><b>SSH</b>></td>><td>git@hostname:path/to/repo.git</td>></tr>><tr>><td align=&apos;right&apos;&gt;&lt;b&gt;Git&lt;/b&gt;&lt;/td&gt;&lt;td&gt;git://hostname/path/to/repo.git&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&apos;right&apos;&gt;&lt;b&gt;Local&lt;/b&gt;&lt;/td&gt;&lt;td&gt;/path/to/repo, C:\path\to\repo&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</source>
+
+<translation>செல்லுபடியாகும் URL-களின் எடுத்துக்காட்டுகளில் பின்வருவன அடங்கும்:&lt;table cellspacing=&apos;8&gt;&lt;tr&gt;&lt;td align=&apos;right&gt;&lt;b&gt;HTTPS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;https://hostname/path/to/repo.git&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&apos;right&gt;&lt;b&gt;SSH&lt;/b&gt;&lt;/td&gt;&lt;td&gt;git@hostname:path/to/repo.git&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align='right'><b>Git</b></td><td>git://hostname/path/to/repo.git</td></tr><tr><td align='right'><b>Local</b></td><td>/path/to/repo, C:\path\to\repo</td></tr></table></translation>
+</message>
+<message>
+<source>Choose Directory</source>
+<translation>கோப்பகத்தைத் தேர்ந்தெடுக்கவும்</translation>
+</message>
+<message>
+<source>Remote Repository URL</source>
+<translation>தொலைநிலை களஞ்சிய URL</translation>
+</message>
+</context>
+<context>
+<name>MenuBar</name>
+<message>
+<source>Cut</source>
+<translation>வெட்டு</translation>
+</message>
+<message>
+<source>Back</source>
+<translation>பின்னால்</translation>
+</message>
+<message>
+<source>Copy</source>
+<translation>நகலெடு</translation>
+</message>
+<message>
+<source>Edit</source>
+<translation>திருத்து</translation>
+</message>
+<message>
+<source>Exit</source>
+<translation>வெளியேறு</translation>
+</message>
+<message>
+<source>File</source>
+<translation>கோப்பு</translation>
+</message><message>
+<source>Help</source>
+<translation>உதவி</translation>
+</message>
+<message>
+<source>Open</source>
+<translation>திற</translation>
+</message>
+<message>
+<source>Pull</source>
+<translation>இழு (Pull)</translation>
+</message>
+<message>
+<source>Push</source>
+<translation>தள்ளு (Push)</translation>
+</message>
+<message>
+<source>Redo</source>
+<translation>மீண்டும் செய்</translation>
+</message>
+<message>
+<source>Save</source>
+<translation>சேமி</translation>
+</message>
+<message>
+<source>Undo</source>
+<translation>செயலை ரத்து செய்</translation>
+</message>
+<message>
+<source>View</source>
+<translation>பார்வை</translation>
+</message>
+<message>
+<source>Amend Commit</source>
+<translation>பதிவை (Commit) திருத்து</translation>
+</message>
+<message>
+<source>Abort</source>
+<translation>நிறுத்து</translation>
+</message>
+<message>
+<source>Close</source>
+<translation>மூடு</translation>
+</message>
+<message>
+<source>Debug</source>
+<translation>பிழைதிருத்தம்</translation>
+</message>
+<message>
+<source>Fetch</source>
+<translation>பெறு (Fetch)</translation>
+</message>
+<message>
+<source>Check For Updates...</source>
+<translation>புதுப்பிப்புகளைச் சரிபார்க்கவும்...</translation>
+</message>
+<message>
+<source>Merge</source>
+<translation>இணை</translation>
+</message>
+<message>
+<source>Paste</source>
+<translation>ஒட்டு</translation>
+</message>
+<message>
+<source>Stash</source>
+<translation>தற்காலிகச் சேமிப்பு (Stash)</translation>
+</message>
+<message>
+<source>Tools</source>
+<translation>கருவிகள்</translation>
+</message>
+<message> 
+<source>Options...</source>
+<translation>விருப்பங்கள்...</translation>
+</message>
+<message>
+<source>Initialize New Repository...</source>
+<translation>புதிய களஞ்சியத்தைத் தொடங்கவும்...</translation>
+</message>
+<message>
+<source>Ctrl+Meta+N</source>
+<translation>Ctrl+Meta+N</translation>
+</message>
+<message>
+<source>Checkout Current</source>
+<translation>தற்போதையதைச் சரிபார்க்கவும் (Checkout)</translation>
+</message>
+<message>
+<source>Fetch From...</source>
+<translation>இதிலிருந்து பெறவும்...</translation>
+</message>
+<message>
+<source>Checkout...</source>
+<translation>சரிபார்க்கவும் (Checkout)...</translation>
+</message>
+<message>
+<source>Log Indexer Progress</source>
+<translation>குறியீட்டாளரின் (Indexer) செயல்பாட்டு முன்னேற்றப் பதிவு</translation>
+</message>
+<message>
+<source>Pop Stash</source>
+<translation>சேமிக்கப்பட்டதை (Stash) மீட்டெடுக்கவும்</translation>
+</message>
+<message>
+<source>Show Previous Tab</source>
+<translation>முந்தைய தாவலைக் (Tab) காட்டவும்</translation>
+</message>
+<message>
+<source>Show Diff View</source>
+<translation>வேறுபாட்டுக் காட்சியைக் காட்டவும்</translation>
+</message>
+<message>
+<source>Show Tree View</source>
+<translation>மரக் கட்டமைப்புக் காட்சியைக் காட்டவும்</translation>
+</message>
+<message>
+<source>Find Next</source>
+<translation>அடுத்ததைக் கண்டறியவும்</translation>
+</message>
+<message>
+<source>New Branch...</source>
+<translation>புதிய கிளை...</translation>
+</message>
+<message>
+<source>Branch</source>
+<translation>கிளை</translation>
+</message>
+<message>
+<source>Commit</source>
+<translation>பதிவுசெய் (Commit)</translation>
+</message>
+<message>
+<source>Ctrl++</source>
+<translation>Ctrl++</translation>
+</message>
+<message>
+<source>Ctrl+-</source>
+<translation>Ctrl+-</translation>
+</message> <translation>Ctrl+-</translation>
+</message>
+<message>
+<source>Ctrl+E</source>
+<translation>Ctrl+E</translation>
+</message>
+<message>
+<source>Show Next Tab</source>
+<translation>அடுத்த தாவலைக் காட்டு</translation>
+</message>
+<message>
+<source>Show Repository Chooser...</source>
+<translation>களஞ்சியத் தேர்வியைக் காட்டு...</translation>
+</message>
+<message>
+<source>Rebase</source>
+<translation>Rebase</translation>
+</message>
+<message>
+<source>Remote</source>
+<translation>தொலைநிலை</translation>
+</message>
+<message>
+<source>Revert</source>
+<translation>மீட்டமை</translation>
+</message>
+<message>
+<source>Find Previous</source>
+<translation>முந்தையதைக் கண்டுபிடி</translation>
+</message>
+<message>
+<source>New Window</source>
+<translation>புதிய சாளரம்</translation>
+</message>
+<message>
+<source>Open Recent</source>
+<translation>சமீபத்தியதைத் திற</translation>
+</message>
+<message><source>Window</source>
+<translation>சாளரம்</translation>
+</message>
+<message>
+<source>Abort Merge</source>
+<translation>இணைப்பை ரத்துசெய்</translation>
+</message>
+<message>
+<source>Repository</source>
+<translation>களஞ்சியம்</translation>
+</message>
+<message>
+<source>Plugin Documentation...</source>
+<translation>செருகுநிரல் ஆவணங்கள்...</translation>
+</message>
+<message>
+<source>Unstage All</source>
+<translation>அனைத்தையும் நிலைமாற்றத்திலிருந்து நீக்கு</translation>
+</message>
+<message>
+<source>Log Remote Connection</source>
+<translation>தொலைநிலை இணைப்புப் பதிவு</translation>
+</message>
+<message>
+<source>Stage All</source>
+<translation>அனைத்தையும் நிலைமாற்றத்திற்குத் தயார்செய்</translation>
+</message>
+<message>
+<source>Log Credential Helper</source>
+<translation>அங்கீகாரத் தகவல் உதவியாளர் பதிவு</translation>
+</message>
+<message>
+<source>Rebase...</source>
+<translation>அடித்தளத்தை மாற்று...</translation>
+</message>
+<message>
+<source>Configure Remotes...</source>
+<translation>தொலைநிலை அமைப்புகளை உள்ளமை...</translation>
+</message>
+<message>
+<source>Update All</source>
+<translation>அனைத்தையும் புதுப்பி</translation>
+</message>
+<message>
+<source>Remove all locks</source>
+<translation>அனைத்து பூட்டுகளையும் நீக்கு</translation>
+</message>
+<message>
+<source>Refresh</source>
+<translation>புதுப்பி</translation>
+</message>
+<message>
+<source>Open Repository...</source>
+<translation>களஞ்சியத்தைத் திற...</translation>
+</message>
+<message>
+<source>Pull From...</source>
+<translation>இதிலிருந்து இழு...</translation>
+</message>
+<message>
+<source>Use Selection for Find</source>
+<translation>தேடலுக்குத் தேர்ந்தெடுக்கப்பட்டதைப் பயன்படுத்து</translation>
+</message>
+<message>
+<source>Submodule</source>
+<translation>துணைத் தொகுதி</translation> 
+<translation>துணைத் தொகுதி</translation>
+</message>
+<message>
+<source>Abort %1</source>
+<translation>%1-ஐ நிறுத்து</translation>
+</message>
+<message>
+<source>About %1</source>
+<translation>%1 பற்றி</translation>
+</message>
+<message>
+<source>Clone Repository...</source>
+<translation>களஞ்சியத்தை நகலெடு...</translation>
+</message>
+<message>
+<source>Ctrl+Shift+Alt+A</source>
+<translation>Ctrl+Shift+Alt+A</translation>
+</message>
+<message>
+<source>Ctrl+Shift+Alt+F</source>
+<translation>Ctrl+Shift+Alt+F</translation>
+</message>
+<message>
+<source>Ctrl+Shift+Alt+H</source>
+<translation>Ctrl+Shift+Alt+H</translation>
+</message>
+<message>
+<source>Ctrl+Shift+Alt+L</source>
+<translation>Ctrl+Shift+Alt+L</translation>
+</message>
+<message>
+<source>Ctrl+Shift+Alt+P</source>
+<translation>Ctrl+Shift+Alt+P</translation>
+</message>
+<message>
+<source>Ctrl+Shift+Alt+T</source>
+<translation>Ctrl+Shift+Alt+T</translation>
+</message>
+<message>
+<source>Ctrl+Shift+Alt+U</source>
+<translation>Ctrl+Shift+Alt+U</translation>
+</message>
+<message>
+<source>Cherry-pick</source>
+<translation>குறிப்பிட்ட மாற்றத்தைத் தேர்ந்தெடு</translation>
+</message>
+<message>
+<source>Push To...</source>
+<translation>இதற்கு அனுப்பு...</translation>
+</message>
+<message>
+<source>Configure Branches...</source>
+<translation>கிளைகளை உள்ளமை...</translation>
+</message>
+<message>
+<source>Stash...</source>
+<translation>தற்காலிகமாகச் சேமி...</translation>
+</message>
+<message> 
+<source>Update...</source>
+<translation>புதுப்பிக்கவும்...</translation>
+</message>
+<message>
+<source>Fetch All</source>
+<translation>அனைத்தையும் பெறவும்</translation>
+</message>
+<message>
+<source>Open Repository</source>
+<translation>களஞ்சியத்தைத் திறக்கவும்</translation>
+</message>
+<message>
+<source>Initialize</source>
+<translation>தொடக்க அமைப்பை உருவாக்கவும்</translation>
+</message>
+<message>
+<source>Load All Diffs</source>
+<translation>அனைத்து வேறுபாடுகளையும் ஏற்றவும்</translation>
+</message>
+<message>
+<source>Select All</source>
+<translation>அனைத்தையும் தேர்ந்தெடுக்கவும்</translation>
+</message>
+<message>
+<source>Merge...</source>
+<translation>இணைக்கவும்...</translation>
+</message>
+<message>
+<source>New File</source>
+<translation>புதிய கோப்பு</translation>
+</message>
+<message>
+<source>Find...</source>
+<translation>தேடவும்...</translation>
+</message>
+<message>
+<source>Ctrl+Shift+A</source>
+<translation>Ctrl+Shift+A</translation>
+</message>
+<message>
+<source>Ctrl+Shift+C</source>
+<translation>Ctrl+Shift+C</translation>
+</message>ft+C</translation>
+</message>
+<message>
+<source>Ctrl+Shift+F</source>
+<translation>Ctrl+Shift+F</translation>
+</message>
+<message>
+<source>Ctrl+Shift+H</source>
+<translation>Ctrl+Shift+H</translation>
+</message>
+<message>
+<source>Ctrl+Shift+L</source>
+<translation>Ctrl+Shift+L</translation>
+</message>
+<message>
+<source>Ctrl+Shift+M</source>
+<translation>Ctrl+Shift+M</translation>
+</message>
+<message>
+<source>Ctrl+Shift+N</source>
+<translation>Ctrl+Shift+N</translation>
+</message>
+<message>
+<source>Ctrl+Shift+O</source>
+<translation>Ctrl+Shift+O</translation>
+</message>
+<message>
+<source>Ctrl+Shift+P</source>
+<translation>Ctrl+Shift+P</translation>
+</message>
+<message>
+<source>Ctrl+Shift+R</source>
+<translation>Ctrl+Shift+R</translation>
+</message>
+<message>
+<source>Ctrl+Shift+T</source>
+<translation>Ctrl+Shift+T</translation>
+</message>
+<message>
+<source>Ctrl+Shift+U</source>
+<translation>Ctrl+Shift+U</translation>
+</message>
+<message>
+<source>Forward</source>
+<translation>முன்னோக்கி</translation>
+</message>
+<message>
+<source>Walk Commits</source>
+<translation>கமிட்களை (Commits) உலாவுதல்</translation>
+</message>
+<message>
+<source>Git LFS</source>
+<translation>Git LFS</translation>
+</message>
+<message>
+<source>Configure Repository...</source>
+<translation>களஞ்சியத்தை (Repository) உள்ளமைக்கவும்...</translation>
+</message>
+<message>
+<source>Ctrl+Alt+N</source> 
+<translation>Ctrl+Alt+N</translation>
+</message>
+<message>
+<source>History</source>
+<translation>வரலாறு</translation>
+</message>
+<message>
+<source>Configure Submodules...</source>
+<translation>துணைத் தொகுதிகளை (Submodules) உள்ளமைக்கவும்...</translation>
+</message>
+<message>
+<source>Show Stashes</source>
+<translation>சேமிப்புகளைக் (Stashes) காட்டவும்</translation>
+</message>
+<message>
+<source>Show Log</source>
+<translation>பதிவைக் (Log) காட்டவும்</translation>
+</message>
+<message>
+<source>Hide Log</source>
+<translation>பதிவை (Log) மறைக்கவும்</translation>
+</message>
+</context>
+<context>
+<name>ConfigDialog</name>
+<message>
+<source>Esc</source>
+<translation>Esc</translation>
+</message>
+<message>
+<source>LFS</source>
+<translation>LFS</translation>
+</message>
+<message>
+<source>Diff</source>
+<translation>வேறுபாடு (Diff)</translation>
+</message>
+<message>
+<source>Edit Config File...</source>
+<translation>உள்ளமைப்புக் கோப்பைத் திருத்தவும்...</translation>
+</message>
+<message>
+<source>Submodules</source>
+<translation>துணைத் தொகுதிகள்</translation>
+</message>
+<message>
+<source>Search</source>
+<translation>தேடுக</translation>
+</message>
+<message>
+<source>Plugins</source>
+<translation>செருகுநிரல்கள் (Plugins)</translation>
+</message>
+<message>
+<source>Branches</source>
+<translation>கிளைகள் (Branches)</translation>
+</message>
+<message>
+<source>Remotes</source>
+<translation>தொலைநிலை அமைப்புகள் (Remotes)</translation>
+</message>
+<message>
+<source>General</source>
+<translation>பொதுவானவை</translation>
+</message>
+</context>
+<context>
+<name>FindWidget</name>
+<message>
+<source>Esc</source>
+<translation>Esc</translation>
+</message>
+<message> 
+<source>Done</source>
+<translation>முடிந்தது</translation>
+</message>
+<message>
+<source>%1 match</source>
+<translation>%1 பொருத்தம்</translation>
+</message>
+<message>
+<source>%1 matches</source>
+<translation>%1 பொருத்தங்கள்</translation>
+</message>
+<message>
+<source>Search</source>
+<translation>தேடு</translation>
+</message>
+<message>
+<source>Not found</source>
+<translation>காணப்படவில்லை</translation>
+</message>
+</context>
+<context>
+<name>HunkWidget</name>
+<message>
+<source>Esc</source>
+<translation>Esc</translation>
+</message>
+<message>
+<source>Fix</source>
+<translation>சரிசெய்</translation>
+</message>
+<message>
+<source>Edit</source>
+<translation>திருத்து</translation>
+</message>
+<message>
+<source>Save</source>
+<translation>சேமி</translation>
+</message>
+<message>
+<source>Undo</source>
+<translation>செயல்நீக்கு</translation>
+</message>
+<message>
+<source>Edit Hunk</source>
+<translation>பகுதியைத் திருத்து</translation>
+</message>
+<message>
+<source>Are you sure you want to remove &apos;%1&apos;?</source>
+<translation>'%1'-ஐ நீக்க விரும்புகிறீர்களா?</translation></message>
+<message>
+<source>Collapse Hunk</source>
+<translation>பகுதியைச் சுருக்குக</translation>
+</message>
+<message>
+<source>No newline at end of file</source>
+<translation>கோப்பின் முடிவில் புதிய வரி இல்லை</translation>
+</message>
+<message>
+<source>Expand Hunk</source>
+<translation>பகுதியை விரிக்கவும்</translation>
+</message>
+<message>
+<source>Are you sure you want to discard the hunk starting at line %1 in &apos;%2&apos;?</source>
+<translation>'%2'-இல் வரி %1-லிருந்து தொடங்கும் பகுதியை நிராகரிக்க விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>Use Theirs</source>
+<translation>அவர்களுடையதைப் பயன்படுத்தவும்</translation>
+</message>
+<message>
+<source>Use Ours</source>
+<translation>நம்முடையதைப் பயன்படுத்தவும்</translation>
+</message>
+<message>
+<source>This action cannot be undone.</source>
+<translation>இந்தச் செயலை மாற்றியமைக்க முடியாது.</translation>
+</message>
+<message>
+<source>Discard Hunk</source>
+<translation>பகுதியை நிராகரிக்கவும்</translation>
+</message>
+<message>
+<source>Discard Hunk?</source>
+<translation>பகுதியை நிராகரிக்கவா?</translation>
+</message>
+</context>
+<context>
+<name>RepoView</name>
+<message>
+<source>Esc</source>
+<translation>Esc</translation>
+</message>
+<message>
+<source>Tag</source>
+<translation>குறிச்சொல்</translation>
+</message>
+<message>
+<source>tag</source>
+<translation>குறிச்சொல்</translation>
+</message>
+<message>
+<source>&lt;p&gt;Some commits may become unreachable from the current branch.&lt;/p&gt;</source>
+<translation>&lt;p&gt;தற்போதைய கிளையிலிருந்து சில கமிட்களை (commits) அணுக முடியாமல் போகலாம்.&lt;/p&gt;</translation>
+</message> உண்மையானது.</p>
+நிறுவப்பட்டது</translation>
+
+</message>
+
+<message>
+<source>நிறுத்து</source>
+<translation>நிறுத்து</translation>
+</message>
+
+<message>
+<source>திருத்து</source>
+<translation>திருத்து</translation>
+</message>
+
+<message>
+<source>பயன்படுத்து</source>
+<translation>பயன்படுத்து</translation>
+</message>
+
+<message>
+<source>பெறு</source>
+<translation>கொண்டு செல்</translation>
+
+</message>
+
+<message>
+<source>Git LFS ஆனது PATH-இல் காணப்படவில்லை. <a href=&apos;https://git-lfs.github.com&gt;Git LFS-ஐ நிறுவவும்</a&gt; LFS ஒருங்கிணைப்பைப் பயன்படுத்த.
+
+<translation>Git LFS no fue encontrado en el PATH. <a href=&apos;https://git-lfs.github.com&gt;Instala Git LFS&lt;/a&gt; LFS ஒருங்கிணைப்பைப் பயன்படுத்த.</translation>
+</message>
+<message>
+<source>Merge</source>
+<translation>இணைக்கவும்</translation>
+</message>
+<message>
+<source>Reset</source>
+<translation>மீட்டமைக்கவும்</translation>
+</message>
+<message>
+<source>%1 into %2</source>
+<translation>%1-ஐ %2-க்குள்</translation>
+</message>
+<message>
+<source>Stage</source>
+<translation>நிலைப்படுத்தவும்</translation>
+</message>
+<message>
+<source>Stash</source>
+<translation>தற்காலிகமாகச் சேமிக்கவும்</translation>
+</message>
+<message>
+<source>Stage Large File?</source>
+<translation>பெரிய கோப்பை நிலைப்படுத்தவா?</translation>
+</message>
+<message>
+<source>amend</source>
+<translation>திருத்தவும்</translation>
+</message>
+<message>
+<source>files</source>
+<translation>கோப்புகள்</translation>
+</message>
+<message>
+<source>merge</source>
+<translation>இணைக்கவும்</translation>
+</message>
+<message>
+<source>reset</source>
+<translation>மீட்டமைக்கவும்</translation>
+</message>
+<message>
+<source>stash</source>
+<translation>தற்காலிகமாகச் சேமிக்கவும்</translation>
+</message>
+<message>
+<source>Stop prompting to stage directories</source>
+<translation>கோப்பகங்களை நிலைப்படுத்தக் கேட்பதை நிறுத்தவும்</translation>
+</message>
+<message>
+<source>&lt;i&gt;no branch&lt;/i&gt;</source>
+<translation>&lt;i&gt;கிளை இல்லை&lt;/i&gt;</translation>
+</message>
+<message>
+<source>update submodule</source>
+<translation>துணைக்கூறைப் (submodule) புதுப்பிக்கவும்</translation>
+</message>
+<message>
+<source>You can &lt;a href</source>
+<translation>நீங்கள் &lt;a href</translation>
+</message><action:checkout>>checkout</a> ஒரு கிளையை எடுத்து, பின்னர் <a href=>action:push>push</a> மீண்டும் தள்ளவும், அல்லது <a href=>action:push-to>ஒரு வெளிப்படையான கிளைக்குத் தள்ளவும்</a>.</source>
+
+<translation>Tu puedes <a href=>action:checkout>revisar</a> una rama y depués <a href=>action:push>enviar</a> de nuevo, o &lt;a href=&apos;action:push-to&apos;&gt;enviar a una rama explícita&lt;/a&gt;.</translation> 
+</message> 
+<செய்தி> 
+<source>Pop Stash</source> 
+<translation>Sacar Guardado Rápido</translation> 
+</message> 
+<செய்தி> 
+<source>Drop Stash</source> 
+<translation>Descartar guardado rápido</translation> 
+</message> 
+<செய்தி> 
+<source>pop stash</source> 
+<translation>sacar Guardado Rápido</translation> 
+</message> 
+<செய்தி> 
+<source>drop stash</source> 
+<translation>descartar guardado rápido</translation> 
+</message>
+<செய்தி>
+
+<மூலம்>பயனர் பெயர் மற்றும் மின்னஞ்சலை <a href=&apos;action:config?global=true&gt;global settings&lt;/a&gt; என்பதில் அமைப்பதைக் கவனியுங்கள்.</மூலம்>
+
+<மொழிபெயர்ப்பு>பயனர் பெயர் மற்றும் மின்னஞ்சலை <a href=&apos;action:config?global=true&gt;configuración global&lt;/a&gt; என்பதில் அமைப்பதைக் கவனியுங்கள்.</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<செய்தி>
+
+<மூலம்>Git LFS துவக்கப்பட்டது.</மூலம்>
+
+<மொழிபெயர்ப்பு>Git LFS inicializado.</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<மூலம்>பெயர் மற்றும் மின்னஞ்சல் அமைப்புகளை இந்தக் களஞ்சியத்திற்குள் மட்டும் கட்டுப்படுத்த விரும்பினால், <a href=&apos;action:config&gt;edit repository</a> என்பதைப் பயன்படுத்தவும். அமைப்புகள்</a> அதற்குப் பதிலாக.
+பெயர் மற்றும் மின்னஞ்சல் அமைப்புகளை இந்த களஞ்சியத்திற்கு (repository) மட்டும் கட்டுப்படுத்த விரும்பினால், &lt;a href=&apos;action:config&apos;&gt;களஞ்சிய அமைப்புகளைத் திருத்தவும்&lt;/a&gt;.
+தொலைநிலை களஞ்சியத்தில் (remote repository) உள்ள கமிட்கள் (commits) நீக்கப்படுவதை நீங்கள் உண்மையில் விரும்பினால், &lt;a href=&apos;action:push?force=true&apos;&gt;கட்டாயப் பதிவேற்றம் (force push)&lt;/a&gt; செய்யலாம்.
+களஞ்சியத்தை அதன் முந்தைய நிலைக்குத் திருப்ப, நீங்கள் %1-ஐ &lt;a href=&apos;action:abort&apos;&gt;நிறுத்தலாம் (abort)&lt;/a&gt;.
+அனைத்தும் புதுப்பித்த நிலையில் உள்ளன.
+%2-ஆக %1
+%2-இல் %1
+%2-க்கு %1
+&lt;a href=&apos;action:merge&apos;&gt;இணைக்க (merge)&lt;/a&gt; முயற்சிக்கும் முன், &lt;a href=&apos;action:stash&apos;&gt;தற்காலிகமாகச் சேமிப்பதன் (stashing)&lt;/a&gt; மூலம் நீங்கள் ரீபேஸ் (rebase) செய்யலாம். பின்னர் உங்கள் மாற்றங்களை மீட்டெடுக்க &lt;a href=&apos;action:unstash&apos;&gt;unstash&lt;/a&gt; செய்யவும்.</source>
+<translation>&lt;a href=&apos;action:merge&apos;&gt;இணைப்பதற்கு&lt;/a&gt; முன் &lt;a href=&apos;action:stash&apos;&gt;stash&lt;/a&gt; செய்வதன் மூலம் நீங்கள் மறுசீரமைக்க (rebase) முடியும். பின்னர் உங்கள் மாற்றங்களை மீட்டெடுக்க &lt;a href=&apos;action:unstash&apos;&gt;unstash&lt;/a&gt; செய்யவும்.</translation>
+</message>
+<message>
+<source>Already up-to-date.</source>
+<translation>ஏற்கனவே புதுப்பிக்கப்பட்டுள்ளது.</translation>
+</message>
+<message>
+<source>&lt;i&gt;no remote&lt;/i&gt;</source>
+<translation>&lt;i&gt;ரிமோட் இல்லை&lt;/i&gt;</translation>
+</message>
+<message>
+<source>You may be able to rebase by &lt;a href=&apos;action:stash&apos;&gt;stashing&lt;/a&gt; before trying to &lt;a href=&apos;action:rebase&apos;&gt;rebase&lt;/a&gt;. Then &lt;a href=&apos;action:unstash&apos;&gt;unstash&lt;/a&gt; to restore your changes.</source>
+<translation>&lt;a href=&apos;action:rebase&apos;&gt;rebase&lt;/a&gt; செய்ய முயற்சிக்கும் முன் &lt;a href=&apos;action:stash&apos;&gt;stash&lt;/a&gt; செய்வதன் மூலம் நீங்கள் rebase செய்ய முடியும். பின்னர் உங்கள் மாற்றங்களை மீட்டெடுக்க &lt;a href=&apos;action:unstash&apos;&gt;unstash&lt;/a&gt; செய்யவும்.</translation>
+</message> உங்கள் மாற்றங்களை மீண்டும் நிலைநிறுத்த.</translation>
+<message>
+<source>%2 முதல் %1 வரை</source>
+<translation>%2 முதல் %1 வரை</translation>
+</message>
+<message>
+<source>திருத்தவா?</source>
+<translation>திருத்தவா?</translation>
+</message>
+<message>
+<source>புதிய கிளை</source>
+<translation>புதிய கிளை</translation>
+</message>
+<message>
+<source>பதிவு செய்</source>
+<translation>பதிவு செய்</translation>
+</message>
+<message>
+<source>உருவாக்கு</source>
+<translation>உருவாக்கு</translation>
+</message>
+<message>
+<source>3. வெளிப்புற ஒன்றிணைப்பு கருவியைப் (external merge tool) பயன்படுத்தவும். பட்டியலில் உள்ள கோப்புகளின் மீது வலது கிளிக் செய்து, 'External Merge' என்பதைத் தேர்ந்தெடுக்கவும்.</source>
+<translation>3. வெளிப்புற ஒன்றிணைப்பு கருவியைப் (external merge tool) பயன்படுத்தவும். பட்டியலில் உள்ள கோப்புகளின் மீது வலது கிளிக் செய்து, 'External Merge' என்பதைத் தேர்ந்தெடுக்கவும்.</translation>
+</message>
+<message>
+<source>'%1'-ஐ '%2'-க்கு மீட்டமைக்க விரும்புகிறீர்களா?</source>
+<translation>'%1'-ஐ '%2'-க்கு மீட்டமைக்க விரும்புகிறீர்களா?</translation>
+</message>
+</message> ஒரு '%2'?</translation>
+</message>
+<message>
+<source>create pull request</source>
+<translation>இணைப்பு கோரிக்கையை (pull request) உருவாக்கவும்</translation>
+</message>
+<message>
+<source>Rebase</source>
+<translation>Rebase (அடித்தளத்தை மாற்றியமைத்தல்)</translation>
+</message>
+<message>
+<source>Remove</source>
+<translation>நீக்கவும்</translation>
+</message>
+<message>
+<source>Reset?</source>
+<translation>மீட்டமைக்கவா?</translation>
+</message>
+<message>
+<source>Revert</source>
+<translation>மீளமைக்கவும் (Revert)</translation>
+</message>
+<message>
+<source>Search</source>
+<translation>தேடவும்</translation>
+</message>
+<message>
+<source>&lt;p&gt;Your branch appears to be up-to-date with its upstream branch. Resetting may menyebabkan tu rama history to diverge from the remote branch history.&lt;/p&gt;</source>
+<translation>&lt;p&gt;உங்கள் கிளை (branch) அதன் அப்ஸ்ட்ரீம் கிளையுடன் புதுப்பிக்கப்பட்ட நிலையில் உள்ளதாகத் தெரிகிறது. மீட்டமைப்பது உங்கள் கிளையின் வரலாற்றை ரிமோட் கிளையின் வரலாற்றிலிருந்து மாறுபடச் செய்யலாம்.&lt;/p&gt;</translation>
+</message>
+<message>
+<source>Unlock</source>
+<translation>பூட்டைத் திறக்கவும்</translation>
+</message>
+<message>
+<source>Update</source>
+<translation>புதுப்பிக்கவும்</translation>
+</message>
+<message>
+<source>You may be able to reconcile your changes with the conflicting files by &lt;a href=&apos;action:stash&apos;&gt;stashing&lt;/a&gt; before you &lt;a href=&apos;%1&apos;&gt;fast-forward&lt;/a&gt;. Then &lt;a href=&apos;action:unstash&apos;&gt;unstash&lt;/a&gt;
+</source>
+<translation>&lt;a href=&apos;%1&apos;&gt;fast-forward&lt;/a&gt; செய்வதற்கு முன் &lt;a href=&apos;action:stash&apos;&gt;stashing&lt;/a&gt; செய்வதன் மூலம் முரண்படும் கோப்புகளுடன் உங்கள் மாற்றங்களைச் சரிசெய்யலாம். பின்னர் &lt;a href=&apos;action:unstash&apos;&gt;unstash&lt;/a&gt; செய்யவும். உங்கள் மாற்றங்களை மீட்டெடுக்க.</source> 
+<translation>Puedes reconciliar tus cambios con los archivos en conflicto &lt;a href=&apos;action:stash&apos;&gt;haciendo un guardado rápido&lt;/a&gt; antes de &lt;a href=&apos;%1&apos;&gt;adelantar&lt;/a&gt;. Después, &lt;a href=&apos;action:unstash&apos;&gt;recupera el guardado&lt;/a&gt; பாரா reestablecer tus cambios.</translation> 
+</message> 
+<செய்தி> 
+<source>இணைப்பு முரண்பாடு ஏற்பட்டது.</source> 
+<translation>ஹுபோ அன் கான்ஃப்ளெஸ்டோ டி ஃப்யூஸியோன்.</translation> 
+</message> 
+<செய்தி> 
+<source>ஒன்றிணைப்பை நிறுத்து</source> 
+<translation>abortar fusión</translation> 
+</message> 
+<செய்தி> 
+<source>உள்ளூர் கிளையை மீட்டமை</source> 
+<translation>உணவக ரமா லோக்கல்</translation> 
+</message> 
+<செய்தி> 
+<source>இண்டெக்சர் தொழிலாளி செயல்முறை செயலிழந்தது. இந்தச் சிக்கல் தொடர்ந்தால், support@gitahead.com இல் எங்களைத் தொடர்பு கொள்ளவும்.</source> 
+<மொழிபெயர்ப்பு>எல் ப்ரோசெசோ டி இன்டெக்சாடோ எஸ்டல்லோ. இந்த சிக்கல் தொடர்கிறது, தயவுசெய்து support@gitahead.com இல் தொடர்பு கொள்ளவும். 
+</message> 
+<செய்தி> 
+<source>1. &apos;நம்முடையது&apos; அல்லது &apos;அவர்களின்&apos; சரியான மாற்றத்தைத் தேர்ந்தெடுக்க பொத்தான். பின்னர் &apos;சேமி&apos; விண்ணப்பிக்க பொத்தான்.</source> 
+<மொழிபெயர்ப்பு>1. Presiona el botón &apos;Nuestro&apos; o &apos;டி எல்லோஸ்&apos; பாரா எஸ்கோகர் எல் கேம்பியோ கரெக்டோ. Después presiona el botón &apos;Guardar&apos; பாரா அப்ளிகார்.</translation> 
+</message> 
+<செய்தி> 
+<source>மோதல்களைத் தீர்த்து, பிறகு % 1ஐ முடிக்க உறுதியளிக்கவும். &lt;a href=&apos;விரிவாக்கு&apos;&gt;விவரங்கள்&lt;/a&gt;.</source> பார்க்கவும். 
+<மொழிபெயர்ப்பு> மோதல்களை மறுபரிசீலனை செய்யுங்கள், % 1 முடிவுக்கு உறுதியளிக்கிறது. <a href=>விரிவாக்கு>>விவரங்கள்</a> என்பதைப் பார்க்கவும்.</translation>
+
+<message>
+
+<source>கமிட்</source>
+<translation>உறுதிப்படுத்து</translation>
+
+</message>
+
+<source>நீங்கள் <a href=>action:add-remote?name=origin>>'ஆரிஜின்' என்ற பெயரில் ஒரு ரிமோட்டைச் சேர்க்க விரும்பலாம்</a>. பிறகு <a href=>action:push?set-upstream=true>>புஷ் செய்து தற்போதைய கிளையின் அப்ஸ்ட்ரீமை அமைக்கவும்</a> &apos;origin/%1&apos; 
+<translation>Tu Podrias Querer &lt;a href=&apos;action:add-remote?name=origin&apos;&gt;añ
+
+
+
+
+சில இணைக்கப்பட்ட கோப்புகளில் நிலைப்படுத்தப்படாத மாற்றங்கள் உள்ளன</source>
+<message>
+<source>%2 முதல் %1 வரை</source>
+<translation>%2 முதல் %1 வரை</translation>
+</message>
+<message>
+<source>திருத்தவா?</source>
+<translation>திருத்தவா?</translation>
+</message>
+<message>
+<source>புதிய கிளை</source>
+<translation>புதிய கிளை</translation>
+</message>
+<message>
+<source>பதிவு செய்</source>
+<translation>பதிவு செய்</translation>
+</message>
+<message>
+<source>உருவாக்கு</source>
+<translation>உருவாக்கு</translation>
+</message>
+<message>
+<source>3. வெளிப்புற ஒன்றிணைப்பு கருவியைப் (external merge tool) பயன்படுத்தவும். பட்டியலில் உள்ள கோப்புகளின் மீது வலது கிளிக் செய்து, 'External Merge' என்பதைத் தேர்ந்தெடுக்கவும்.</source>
+<translation>3. வெளிப்புற ஒன்றிணைப்பு கருவியைப் (external merge tool) பயன்படுத்தவும். பட்டியலில் உள்ள கோப்புகளின் மீது வலது கிளிக் செய்து, 'External Merge' என்பதைத் தேர்ந்தெடுக்கவும்.</translation>
+</message>
+<message>
+<source>'%1'-ஐ '%2'-க்கு மீட்டமைக்க விரும்புகிறீர்களா?</source>
+<translation>'%1'-ஐ '%2'-க்கு மீட்டமைக்க விரும்புகிறீர்களா?</translation>
+</message>
+</message> ஒரு '%2'?</translation>
+</message>
+<message>
+<source>create pull request</source>
+<translation>இணைப்பு கோரிக்கையை (pull request) உருவாக்கவும்</translation>
+</message>
+<message>
+<source>Rebase</source>
+<translation>Rebase (அடித்தளத்தை மாற்றியமைத்தல்)</translation>
+</message>
+<message>
+<source>Remove</source>
+<translation>நீக்கவும்</translation>
+</message>
+<message>
+<source>Reset?</source>
+<translation>மீட்டமைக்கவா?</translation>
+</message>
+<message>
+<source>Revert</source>
+<translation>மீளமைக்கவும் (Revert)</translation>
+</message>
+<message>
+<source>Search</source>
+<translation>தேடவும்</translation>
+</message>
+<message>
+<source>&lt;p&gt;Your branch appears to be up-to-date with its upstream branch. Resetting may menyebabkan tu rama history to diverge from the remote branch history.&lt;/p&gt;</source>
+<translation>&lt;p&gt;உங்கள் கிளை (branch) அதன் அப்ஸ்ட்ரீம் கிளையுடன் புதுப்பிக்கப்பட்ட நிலையில் உள்ளதாகத் தெரிகிறது. மீட்டமைப்பது உங்கள் கிளையின் வரலாற்றை ரிமோட் கிளையின் வரலாற்றிலிருந்து மாறுபடச் செய்யலாம்.&lt;/p&gt;</translation>
+</message>
+<message>
+<source>Unlock</source>
+<translation>பூட்டைத் திறக்கவும்</translation>
+</message>
+<message>
+<source>Update</source>
+<translation>புதுப்பிக்கவும்</translation>
+</message>
+<message>
+<source>You may be able to reconcile your changes with the conflicting files by &lt;a href=&apos;action:stash&apos;&gt;stashing&lt;/a&gt; before you &lt;a href=&apos;%1&apos;&gt;fast-forward&lt;/a&gt;. Then &lt;a href=&apos;action:unstash&apos;&gt;unstash&lt;/a&gt;
+</source>
+<translation>&lt;a href=&apos;%1&apos;&gt;fast-forward&lt;/a&gt; செய்வதற்கு முன் &lt;a href=&apos;action:stash&apos;&gt;stashing&lt;/a&gt; செய்வதன் மூலம் முரண்படும் கோப்புகளுடன் உங்கள் மாற்றங்களைச் சரிசெய்யலாம். பின்னர் &lt;a href=&apos;action:unstash&apos;&gt;unstash&lt;/a&gt; செய்யவும். உங்கள் மாற்றங்களை மீட்டெடுக்க.</source> 
+<translation>Puedes reconciliar tus cambios con los archivos en conflicto &lt;a href=&apos;action:stash&apos;&gt;haciendo un guardado rápido&lt;/a&gt; antes de &lt;a href=&apos;%1&apos;&gt;adelantar&lt;/a&gt;. Después, &lt;a href=&apos;action:unstash&apos;&gt;recupera el guardado&lt;/a&gt; பாரா reestablecer tus cambios.</translation> 
+</message> 
+<செய்தி> 
+<source>இணைப்பு முரண்பாடு ஏற்பட்டது.</source> 
+<translation>ஹுபோ அன் கான்ஃப்ளெஸ்டோ டி ஃப்யூஸியோன்.</translation> 
+</message> 
+<செய்தி> 
+<source>ஒன்றிணைப்பை நிறுத்து</source> 
+<translation>abortar fusión</translation> 
+</message> 
+<செய்தி> 
+<source>உள்ளூர் கிளையை மீட்டமை</source> 
+<translation>உணவக ரமா லோக்கல்</translation> 
+</message> 
+<செய்தி> 
+<source>இண்டெக்சர் தொழிலாளி செயல்முறை செயலிழந்தது. இந்தச் சிக்கல் தொடர்ந்தால், support@gitahead.com இல் எங்களைத் தொடர்பு கொள்ளவும்.</source> 
+<மொழிபெயர்ப்பு>எல் ப்ரோசெசோ டி இன்டெக்சாடோ எஸ்டல்லோ. இந்த சிக்கல் தொடர்கிறது, தயவுசெய்து support@gitahead.com இல் தொடர்பு கொள்ளவும். 
+</message> 
+<செய்தி> 
+<source>1. &apos;நம்முடையது&apos; அல்லது &apos;அவர்களின்&apos; சரியான மாற்றத்தைத் தேர்ந்தெடுக்க பொத்தான். பின்னர் &apos;சேமி&apos; விண்ணப்பிக்க பொத்தான்.</source> 
+<மொழிபெயர்ப்பு>1. Presiona el botón &apos;Nuestro&apos; o &apos;டி எல்லோஸ்&apos; பாரா எஸ்கோகர் எல் கேம்பியோ கரெக்டோ. Después presiona el botón &apos;Guardar&apos; பாரா அப்ளிகார்.</translation> 
+</message> 
+<செய்தி> 
+<source>மோதல்களைத் தீர்த்து, பிறகு % 1ஐ முடிக்க உறுதியளிக்கவும். &lt;a href=&apos;விரிவாக்கு&apos;&gt;விவரங்கள்&lt;/a&gt;.</source> பார்க்கவும். 
+<மொழிபெயர்ப்பு> மோதல்களை மறுபரிசீலனை செய்யுங்கள், % 1 முடிவுக்கு உறுதியளிக்கிறது. <a href=>விரிவாக்கு>>விவரங்கள்</a> என்பதைப் பார்க்கவும்.</translation>
+
+<message>
+
+<source>கமிட்</source>
+<translation>உறுதிப்படுத்து</translation>
+
+</message>
+
+<source>நீங்கள் <a href=>action:add-remote?name=origin>>'ஆரிஜின்' என்ற பெயரில் ஒரு ரிமோட்டைச் சேர்க்க விரும்பலாம்</a>. பிறகு <a href=>action:push?set-upstream=true>>புஷ் செய்து தற்போதைய கிளையின் அப்ஸ்ட்ரீமை அமைக்கவும்</a> &apos;origin/%1&apos; 
+<translation>Tu Podrias Querer &lt;a href=&apos;action:add-remote?name=origin&apos;&gt;añ
+'origin' என்ற ரிமோட்டைச் சேர்க்கவும். பின்னர், 'origin/%1' என்ற ரிமோட் கிளையைப் பின்தொடரத் தொடங்க, கிளையை அனுப்பி, அதைப் பின்தொடருமாறு அமைக்கவும். 
+</message>
+<message>
+<source>You are not currently on a branch.</source>
+<translation>நீங்கள் தற்போது எந்தக் கிளையிலும் இல்லை.</translation>
+</message>
+<message>
+<source>Stage Directory?</source>
+<translation>கோப்பகத்தை (directory) தயார் நிலையில் (stage) வைக்கவா?</translation>
+</message>
+<message>
+<source>&lt;i&gt;no commit&lt;/i&gt;</source>
+<translation>&lt;i&gt;கமிட் (commit) இல்லை&lt;/i&gt;</translation>
+</message>
+<message>
+<source>Force Push?</source>
+<translation>கட்டாயமாக அனுப்பவா (Force Push)?</translation>
+</message>
+<message>
+<source>Are you sure you want to commit on a detached HEAD?</source>
+<translation>துண்டிக்கப்பட்ட HEAD-இல் கமிட் (commit) செய்ய விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>Invalid Submodule Repository</source>
+<translation>செல்லுபடியாகாத துணை-தொகுதி (submodule) களஞ்சியம்</translation>
+</message>
+<message>
+<source>rebase</source>
+<translation>rebase (அடித்தளத்தை மாற்றுதல்)</translation>
+</message>
+<message>
+<source>revert</source>
+<translation>revert (திரும்பப் பெறுதல்)</translation>
+</message>
+<message>
+<source>Revert &quot;%1&quot;
+
+This reverts commit %2.</source>
+<translation>&quot;%1&quot;-ஐத் திரும்பப் பெறுக
+
+இது %2 கமிட்டைத் திரும்பப் பெறுகிறது.</translation>
+</message>
+<message>
+<source>&lt;p&gt;Resetting will cause you to lose uncommitted changes. கண்காணிக்கப்படாத மற்றும் புறக்கணிக்கப்பட்ட கோப்புகள் பாதிக்கப்படாது.&lt;/p&gt;</source> 
+<மொழிபெயர்ப்பு>&lt;p&gt;Reestablecer causará que pierdas todos los cambios que no se han confirmado. Los archivos sin seguimiento e ignorados no serán afectados&lt;/p&gt;</translation> 
+</message> 
+<செய்தி> 
+<source>தற்போதைய கிளை &apos;%1&apos; இயல்புநிலை ரிமோட் இல்லை.</source> 
+<translation>la rama actual %1 no tiene remoto por defecto.</translation> 
+</message> 
+<செய்தி> 
+<source>புஷ் டு</source> 
+<translation>enviar a</ translation> 
+</message> 
+<செய்தி> 
+<source>அனைத்து முரண்பட்ட கோப்புகளும் அரங்கேற்றப்பட்ட பிறகு, %1ஐ முடிக்க உறுதியளிக்கவும்.</source> 
+<translation>Después de preparar todos los archivos en Conclicto, realiza una confirmación para concluir la %1.</translation> 
+</message> 
+<செய்தி> 
+<source>உங்கள் மாற்றங்களை &lt;a href=&apos;action:stash&apos;&gt;stashing&lt;/a&gt; மூலம் முரண்பட்ட கோப்புகளுடன் நீங்கள் சரிசெய்யலாம். நீங்கள் &lt;a href=&apos;action:checkout?%1&apos;&gt;செக்அவுட் &apos;%2&apos;&lt;/a&gt;. பிறகு &lt;a href=&apos;action:unstash&apos;&gt;unstash&lt;/a&gt; உங்கள் மாற்றங்களை மீட்டெடுக்க.</source> 
+<translation>Puedes reconciliar tus cambios con los archivos en conflicto &lt;a href=&apos;action:stash&apos;&gt;haciendo un guardado rápido&lt;/a&gt; antes de &lt;a href=&apos;action:checkout?%1&apos;&gt;revisar &apos;%2&apos;&lt;/a&gt;. Después, &lt;a href=&apos;action:unstash&apos;&gt;recupera el guardado&lt;/a&gt; பாரா reestablecer tus cambios.</translation> 
+</message> 
+<செய்தி> 
+<source>எடுக்க முடியவில்லை. தற்போதைய கிளைக்கு (branch) எந்த 'upstream'-ம் கட்டமைக்கப்படவில்லை, மேலும் 'origin' என்ற பெயரில் தொலைநிலை (remote) எதுவும் இல்லை.
+'Push' செயல்பாடு ரத்து செய்யப்பட்டது.
+%1 - %2
+'Fast-forward' செய்ய முடியவில்லை.
+குறிச்சொல் (tag) புதுப்பிப்பால் தொலைநிலை களஞ்சியத்தில் 'commits' இழக்கப்படலாம்.
+முரண்பாடு (!) உள்ள ஒவ்வொரு கோப்பிலும் உள்ள முரண்பாடுகளைப் பின்வரும் வழிகளில் ஏதேனும் ஒன்றின் மூலம் சரிசெய்யவும்:
+&lt;i&gt;upstream இல்லை&lt;/i&gt;
+%1 தொலைநிலை களஞ்சியங்கள்
+தொலைநிலைக் கிளையான '%1'-ஐ 'checkout' செய்வது 'detached HEAD' நிலையை உருவாக்கும். அதற்குப் பதிலாக, அதைக் கண்காணிக்க '%2' என்ற பெயரில் புதிய உள்ளூர் கிளையை உருவாக்க விரும்புகிறீர்களா?
+அதற்குப் பதிலாக '%2' என்ற புதிய உள்ளூர் கிளையை (local branch) பின்பற்ற வேண்டுமா?
+தனித்த HEAD-ஐ (Detached HEAD) சரிபார்க்கவா?
+LFS மூலம் கண்காணிக்கவா?
+அமைப்புகள் புதுப்பிக்கப்பட்ட பிறகு, புதிய பயனர் பெயர் மற்றும் மின்னஞ்சலைப் பதிவு செய்ய &lt;a href='action:amend&apos;&gt;இந்தக் கமிட்டை (commit) திருத்தவும்&lt;/a&gt;. புதிய பயனர் பெயர் மற்றும் மின்னஞ்சல் முகவரியைப் பதிவு செய்ய.
+Git LFS செயலிழக்கச் செய்யப்பட்டது.
+ரிமோட் (remote) களஞ்சியத்தில் கமிட்கள் (commits) இழக்கப்படும் அபாயத்தை நீங்கள் ஏற்கத் தயாராக இருந்தால், நீங்கள் &lt;a href=&apos;action:push?ref=%1&amp;to=%2&amp;force=true&apos;&gt;force push&lt;/a&gt; செய்யலாம்.
+Force Push (கட்டாயப் பதிவேற்றம்)
+இங்கிருந்து பெறவும் (fetch)
+Fast-forward
+(கிளை ஏதுமில்லை)
+Push (Force)
+cherry-pick
+Cherry-pick
+%1 - %2 செய்ய முடியவில்லை
+%1 - %2 &lt;i&gt;ஏற்கனவே செயல்படுத்தப்பட்டது&lt;/i&gt;
+100-க்கும் மேற்பட்டவை
+%1 %2-ஐ நீக்கவா?        <translation>%1 %2-ஐ நீக்கவா?</translation>
+</message>
+<message>
+<source>Commit?</source>
+<translation>உறுதிப்படுத்தவா?</translation>
+</message>
+<message>
+<source>If you want to create a new merge commit instead of fast-forwarding, you can &lt;a href=&apos;%1&apos;&gt;merge without fast-forwarding &lt;/a&gt; instead.</source>
+<translation>Fast-forwarding-க்கு பதிலாக புதிய merge commit-ஐ உருவாக்க விரும்பினால், அதற்குப் பதிலாக &lt;a href=&apos;%1&apos;&gt;fast-forwarding இல்லாமல் இணைக்கலாம் (merge)&lt;/a&gt;.</translation>
+</message>
+<message>
+<source>There was a merge conflict. The rebase has been aborted</source>
+<translation>இணைப்பதில் முரண்பாடு (merge conflict) ஏற்பட்டது. Rebase செயல்முறை நிறுத்தப்பட்டது.</translation>
+</message>
+<message>
+<source>The submodule &apos;%1&apos; doesn&apos;t have a valid repository. You may need to init and/or update the submodule to check out a repository.</source>
+<translation>&apos;%1&apos; என்ற துணைத் தொகுதியில் (submodule) செல்லுபடியாகும் களஞ்சியம் (repository) இல்லை. களஞ்சியத்தைப் பெற, நீங்கள் அந்தத் துணைத் தொகுதியைத் தொடங்க (init) மற்றும்/அல்லது புதுப்பிக்க வேண்டியிருக்கலாம்.</translation>
+</message>
+<message>
+<source>Fetch All</source>
+<translation>அனைத்தையும் பெறுக (Fetch All)</translation>
+</message>
+<message>
+<source>To push without setting up tracking information, &lt;a href=&apos;action:push?ref=%1&apos;&gt;push &apos;%2&apos;&lt;/a&gt; explicitly.</source>
+<translation>Tracking தகவலை அமைக்காமல் push செய்ய, &lt;a href=&apos;action:push?ref=%1&apos;&gt;&apos;%2&apos;-ஐ push செய்யவும்&lt;/a&gt;.</translation>
+</message> தெளிவாக.
+தொடக்க நிலையை அமை
+கண்காணிக்கப்படாத கோப்புகளை நீக்கு
+சேமிக்கப்பட்ட மாற்றங்களை (stash) பயன்படுத்து
+சேமிக்கப்பட்ட மாற்றங்களை (stash) பயன்படுத்து
+உள்ளூர் கிளையை உருவாக்கு
+தற்போதைய கிளை '%1'-க்கு அப்ஸ்ட்ரீம் (upstream) கிளை எதுவும் இல்லை.
+பின்தொடரவும்.
+ஒரு பிரிக்கப்பட்ட HEAD நிலையை ஏற்படுத்தும். ஏற்கனவே உள்ள உள்ளூர் கிளையை மீட்டமைக்க விரும்புகிறீர்களா &apos;%2&apos; இதற்கு பதிலாக?</source> 
+<translation>Revisar la rama remota &apos;%1&apos; resultará en un estado de HEAD separado . ¿Quieres restaurar லா ராமா லோக்கல் எக்ஸிடென்ட் &apos;%2&apos; எஸ்டா உறுதிப்படுத்தல் என்ன சு லுகர்?</translation> 
+</message> 
+<செய்தி> 
+<source>இயல்புநிலை &apos;%1&apos; கிளை.
+</message>
+<message>
+<source>Create a commit to add the default branch %1.</source>
+<translation>இயல்புநிலை கிளையான %1-ஐச் சேர்க்க ஒரு கமிட்டை (commit) உருவாக்கவும்.</translation>
+</message>
+<message>
+<source>%1 - %2 as %3</source>
+<translation>%1 - %2, %3 ஆக</translation>
+</message>
+<message>
+<source>This action cannot be undone.</source>
+<translation>இந்தச் செயலை மாற்றியமைக்க முடியாது.</translation>
+</message>
+<message>
+<source>create new branch</source>
+<translation>புதிய கிளையை உருவாக்கவும்</translation>
+</message>
+<message>
+<source>To begin tracking a remote branch called &apos;%1&apos;, &lt;a href=&apos;action:push?set-upstream=true&apos;&gt;push and set the current branch&apos;s upstream&lt;/a&gt;.</source>
+<translation>&apos;%1&apos; என்ற ரிமோட் கிளையைக் கண்காணிக்கத் தொடங்க, &lt;a href=&apos;action:push?set-upstream=true&apos;&gt;தற்போதைய கிளையை புஷ் (push) செய்து அதன் அப்ஸ்ட்ரீமை (upstream) அமைக்கவும்&lt;/a&gt;.</translation>
+</message>
+<message>
+<source>The remote will lose any commits that are reachable only crustaceans from the overwritten reference. Dropped commits may be unexpectedly reintroduced by clones that already contain those commits locally.</source>
+<translation>மேலெழுதப்பட்ட குறிப்பிலிருந்து (reference) மட்டுமே அணுகக்கூடிய கமிட்கள் ரிமோட் களஞ்சியத்தில் இழக்கப்படும். உள்ளூரில் ஏற்கனவே அந்தக் கமிட்களைக் கொண்ட குளோன்கள் (clones) மூலம், நீக்கப்பட்ட கமிட்கள் எதிர்பாராத விதமாக மீண்டும் சேர்க்கப்படலாம்.</translation>
+</message>
+<message>
+<source>%1 from %2</source>
+<translation>%2-லிருந்து %1</translation>
+</message>
+<message>
+<source>Pull Request</source>
+<translation>புல் கோரிக்கை (Pull Request)</translation>
+</message>
+<message>
+<source>You may want to integrate remote commits first by &lt;a href=&apos;action:pull&apos;&gt;pulling&lt;/a&gt;.</source>
+<translation>&lt;a href=&apos;action:pull&apos;&gt;புல் (pull)&lt;/a&gt; செய்வதன் மூலம் முதலில் ரிமோட் கமிட்களை ஒருங்கிணைக்க நீங்கள் விரும்பலாம்.</translation>
+</message>
+</context> பிறகு <a href=&apos;action:push&gt;push&lt;/a&gt; மீண்டும்.</source>
+
+<translation>தொலைநிலை மாற்றங்களைக் கண்காணிக்கத் தொடங்கவும், புதிய கமிட்களைச் செய்யவும் ஒரு உள்ளூர் கிளையை உருவாக்கவும். உங்கள் வேலை செய்யும் கோப்பகத்தை தொலைதூர கிளையின் நிலைக்கு தற்காலிகமாக வைக்க, பிரிக்கப்பட்ட HEAD ஐப் பார்க்கவும்.</source> 
+<translation>Crea una rama local para empezar a seguir los cambios remotos y hacer nuevas confirmaciones. உங்கள் பணி அடைவை (working directory) தற்காலிகமாக தொலைதூரக் கிளையின் (remote branch) நிலைக்கு மாற்ற, 'detached HEAD' நிலையைப் பயன்படுத்தவும்.
+</message>
+<message>
+<source>untracked files</source>
+<translation>கண்காணிக்கப்படாத கோப்புகள்</translation>
+</message>
+<message>
+<source>&lt;i&gt;detached HEAD&lt;/i&gt;</source>
+<translation>&lt;i&gt;detached HEAD&lt;/i&gt;</translation>
+</message>
+<message>
+<source>Fetch canceled.</source>
+<translation>Fetch செயல்பாடு ரத்து செய்யப்பட்டது.</translation>
+</message>
+<message>
+<source>Git LFS</source>
+<translation>Git LFS</translation>
+</message>
+<message>
+<source>Are you sure you want to amend &apos;%1&apos;?</source>
+<translation>'%1'-ஐத் திருத்த விரும்புகிறீர்களா? உறுதியாக உள்ளீர்களா?</translation>
+</message>
+<message>
+<source>Deinitialize</source>
+<translation>தொடக்க அமைப்பை நீக்கு (Deinitialize)</translation>
+</message>
+<message>
+<source>This commit was signed with a generated user name and email.</source>
+<translation>இந்தக் கமிட் (commit), உருவாக்கப்பட்ட பயனர் பெயர் மற்றும் மின்னஞ்சல் முகவரியைக் கொண்டு கையொப்பமிடப்பட்டது.</translation>
+</message>
+<message>
+<source>After all conflicts in the file are resolved, click the check box to mark it as resolved.</source>
+<translation>கோப்பில் உள்ள அனைத்து முரண்பாடுகளும் தீர்க்கப்பட்ட பிறகு, அதைத் தீர்க்கப்பட்டதாகக் குறிக்கத் தேர்வுப்பெட்டியை (check box) கிளிக் செய்யவும்.</translation>
+</message>
+<message>
+<source>&lt;i&gt;working directory&lt;/i&gt;</source>
+<translation>&lt;i&gt;செயல்பாட்டு அடைவு&lt;/i&gt;</translation>
+</message>
+<message>
+<source>Indexing...</source>
+<translation>குறியீடாக்கம் செய்யப்படுகிறது...</translation>
+</message>
+<message>
+<source>Are you sure you want to stage &apos;%1&apos; with a size of %2?</source>
+<translation>%2 அளவுள்ள &apos;%1&apos;-ஐ நிலைப்படுத்த (stage) விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>checkout</source>
+<translation>checkout</translation>
+</message>
+<message>
+<source>Checkout</source>
+<translation>Checkout</translation>
+</message>
+<message>
+<source>untracked file</source>
+<translation>கண்காணிக்கப்படாத கோப்பு</translation>
+</message>
+<message>
+<source>&lt;i&gt;no reference&lt;/i&gt;</source>
+<translation>&lt;i&gt;குறிப்பு ஏதுமில்லை&lt;/i&gt;</translation>
+</message>
+<message>
+<source>Are you sure you want to force push?</source>
+<translation>கட்டாயப் பதிவேற்றம் (force push) செய்ய விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>%1 - %2 %3</source>
+<translation>%1 - %2 %3</translation>
+</message>
+<message>
+<source>Unable to %1 &apos;%2&apos; - %3</source>
+<translation>&apos;%2&apos;-ஐ %1 செய்ய முடியவில்லை - %3</translation>
+</message>
+<message>
+<source>This will result in the addition of %1 files.</source>
+<translation>இது %1 கோப்புகளைச் சேர்ப்பதில் முடியும்.</translation>
+</message>
+<message>
+<source>This repository has LFS enabled. அதற்குப் பதிலாக LFS-ஐப் பயன்படுத்தி கோப்பைக் கண்காணிக்க விரும்புகிறீர்களா?</source>
+
+<translation>Este repositorio tiene LFS habilitado. ¿Prefieres seguir el archivo con LFS?</translation>
+
+</message>
+<message>
+<source>நீங்கள் &apos;%1&apos;-ஐ ஸ்டேஜ் செய்ய விரும்புவது உறுதியா?</source>
+
+<translation>¿Estás seguro que deseas preparar %1?</translation>
+
+</message>
+
+<source>2. Edita el archivo en el editor para hacer un cambio diferente. Recuerda Remover las marcas de conflicto.</translation> 
+</message> 
+<செய்தி> 
+<source>நிலை அடைவு</source> 
+<translation>கோப்பகத்தைத் தயார் செய்</translation> 
+</message> 
+<செய்தி> 
+<source>&lt;p&gt;நீங்கள் பிரிக்கப்பட்ட HEAD நிலையில் உள்ளீர்கள். நீங்கள் இன்னும் உறுதியளிக்கலாம், ஆனால் புதிய ஒப்பந்தத்தை எந்த கிளையிலிருந்தும் அணுக முடியாது. நீங்கள் ஏற்கனவே உள்ள கிளையில் ஈடுபட விரும்பினால், முதலில் கிளையை செக்அவுட் செய்யவும்.&lt;/p&gt;</source> 
+<மொழிபெயர்ப்பு>&lt;p&gt;Estás en un estado separado de HEAD. Aun así, puedes confirmar, pero la nueva confirmación no será alcanzable desde ninguna rama. Si quieres confirmar a una rama existente, revisa primero la rama.</p></translation>
+
+
+
+
+
+நீங்கள் ஒரு ரிமோட் கிளையைக் கண்காணிக்க விரும்பவில்லை என்றால், <a href=&apos;action:push-to&apos;>ஒரு வெளிப்படையான URL-க்கு புஷ் செய்யலாம்</a>.</source>
+நீங்கள் ஒரு தொலைதூரக் கிளையைப் (remote branch) பின்தொடர விரும்பவில்லை என்றால்.
+</message>
+</context>
+<context>
+<name>SettingsDialog</name>
+<message>
+<source>Esc</source>
+<translation>Esc</translation>
+</message>
+<message>
+<source>Diff</source>
+<translation>வேறுபாடு (Diff)</translation>
+</message>
+<message>
+<source>Tools</source>
+<translation>கருவிகள்</translation>
+</message>
+<message>
+<source>Edit Config File...</source>
+<translation>அமைப்புக் கோப்பைத் திருத்து...</translation>
+</message>
+<message>
+<source>Editor</source>
+<translation>திருத்தி (Editor)</translation>
+</message>
+<message>
+<source>Global git settings can be overridden for each repository in the corresponding repository configuration page.</source>
+<translation>ஒவ்வொரு களஞ்சியத்திற்கும் (repository) அதற்கான அமைப்புகள் பக்கத்தில் பொதுவான Git அமைப்புகளை மாற்றியமைக்கலாம்.</translation>
+</message>
+<message>
+<source>Update</source>
+<translation>புதுப்பி</translation>
+</message>
+<message>
+<source>Window</source>
+<translation>சாளரம்</translation>
+</message>
+<message>
+<source>Plugins</source>
+<translation>செருகுநிரல்கள் (Plugins)</translation>
+</message>
+<message>
+<source>Terminal</source>
+<translation>முனையம் (Terminal)</translation>
+</message>
+<message>
+<source>General</source>
+<translation>பொதுவானவை</translation>
+</message>
+</context>
+<context>
+<name>CommitDetail</name>
+<message>
+<source>Id:</source>
+<translation>அடையாளம் (Id):</translation>
+</message>
+<message>
+<source>Copy</source>
+<translation>நகலெடு</translation>
+</message>
+</context>
+/message>
+<message>
+<source>initial commit</source>
+<translation>ஆரம்பப் பதிவு</translation>
+</message>
+<message>
+<source>Range:</source>
+<translation>வரம்பு:</translation>
+</message>
+</context>
+<context>
+<name>FileWidget</name>
+<message>
+<source>LFS</source>
+<translation>LFS</translation>
+</message>
+<message>
+<source>File</source>
+<translation>கோப்பு</translation>
+</message>
+<message>
+<source>Lock</source>
+<translation>பூட்டு</translation>
+</message>
+<message>
+<source>Edit File</source>
+<translation>கோப்பைத் திருத்து</translation>
+</message>
+<message>
+<source>Discard Changes</source>
+<translation>மாற்றங்களை நிராகரி</translation>
+</message>
+<message>
+<source>Are you sure you want to remove &apos;%1&apos;?</source>
+<translation>'%1'-ஐ நீக்க விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>Collapse File</source>
+<translation>கோப்பைச் சுருக்கு</translation>
+</message>
+<message>
+<source>Expand File</source>
+<translation>கோப்பை விரிவுபடுத்து</translation>
+</message>
+<message>
+<source>Remove %1</source>
+<translation>%1-ஐ நீக்கு</translation>
+</message>
+<message>
+<source>Show Pointer</source>
+<translation>சுட்டியை காட்டு</translation>
+</message>
+<message>
+<source>Show Object</source>
+<translation>பொருளைக் காட்டு</translation>
+</message>
+<message>
+<source>Unlock</source>
+<translation>பூட்டைத் திற</translation>
+</message>
+<message>
+<source>Remove %1?</source>
+<translation>%1-ஐ நீக்கவா?</translation>
+</message>
+<message>
+<source>Discard Changes?</source>
+<translation>மாற்றங்களை நிராகரிக்கவா?</translation> 
+</message>
+<message>
+<source>Directory</source>
+<translation>கோப்புறை</translation>
+</message>
+<message>
+<source>Are you sure you want to discard all changes in &apos;%1&apos;?</source>
+<translation>'%1'-இல் உள்ள அனைத்து மாற்றங்களையும் நிராகரிக்க விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>Discard</source>
+<translation>நிராகரி</translation>
+</message>
+<message>
+<source>discard</source>
+<translation>நிராகரி</translation>
+</message>
+<message>
+<source>This action cannot be undone.</source>
+<translation>இந்தச் செயலை மீளமைக்க முடியாது.</translation>
+</message>
+<message>
+<source>Discard File</source>
+<translation>கோப்பை நிராகரி</translation>
+</message>
+</context>
+<context>
+<name>CommitList</name>
+<message>
+<source>Pop</source>
+<translation>Pop (எடு)</translation>
+</message>
+<message>
+<source>Drop</source>
+<translation>Drop (நீக்கு)</translation>
+</message>
+<message>
+<source>Hard</source>
+<translation>Hard (கடுமையான)</translation>
+</message>
+<message>
+<source>Soft</source>
+<translation>Soft (மென்மையான)</translation>
+</message>
+<message>
+<source>Star</source>
+<translation>நட்சத்திரம் (விருப்பக்குறி)</translation>
+</message>
+<message>
+<source>Apply</source>
+<translation>பயன்படுத்து</translation>
+</message>
+<message>
+<source>Mixed</source>
+<translation>Mixed (கலப்பு)</translation>
+</message>
+<message>
+<source>Reset</source>
+<translation>மீளமை</translation>
+</message>
+<message>
+<source>This is a bare repository</source>
+<translation>இது ஒரு 'bare' களஞ்சியம் (repository)</translation>
+</message>
+<message>
+<source>Checkout %1</source>
+<translation>Checkout %1</translation>
+<மொழிபெயர்ப்பு>%1-ஐ சரிபார்க்கவும்</மொழிபெயர்ப்பு>
+
+<செய்தி>
+
+<மூலம்>புதிய கிளை...</மூலம்>
+<மொழிபெயர்ப்பு>புதிய கிளை...</மொழிபெயர்ப்பு>
+</செய்தி>
+
+<செய்தி>
+<மூலம்>மீளப்பெறு</மூலம்>
+<மொழிபெயர்ப்பு>மீளப்பெறு</மொழிபெயர்ப்பு>
+</செய்தி>
+
+<செய்தி>
+<மூலம்>குறிச்சொல்லைச் சேர்க்கவும்...</மூலம்>
+<மொழிபெயர்ப்பு>குறிச்சொல்லைச் சேர்க்கவும்...</மொழிபெயர்ப்பு>
+</செய்தி>
+
+<செய்தி>
+<மூலம்>நட்சத்திரத்தை நீக்கு</மூலம்>
+<மொழிபெயர்ப்பு>பிடித்தமானதாகக் குறியை நீக்கு</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<மூலம்>மறுஅடிப்படைப்படுத்து...</மூலம்>
+<மொழிபெயர்ப்பு>மறுசீரமைக்கவும்...</மொழிபெயர்ப்பு>
+</செய்தி>
+
+<செய்தி> <மூலம்>தேர்ந்தெடுத்தல்</மூலம்>
+
+தேர்ந்தெடு
+
+
+
+
+
+கண்காணிக்கப்படாத கோப்புகளை நீக்கு
+RemoteTableModel</name>
+<message>
+<source>URL</source>
+<translation>URL</translation>
+</message>
+<message>
+<source>Name</source>
+<translation>பெயர்</translation>
+</message>
+</context>
+<context>
+<name>SubmoduleTableModel</name>
+<message>
+<source>URL</source>
+<translation>URL</translation>
+</message>
+<message>
+<source>Name</source>
+<translation>பெயர்</translation>
+</message>
+<message>
+<source>Branch</source>
+<translation>கிளை</translation>
+</message>
+<message>
+<source>Deinitialize Submodule?</source>
+<translation>துணைக்கூறின் (submodule) துவக்கத்தை நீக்கவா?</translation>
+</message>
+<message>
+<source>Deinitializing &apos;%1&apos; will remove its working directory. Are you sure you want to deinitialize?</source>
+<translation>&apos;%1&apos;-ன் துவக்கத்தை நீக்குவது அதன் பணி அடைவை (working directory) அகற்றிவிடும். இதைச் செய்ய உறுதியாக விரும்புகிறீர்களா?</translation>
+</message> நீங்கள் இதைத் தொடக்க நிலையில் இருந்து நீக்க (deinitialize) விரும்புகிறீர்களா?
+</message>
+<message>
+<source>Deinitialize</source>
+<translation>தொடக்க நிலையிலிருந்து நீக்கு</translation>
+</message>
+<message>
+<source>Initialized</source>
+<translation>தொடக்க நிலை அமைக்கப்பட்டது</translation>
+</message>
+<message>
+<source>The submodule working directory contains uncommitted changes that will be lost if you continue.</source>
+<translation>துணைத் தொகுதியின் (submodule) பணி அடைவில் உறுதிப்படுத்தப்படாத மாற்றங்கள் உள்ளன; நீங்கள் தொடர்ந்தால் அவை இழக்கப்படும்.</translation>
+</message>
+</context>
+<context>
+<name>ReferenceView</name>
+<message>
+<source>Tag</source>
+<translation>குறிச்சொல் (Tag)</translation>
+</message>
+<message>
+<source>New Local Branch</source>
+<translation>புதிய உள்ளூர் கிளை</translation>
+</message>
+<message>
+<source>Branch</source>
+<translation>கிளை</translation>
+</message>
+<message>
+<source>Delete</source>
+<translation>நீக்கு</translation>
+</message>
+<message>
+<source>Remote</source>
+<translation>தொலைநிலை (Remote)</translation>
+</message>
+<message>
+<source>Rename</source>
+<translation>பெயர் மாற்று</translation>
+</message>
+<message>
+<source>Push Tag to %1</source>
+<translation>குறிச்சொல்லை %1-க்கு அனுப்பு</translation>
+</message>
+<message>
+<source>Rebase...</source>
+<translation>Rebase செய்...</translation>
+</message>
+<message>
+<source>Merge...</source>
+<translation>இணை (Merge)...</translation>
+</message>
+<message>
+<source>Checkout</source>
+<translation>Checkout</translation>
+</message>
+</context>
+<context>
+<name>PullRequestDialog</name>
+<message>
+<source>To:</source>
+<translation>பெறுநர்:</translation>
+</message>
+<message>
+<source>Body</source>
+<translation>உள்ளடக்கம்</translation> </message>
+<message>
+<source>From:</source>
+<translation>அனுப்புநர்:</translation>
+</message>
+<message>
+<source>Title</source>
+<translation>தலைப்பு</translation>
+</message>
+<message>
+<source>Create</source>
+<translation>உருவாக்கு</translation>
+</message>
+<message>
+<source>branch</source>
+<translation>கிளை</translation>
+</message>
+<message>
+<source>Create Pull Request</source>
+<translation>இணைப்புக்கான கோரிக்கையை (Pull Request) உருவாக்கு</translation>
+</message>
+<message>
+<source>owner/repository</source>
+<translation>உரிமையாளர்/களஞ்சியம்</translation>
+</message>
+<message>
+<source>Maintainer can modify</source>
+<translation>பராமரிப்பாளர் மாற்றங்களைச் செய்யலாம்</translation>
+</message>
+</context>
+<context>
+<name>Updater</name>
+<message>
+<source>Unable to download update</source>
+<translation>புதுப்பிப்பைப் பதிவிறக்க முடியவில்லை</translation>
+</message>
+<message>
+<source>Unknown install error</source>
+<translation>தெரியாத நிறுவல் பிழை</translation>
+</message>
+<message>
+<source>Helper application failed to start</source>
+<translation>உதவிச் செயலியைத் தொடங்க முடியவில்லை</translation>
+</message>
+<message>
+<source>Unable to install update</source>
+<translation>புதுப்பிப்பை நிறுவ முடியவில்லை</translation>
+</message>
+<message>
+<source>The new bundle could not be copied into place</source>
+<translation>புதிய தொகுப்பை உரிய இடத்தில் நகலெடுக்க முடியவில்லை</translation>
+</message>
+<message>
+<source>The disk image failed to mount successfully</source>
+<translation>வட்டுப் படிமத்தை (disk image) வெற்றிகரமாக இணைக்க முடியவில்லை</translation>
+</message>
+<message>
+<source>Unable to check for updates</source>
+<translation>புதுப்பிப்புகள் உள்ளனவா எனச் சரிபார்க்க முடியவில்லை</translation>
+</message>
+<message>
+<source>Update Failed</source>
+<translation>புதுப்பித்தல் தோல்வியடைந்தது</translation>
+</message>
+<message>
+<source>Actualización Fallida</source>
+<translation>புதுப்பித்தல் தோல்வியடைந்தது</translation>
+</message>
+<message>
+<source>Unable to open temporary file</source>
+<translation>தற்காலிகக் கோப்பைத் திறக்க முடியவில்லை</translation>
+</message>
+<message>
+<source>Installer script failed: %1</source>
+<translation>நிறுவி ஸ்கிரிப்ட் தோல்வியடைந்தது: %1</translation>
+</message>
+<message>
+<source>The existing bundle could not be moved to the trash</source>
+<translation>ஏற்கனவே உள்ள தொகுப்பை குப்பைத் தொட்டிக்கு மாற்ற முடியவில்லை</translation>
+</message>
+<message>
+<source>Some windows failed to close</source>
+<translation>சில சாளரங்களை மூட முடியவில்லை</translation>
+</message>
+<message>
+<source>Installer failed to start</source>
+<translation>நிறுவியைத் தொடங்க முடியவில்லை</translation>
+</message>
+</context>
+<context>
+<name>RemoteButton</name>
+<message>
+<source>999+</source>
+<translation>999+</translation>
+</message>
+</context>
+<context>
+<name>LogView</name>
+<message>
+<source>Copy</source>
+<translation>நகலெடு</translation>
+</message>
+</context>
+<context>
+<name>BlameEditor</name>
+<message>
+<source>HEAD</source>
+<translation>HEAD</translation>
+</message>
+<message>
+<source>Working Copy</source>
+<translation>பணி நகல்</translation>
+</message>
+<message>
+<source>Untitled</source>
+<translation>தலைப்பற்றது</translation>
+</message>
+<message>
+<source>Not Tracked</source>
+<translation>கண்காணிக்கப்படவில்லை</translation>
+</message>
+<message>
+<source>Save File</source>
+<translation>கோப்பைச் சேமி</translation>
+</message>
+</context>
+<context>
+<name>UpdateSubmodulesDialog</name>
+<message>
+<source>Init</source>
+<translation>தொடக்கநிலை</translation>
+</message>
+</context> </message>
+<message>
+<source>Update</source>
+<translation>புதுப்பி</translation>
+</message>
+<message>
+<source>Recursive</source>
+<translation>மீள்சுழற்சி முறை</translation>
+</message>
+</context>
+<context>
+<name>PluginsPanel</name>
+<message>
+<source>Kind</source>
+<translation>வகை</translation>
+</message>
+<message>
+<source>Name</source>
+<translation>பெயர்</translation>
+</message>
+<message>
+<source>Note</source>
+<translation>குறிப்பு</translation>
+</message>
+<message>
+<source>Error</source>
+<translation>பிழை</translation>
+</message>
+<message>
+<source>%1 Options</source>
+<translation>%1 விருப்பங்கள்</translation>
+</message>
+<message>
+<source>Options</source>
+<translation>விருப்பங்கள்</translation>
+</message>
+<message>
+<source>Description</source>
+<translation>விளக்கம்</translation>
+</message>
+<message>
+<source>Warning</source>
+<translation>எச்சரிக்கை</translation>
+</message>
+</context>
+<context>
+<name>FileContextMenu</name>
+<message>
+<source>Lock</source>
+<translation>பூட்டு</translation>
+</message>
+<message>
+<source>diff</source>
+<translation>வேறுபாடு</translation>
+</message>
+<message>
+<source>edit</source>
+<translation>திருத்து</translation>
+</message>
+<message>
+<source>next</source>
+<translation>அடுத்தது</translation>
+</message>
+<message>
+<source>Stage</source>
+<translation>நிலைப்படுத்து</translation>
+</message>
+<message>
+<source>merge</source>
+<translation>இணை</translation>
+</message>
+<message>
+<source>The selected file doesn&apos;t have a %1 revision.</source>
+<translation>தேர்ந்தெடுக்கப்பட்ட கோப்பில் %1 திருத்தப் பதிப்பு இல்லை.</translation>
+</message> 
+%1.</translation>
+</message>
+<message>
+<source>Discard Changes</source>
+<translation>மாற்றங்களை நிராகரி</translation>
+</message>
+<message>
+<source>Bash was not found on your PATH.</source>
+<translation>உங்கள் PATH-இல் Bash கண்டறியப்படவில்லை.</translation>
+</message>
+<message>
+<source>%1 files</source>
+<translation>%1 கோப்புகள்</translation>
+</message>
+<message>
+<source>Copy File Name</source>
+<translation>கோப்புப் பெயரை நகலெடு</translation>
+</message>
+<message>
+<source>Ignore</source>
+<translation>புறக்கணி</translation>
+</message>
+<message>
+<source>Unlock</source>
+<translation>பூட்டை நீக்கு</translation>
+</message>
+<message>
+<source>Unset Executable</source>
+<translation>இயக்கக்கூடிய தன்மையை நீக்கு</translation>
+</message>
+<message>
+<source>Set Executable</source>
+<translation>இயக்கக்கூடியதாக அமை</translation>
+</message>
+<message>
+<source>Discard Changes?</source>
+<translation>மாற்றங்களை நிராகரிக்கவா?</translation>
+</message>
+/message>
+<message>
+<source>Next Revision</source>
+<translation>அடுத்த திருத்தம்</translation>
+</message>
+<message>
+<source>previous</source>
+<translation>முந்தைய</translation>
+</message>
+<message>
+<source>Are you sure you want to discard changes in the selected files?</source>
+<translation>தேர்ந்தெடுக்கப்பட்ட கோப்புகளில் உள்ள மாற்றங்களை நிராகரிக்க விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>Failed to execute external %1 tool.</source>
+<translation>வெளிப்புற %1 கருவியை இயக்குவதில் தோல்வி ஏற்பட்டது.</translation>
+</message>
+<message>
+<source>Discard</source>
+<translation>நிராகரி</translation>
+</message>
+<message>
+<source>discard</source>
+<translation>நிராகரி</translation>
+</message>
+<message>
+<source>Remove Untracked Files</source>
+<translation>கண்காணிக்கப்படாத கோப்புகளை நீக்கு</translation>
+</message>
+<message>
+<source>External Tool Not Found</source>
+<translation>வெளிப்புறக் கருவி காணப்படவில்லை</translation>
+</message>
+<message>
+<source>Unstage</source>
+<translation>தயார்நிலையிலிருந்து நீக்கு</translation>
+</message>
+<message>
+<source>This action cannot be undone.</source>
+<translation>இந்தச் செயலை மாற்றியமைக்க முடியாது.</translation>
+</message>
+<message>
+<source>Previous Revision</source>
+<translation>முந்தைய திருத்தம்</translation>
+</message>
+<message>
+<source>Revision Not Found</source>
+<translation>திருத்தம் காணப்படவில்லை</translation>
+</message>
+<message>
+<source>Navigate to</source>
+<translation>செல்ல வேண்டிய இடம்</translation>
+</message>
+<message>
+<source>Bash is required to execute external tools.</source>
+<translation>வெளிப்புறக் கருவிகளை இயக்க Bash தேவைப்படுகிறது.</translation>
+</message>
+<message>
+<source>Checkout</source>
+<translation>Checkout (சரிபார்த்து எடுத்தல்)</translation> 
+</message>
+<message>
+<source>Bash Not Found</source>
+<translation>Bash காணப்படவில்லை</translation>
+</message>
+<message>
+<source>Filter History</source>
+<translation>வரலாற்றை வடிகட்டவும்</translation>
+</message>
+</context>
+<context>
+<name>WindowPanel</name>
+<message>
+<source>Log:</source>
+<translation>பதிவு:</translation>
+</message>
+<message>
+<source>Later</source>
+<translation>பின்னர்</translation>
+</message>
+<message>
+<source>Tabs:</source>
+<translation>தத்தல்கள்:</translation>
+</message>
+<message>
+<source>Theme Name</source>
+<translation>தீம் பெயர்</translation>
+</message>
+<message>
+<source>Create Theme</source>
+<translation>தீம்-ஐ உருவாக்கவும்</translation>
+</message>
+<message>
+<source>Open submodules in tabs</source>
+<translation>துணைத் தொகுதிகளைத் தத்தல்களில் திறக்கவும்</translation>
+</message>
+<message>
+<source>Open all repositories in tabs</source>
+<translation>அனைத்து களஞ்சியங்களையும் தத்தல்களில் திறக்கவும்</translation>
+</message>
+<message>
+<source>Theme:</source>
+<translation>தீம்:</translation>
+</message>
+<message>
+<source>Title:</source>
+<translation>தலைப்பு:</translation>
+</message>
+<message>
+<source>Hide automatically</source>
+<translation>தானாகவே மறைக்கவும்</translation>
+</message>
+<message>
+<source>Prompt:</source>
+<translation>கேள்வி/தூண்டுதல்:</translation>
+</message>
+<message>
+<source>Edit Current Theme</source>
+<translation>தற்போதைய தீம்-ஐத் திருத்தவும்</translation>
+</message>
+<message>
+<source>Restart</source>
+<translation>மீண்டும் தொடங்கவும்</translation>
+</message>
+<message>
+<source>The application must be restarted for the theme change to take effect.</source>
+<translation>தீம் மாற்றங்கள் நடைமுறைக்கு வர, பயன்பாட்டை மீண்டும் தொடங்க வேண்டும்.</translation>
+</message> <message>
+
+<message>
+
+<source>மறுதொடக்கம் செய்யவா?</source>
+
+<translation>¿Reiniciar?</translation>
+
+</message>
+
+<source>இப்போது மறுதொடக்கம் செய்ய விரும்புகிறீர்களா?</source>
+
+<translation>¿Quieres reiniciar ahora?</translation>
+
+</message>
+
+<message>
+<source>புதிய தீம் சேர்க்கவும்</source>
+<translation>Añadir Nuevo Tema</translation>
+
+</message>
+
+<message>
+<source>முழு ரெபாசிட்டரி பாதையைக் காட்டு</source>
+<translation>Mostrar ruta completa del repositorio</translation>
+
+</message>
+<context>
+<name>BranchTableModel</name>
+
+<message>
+<source>பெயர்</source>
+
+<translation>பெயர்</translation>
+
+</message>
+
+<source>மறுசீரமைப்பு</source>
+
+<translation>மறுசீரமைப்பு</translation>
+
+</message>
+
+<source>மேல்நிலை</source>
+<translation>பின்பற்றும் கிளை</tr>
+<context>
+<name>ExternalToolsModel</name>
+<message>
+<source>Name</source>
+<translation>பெயர்</translation>
+</message>
+<message>
+<source>Command</source>
+<translation>கட்டளை</translation>
+</message>
+<message>
+<source>Arguments</source>
+<translation>அளபுருக்கள்</translation>
+</message>
+</context>
+<context>
+<name>FileList</name>
+<message>
+<source>Name</source>
+<translation>பெயர்</translation>
+</message>
+<message>
+<source>Added</source>
+<translation>சேர்க்கப்பட்டது</translation>
+</message>
+<message>
+<source>Copied</source>
+<translation>நகலெடுக்கப்பட்டது</translation>
+</message>
+<message>
+<source>Type Change</source>
+<translation>வகை மாற்றம்</translation>
+</message>
+<message>
+<source>Select</source>
+<translation>தேர்ந்தெடு</translation>
+</message>
+<message>
+<source>Unmodified</source>
+<translation>மாற்றப்படாதது</translation>
+</message>
+<message>
+<source>Status</source>
+<translation>நிலை</translation>
+</message>
+<message>
+<source>Modified</source>
+<translation>மாற்றப்பட்டது</translation>
+</message>
+<message>
+<source>Renamed</source>
+<translation>பெயர் மாற்றப்பட்டது</translation>
+</message>
+<message>
+<source>Sort By</source>
+<translation>வரிசைப்படுத்து</translation>
+</message>
+<message>
+<source>Deleted</source>
+<translation>நீக்கப்பட்டது</translation>
+</message>
+<message>
+<source>Unreadable</source>
+<translation>வாசிக்க முடியாதது</translation>
+</message>
+<message>
+<source>Untracked</source>
+<translation>கண்காணிக்கப்படாதது</translation>
+</message>
+<message>
+<source>Conflicted</source>
+<translation>முரண்பாடுள்ளது</translation>
+</message>
+</context> முரண்பாடு
+வெற்றிடத்தைப் புறக்கணி (-w)
+புறக்கணிக்கப்பட்டது
+குறிச்சொல் உரையாடல்
+பெயர்
+குறிப்புரை கொண்டது
+கட்டாயப்படுத்து (ஏற்கனவே உள்ள குறிச்சொல்லை மாற்றவும்)
+குறிச்சொல்லை உருவாக்கு
+%1-இல் புதிய குறிச்சொல்லைச் சேர்க்கவும்
+%1-க்கு அனுப்பவும்
+கருவிப்பட்டை
+அடுத்தது
+இழு (Pull)
+அனுப்பு (Push)
+கொண்டுவரு (Fetch)
+இணை (Merge)
+தற்காலிகச் சேமிப்பு (Stash)
+தற்காலிகச் சேமிப்பை மீட்டெடு (Pop Stash) </message>
+<message>
+<source>Rebase</source>
+<translation>மீண்டும் அமை (Rebase)</translation>
+</message>
+<message>
+<source>Configure Settings</source>
+<translation>அமைப்புகளை உள்ளமைக்கவும்</translation>
+</message>
+<message>
+<source>Previous</source>
+<translation>முந்தையது</translation>
+</message>
+<message>
+<source>Tree View</source>
+<translation>கிளை அமைப்பு காட்சி</translation>
+</message>
+<message>
+<source>Diff View</source>
+<translation>வேறுபாட்டுக் காட்சி</translation>
+</message>
+<message>
+<source>Show repository sidebar</source>
+<translation>களஞ்சியத்தின் பக்கவாட்டுப் பட்டையைக் காட்டவும்</translation>
+</message>
+<message>
+<source>Checkout</source>
+<translation>Checkout (கிளையைத் தேர்ந்தெடுக்கவும்)</translation>
+</message>
+<message>
+<source>Show Log</source>
+<translation>பதிவைக் காட்டவும்</translation>
+</message>
+<message>
+<source>Hide Log</source>
+<translation>பதிவை மறைக்கவும்</translation>
+</message>
+<message>
+<source>Show Starred Commits</source>
+<translation>குறிக்கப்பட்ட கமிட்களைக் (commits) காட்டவும்</translation>
+</message>
+</context>
+<சூழல்>
+<name>StartDialog</name>
+<message>
+<source>Open</source>
+<translation>திற</translation>
+</message>
+<message>
+<source>Clone</source>
+<translation>நகலெடு (Clone)</translation>
+</message>
+<message>
+<source>Understand your history!</source>
+<translation>உங்கள் வரலாற்றைப் புரிந்துகொள்ளுங்கள்!</translation>
+</message>
+<message>
+<source>Clone Repository</source>
+<translation>களஞ்சியத்தை (Repository) நகலெடு</translation>
+</message>
+<message>
+<source>Filter Non-existent Paths</source>
+<translation>இல்லாத பாதைகளை வடிகட்டவும்</translation>
+</message>
+<message>
+<source>Repositories:</source>
+<translation>களஞ்சியங்கள்:</translation>
+</message>
+<message>
+<source>Remove</source>
+<translation>நீக்கு</translation>
+</message>
+<message>
+<source>&lt;p&gt;Are you sure you want to remove the remote repository association for %1?&lt;/p&gt;&lt;p&gt;The local clone itself will not be affected.&lt;/p&gt;</source>
+<translation>&lt;p&gt;%1-க்கான தொலைதூரக் களஞ்சியத் தொடர்பை நீக்க விரும்புகிறீர்களா?&lt;/p&gt;&lt;p&gt;உள்ளூர் நகல் (local clone) பாதிக்கப்படாது.&lt;/p&gt;</translation>
+</message>
+<message>
+<source>Remove Repository Association?</source>
+<translation>களஞ்சியத் தொடர்பை நீக்கவா?</translation>
+</message>
+<message>
+<source>View Getting Started Video</source>
+<translation>தொடங்குவதற்கான காணொளியைப் பார்க்கவும்</translation>
+</message>
+<message>
+<source>Refresh</source>
+<translation>புதுப்பிக்கவும்</translation>
+</message>
+<message>
+<source>Remote:</source>
+<translation>தொலைதூரக் களஞ்சியம்:</translation>
+</message>
+<message>
+<source>Initialize New Repository</source>
+<translation>புதிய களஞ்சியத்தை உருவாக்கவும்</translation>
+</message> 
+<message>
+<source>Open Repository</source>
+<translation>களஞ்சியத்தைத் திறக்கவும்</translation>
+</message>
+<message>
+<source>Clear All</source>
+<translation>அனைத்தையும் நீக்கவும்</translation>
+</message>
+<message>
+<source>Open Existing Repository</source>
+<translation>ஏற்கனவே உள்ள களஞ்சியத்தைத் திறக்கவும்</translation>
+</message>
+<message>
+<source>&lt;p&gt;Are you sure you want to remove the %1 account for &apos;%2&apos;?&lt;/p&gt;&lt;p&gt;Only the account association will_be removed. Remote configurations and local clones will not be affected.&lt;/p&gt;</source>
+<translation>&lt;p&gt;&apos;%2&apos;-க்கான %1 கணக்கை நீக்க விரும்புகிறீர்களா?&lt;/p&gt;&lt;p&gt;கணக்கு இணைப்பு மட்டுமே நீக்கப்படும். தொலைநிலை அமைப்புகள் மற்றும் உள்ளூர் நகல்கள் (local clones) பாதிக்கப்படாது.&lt;/p&gt;</translation>
+</message> தொலைநிலை அமைப்புகள் மற்றும் உள்ளூர் களஞ்சியங்கள் பாதிக்கப்படாது.
+</message>
+<message>
+<source>Show Full Path</source>
+<translation>முழுப் பாதையைக் காட்டு</translation>
+</message>
+<message>
+<source>Show Full Name</source>
+<translation>முழுப் பெயரைக் காட்டு</translation>
+</message>
+<message>
+<source>Remove Account?</source>
+<translation>கணக்கை நீக்கவா?</translation>
+</message>
+<message>
+<source>Choose Repository</source>
+<translation>களஞ்சியத்தைத் தேர்ந்தெடுக்கவும்</translation>
+</message>
+</context>
+<context>
+<name>RemoteDialog</name>
+<message>
+<source>Pull</source>
+<translation>இழு (Pull)</translation>
+</message>
+<message>
+<source>Push</source>
+<translation>தள்ளு (Push)</translation>
+</message>
+<message>
+<source>Fetch</source>
+<translation>பெறு (Fetch)</translation>
+</message>
+<message>
+<source>Force</source>
+<translation>கட்டாயப்படுத்து</translation>
+</message>
+<message>
+<source>Merge</source>
+<translation>இணை</translation>
+</message>
+<message>
+<source>Set upstream</source>
+<translation>மேல்நிலை (upstream) அமைப்பை வரையறு</translation>
+</message>
+<message>
+<source>Merge (Fast-forward Only)</source>
+<translation>இணை (Fast-forward மட்டும்)</translation>
+</message>
+<message>
+<source>Push all tags</source>
+<translation>அனைத்து குறிச்சொற்களையும் (tags) அனுப்பு</translation>
+</message>
+<message>
+<source>Rebase</source>
+<translation>அடித்தளத்தை மாற்று (Rebase)</translation>
+</message>
+<message>
+<source>Remote Reference:</source>
+<translation>தொலைநிலை குறிப்பு:</translation>
+</message>
+<message>
+<source>Action:</source>
+<translation>செயல்பாடு:</translation>
+</message>
+<message>
+<source>Remote:</source>
+<translation>தொலைநிலை:</translation>
+</message> <மொழிபெயர்ப்பு>தொலைநிலை:</மொழிபெயர்ப்பு>
+
+<செய்தி>
+
+<மூலம்>குறிப்புகளை நீக்கு</மூலம்>
+
+<மொழிபெயர்ப்பு>குறிப்புகளை இடு</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<செய்தி>
+<மூலம்>மேம்பட்டது:</மூலம்>
+<மொழிபெயர்ப்பு>மேம்பட்டது:</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<செய்தி>
+<மூலம்>குறிப்புe:</source>
+<translation>குறிப்பு:</translation>
+</message>
+<message>
+<source>Merge (No Fast-forward)</source>
+<translation>இணைக்கவும் (Fast-forward இல்லை)</translation>
+</message>
+<message>
+<source>Update existing tags</source>
+<translation>ஏற்கனவே உள்ள குறிச்சொற்களைப் புதுப்பிக்கவும்</translation>
+</message>
+</context>
+<context>
+<name>DeleteBranchDialog</name>
+<message>
+<source>Push</source>
+<translation>Push</translation>
+</message>
+<message>
+<source>Delete</source>
+<translation>நீக்கவும்</translation>
+</message>
+<message>
+<source>Delete Branch?</source>
+<translation>கிளையை நீக்கவா?</translation>
+</message>
+<message>
+<source>Are you sure you want to delete local branch &apos;%1&apos;?</source>
+<translation>'%1' என்ற உள்ளூர் கிளையை நீக்க விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>Push canceled.</source>
+<translation>Push செயல்பாடு ரத்து செய்யப்பட்டது.</translation>
+</message>
+<message>
+<source>Unable to push to %1 - %2</source>
+<translation>%1 - %2-க்கு Push செய்ய முடியவில்லை</translation>
+</message>
+<message>
+<source>Also delete the upstream branch from its remote</source>
+<translation>அதன் ரிமோட் (remote) தளத்திலிருந்து அப்ஸ்ட்ரீம் (upstream) கிளையையும் நீக்கவும்</translation>
+</message>
+<message>
+<source>The branch is not fully merged. Deleting it may cause some commits to be lost.</source>
+<translation>கிளை முழுமையாக இணைக்கப்படவில்லை. அதை நீக்குவது சில கமிட்களை (commits) இழக்க நேரிடலாம்.</translation>
+</message>
+<message>
+<source>delete &apos;%1&apos; from &apos;%2&apos;</source>
+<translation>'%2'-லிருந்து '%1'-ஐ நீக்கவும்</translation>
+</message>
+de &apos;%2&apos;</translation>
+</message>
+</context>
+<context>
+<name>DeleteTagDialog</name>
+<message>
+<source>Push</source>
+<translation>அனுப்பு</translation>
+</message>
+<message>
+<source>Are you sure you want to delete tag &apos;%1&apos;?</source>
+<translation>&apos;%1&apos; என்ற குறியீட்டை (tag) நீக்க விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>Delete</source>
+<translation>நீக்கு</translation>
+</message>
+<message>
+<source>Push canceled.</source>
+<translation>அனுப்புதல் ரத்து செய்யப்பட்டது.</translation>
+</message>
+<message>
+<source>Delete Tag?</source>
+<translation>குறியீட்டை நீக்கவா?</translation>
+</message>
+<message>
+<source>Unable to push to %1 - %2</source>
+<translation>%1 -க்கு அனுப்ப முடியவில்லை - %2</translation>
+</message>
+<message>
+<source>delete tag</source>
+<translation>குறியீட்டை நீக்கு</translation>
+</message>
+<message>
+<source>Delete Tag</source>
+<translation>குறியீட்டை நீக்கு</translation>
+</message>
+<message>
+<source>Also delete the upstream tag from %1</source>
+<translation>%1 -லிருந்து அப்ஸ்ட்ரீம் (upstream) குறியீட்டையும் நீக்கு</translation>
+</message>
+<message>
+<source>delete &apos;%1&apos; from &apos;%2&apos;</source>
+<translation>&apos;%2&apos; -லிருந்து &apos;%1&apos; -ஐ நீக்கு</translation>
+</message>
+</context> de '%2'</translation>
+</message>
+</context>
+<context>
+<name>AccountDialog</name>
+<message>
+<source>URL:</source>
+<translation>URL:</translation>
+</message>
+<message>
+<source>Host:</source>
+<translation>Host:</translation>
+</message>
+<message>
+<source>Would you like to replace the previous account?</source>
+<translation>முந்தைய கணக்கை மாற்ற விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>Cancel</source>
+<translation>ரத்துசெய்</translation>
+</message>
+<message>
+<source>Add Remote Account</source>
+<translation>தொலைதூரக் கணக்கைச் சேர்</translation>
+</message>
+<message>
+<source>Replace</source>
+<translation>மாற்று</translation>
+</message>
+<message>
+<source>Password:</source>
+<translation>கடவுச்சொல்:</translation>
+</message>
+<message>
+<source>Replace?</source>
+<translation>மாற்றவா?</translation>
+</message>
+<message>
+<source>Advanced:</source>
+<translation>மேம்பட்டவை:</translation>
+</message>
+<message>
+<source>Username:</source>
+<translation>பயனர்பெயர்:</translation>
+</message>
+<message>
+<source>An account of this type already exists.</source>
+<translation>இவ்வகையான கணக்கு ஏற்கனவே உள்ளது.</translation>
+</message>
+<message>
+<source>Connection Failed</source>
+<translation>இணைப்பு தோல்வியடைந்தது</translation>
+</message>
+</context>
+<context>
+<name>AddRemoteDialog</name>
+<message>
+<source>URL:</source>
+<translation>URL:</translation>
+</message>
+<message>
+<source>Name:</source>
+<translation>பெயர்:</translation>
+</message>
+<message>
+<source>Add Remote</source>
+<translation>தொலைநிலை அமைப்பைச் சேர்க்கவும்</translation>
+</message>
+</context>
+<context>
+<name>EditorPanel</name>
+<message>
+<source>Tabs</source>
+<translation>தத்தல்கள் (Tabs)</translation>
+</message>
+<message>
+<source>Font:</source>
+<translation>எழுத்துரு:</translation>
+</message>
+<message>
+<source>Show heat map</source>
+<translation>வெப்ப வரைபடத்தைக் காட்டு</translation>
+</message>
+<message>
+<source>Spaces</source>
+<translation>இடைவெளிகள்</translation>
+</message>
+<message>
+<source>Font size:</source>
+<translation>எழுத்துரு அளவு:</translation>
+</message>
+<message>
+<source>Indent using:</source>
+<translation>உள் தள்ளலுக்குப் பயன்படுத்துவது:</translation>
+</message>
+<message>
+<source>Indent width:</source>
+<translation>உள் தள்ளல் அகலம்:</translation>
+</message>
+<message>
+<source>Tab width:</source>
+<translation>தத்தல் அகலம்:</translation>
+</message>
+<message>
+<source>Blame margin:</source>
+<translation>Blame விளிம்பு:</translation>
+</message>
+</context>
+<context>
+<name>ReferenceModel</name>
+<message>
+<source>Tags</source>
+<translation>குறிச்சொற்கள்</translation>
+</message>
+<message>
+<source>Branches</source>
+<translation>கிளைகள்</translation>
+</message>
+<message>
+<source>Remotes</source>
+<translation>தொலைநிலை அமைப்புகள்</translation>
+</message>
+</context>
+<context>
+<name>LfsPanel</name>
+<message>
+<source>days</source>
+<translation>நாட்கள்</translation>
+</message>
+<message>
+<source>commit days</source>
+<translation>கமிட் (commit) நாட்கள்</translation>
+</message>
+<message>
+<source>Track</source>
+<translation>கண்காணி</translation> 
+<translation>பின்தொடர்</translation>
+</message>
+<message>
+<source>Deinitialize LFS?</source>
+<translation>LFS-ஐ செயலிழக்கச் செய்யவா?</translation>
+</message>
+<message>
+<source>View Environment</source>
+<translation>சூழலைப் பார்</translation>
+</message>
+<message>
+<source>Prune Offset:</source>
+<translation>நீக்குதலுக்கான இடைவெளி (Offset):</translation>
+</message>
+<message>
+<source>reference days or</source>
+<translation>குறிப்பு நாட்கள் அல்லது</translation>
+</message>
+<message>
+<source>Fetch LFS objects from all references for the past</source>
+<translation>கடந்த காலத்திற்கான அனைத்து குறிப்புகளிலிருந்தும் LFS பொருட்களைப் பெறு</translation>
+</message>
+<message>
+<source>Fetch Recent:</source>
+<translation>சமீபத்தியவற்றைப் பெறு:</translation>
+</message>
+<message>
+<source>Deinitialize LFS</source>
+<translation>LFS-ஐ செயலிழக்கச் செய்</translation>
+</message>
+<message>
+<source>Initialize LFS</source>
+<translation>LFS-ஐத் தொடங்கு</translation>
+</message>
+<message>
+<source>Specify a glob pattern for tracking large files.
+
+Generally, large files are greater than 500kB, change frequently,
+and do not compress well with git. This includes binary or video
+files which are already highly compressed.
+
+Examples
+*.png
+*.[pP][nN][gG]
+/images/*
+</source>
+<translation>பெரிய கோப்புகளைக் கண்காணிக்க ஒரு 'glob' வடிவத்தைக் குறிப்பிடவும்.
+
+பொதுவாக, பெரிய கோப்புகள் என்பவை 500kB-க்கு மேல் உள்ளவை, அடிக்கடி மாறக்கூடியவை
+மற்றும் git மூலம் சரியாகச் சுருக்க முடியாதவை ஆகும். இதில் ஏற்கனவே
+அதிகம் சுருக்கப்பட்ட பைனரி அல்லது வீடியோ கோப்புகளும் அடங்கும்.
+
+எடுத்துக்காட்டுகள்
+*.png
+*.[pP][nN][gG]
+/images/*
+</translation> எடுத்துக்காட்டுகள்
+*.png
+*.[pP][nN][gG]
+/images/*
+</translation>
+</message>
+<message>
+<source>Pattern:</source>
+<translation>மாதிரி:</translation>
+</message>
+<message>
+<source>Server URL:</source>
+<translation>சேவையக URL:</translation>
+</message>
+<message>
+<source>Advanced:</source>
+<translation>மேம்பட்டவை:</translation>
+</message>
+<message>
+<source>git-lfs env (read only)</source>
+<translation>git-lfs env (வாசிக்க மட்டும்)</translation>
+</message>
+<message>
+<source>Deinitialize</source>
+<translation>தொடக்க அமைப்பை நீக்கு</translation>
+</message>
+<message>
+<source>Are you sure you want uninstall LFS from இந்த களஞ்சியத்திலிருந்து (repository) LFS-ஐ நீக்க விரும்புகிறீர்களா?</source>
+<translation>இந்தக் களஞ்சியத்திலிருந்து LFS-ஐ நீக்க விரும்புகிறீர்களா?</translation>
+</message>
+</context>
+<context>
+<name>RepoModel</name>
+<message>
+<source>none</source>
+<translation>எதுவுமில்லை</translation>
+</message>
+<message>
+<source>open</source>
+<translation>திற</translation>
+</message>
+<message>
+<source>Clone Repository</source>
+<translation>களஞ்சியத்தை நகலெடு (Clone)</translation>
+</message>
+<message>
+<source>Connecting</source>
+<translation>இணைக்கப்படுகிறது</translation>
+</message>
+<message>
+<source>recent</source>
+<translation>சமீபத்தியவை</translation>
+</message>
+</context>
+/மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<செய்தி>
+<மூலம்>ரிமோட்</மூலம்>
+<மொழிபெயர்ப்பு>ரிமோட்டோ</மொழிபெயர்ப்பு>
+</செய்தி>
+
+<செய்தி>
+<மூலம்>புதிய களஞ்சியத்தைத் தொடங்குதல்</மூலம்>
+<மொழிபெயர்ப்பு>Inicializar Nuevo Repositorio</மொழிபெயர்ப்பு>
+</செய்தி>
+
+<செய்தி>
+<மூலம்>ஏற்கனவே உள்ள களஞ்சியத்தைத் திறத்தல்</மூலம்>
+<மொழிபெயர்ப்பு>Abrir repositorio existente</மொழிபெயர்ப்பு>
+
+</செய்தி>
+</சூழல்>
+<சூழல்><பெயர்>குளோன்பேஜ்</பெயர்>
+
+<செய்தி>
+<மூலம்>%1 இலிருந்து &apos;%2&apos; - %3 க்குள் செல்லத் தவறியது</மூலம்>
+<மொழிபெயர்ப்பு>Falló al %1 en &apos;%2&apos; - %3</translation>
+</message>
+<message>
+<source>Clone</source>
+<translation>நகலெடு (Clone)</translation>
+</message>
+<message>
+<source>clone</source>
+<translation>நகலெடு</translation>
+</message>
+<message>
+<source>Clone canceled.</source>
+<translation>நகலெடுக்கும் செயல்முறை ரத்து செய்யப்பட்டது.</translation>
+</message>
+<message>
+<source>The new repository will open after the clone finishes.</source>
+<translation>நகலெடுக்கும் செயல்முறை முடிந்ததும் புதிய களஞ்சியம் (repository) திறக்கப்படும்.</translation>
+</message>
+<message>
+<source>Clone Progress</source>
+<translation>நகலெடுக்கும் முன்னேற்றம்</translation>
+</message>
+</context>
+<context>
+<name>DiffPanel</name>
+<message>
+<source>System Locale</source>
+<translation>கணினி வட்டார அமைப்பு (System Locale)</translation>
+</message>
+<message>
+<source>lines</source>
+<translation>வரிகள்</translation>
+</message>
+<message>
+<source>Context lines:</source>
+<translation>சூழல் வரிகள் (Context lines):</translation>
+</message>
+<message>
+<source>Added files</source>
+<translation>சேர்க்கப்பட்ட கோப்புகள்</translation>
+</message>
+<message>
+<source>Character Encoding:</source>
+<translation>எழுத்து குறியாக்கம் (Character Encoding):</translation>
+</message>
+<message>
+<source>Deleted files</source>
+<translation>நீக்கப்பட்ட கோப்புகள்</translation>
+</message>
+<message>
+<source>Whitespace:</source>
+<translation>வெற்றிடம் (Whitespace):</translation>
+</message>
+<message>
+<source>Ignore Whitespace (-w)</source>
+<translation>வெற்றிடத்தைப் புறக்கணி (-w)</translation>
+</message>
+<message>
+<source>Auto Collapse:</source>
+<translation>தானாகச் சுருக்குதல் (Auto Collapse):</translation>
+</message>
+</context>
+<context>
+<name>MainWindow</name>
+<message>
+<source>behind: %1</source>
+<translation>பின்னே உள்ளது: %1</translation> <translation>பின்னே: %1</translation>
+</message>
+<message>
+<source>MERGING</source>
+<translation>இணைத்தல்</translation>
+</message>
+<message>
+<source>%1 (%2)</source>
+<translation>%1 (%2)</translation>
+</message>
+<message>
+<source>%1 - %2</source>
+<translation>%1 - %2</translation>
+</message>
+<message>
+<source>CHERRY-PICKING</source>
+<translation>தேர்ந்தெடுத்தல்</translation>
+</message>
+<message>
+<source>REBASING</source>
+<translation>அடித்தளத்தை மாற்றுதல்</translation>
+</message>
+<message>
+<source>%1 does not contain a valid git repository.</source>
+<translation>%1-இல் செல்லுபடியாகும் git களஞ்சியம் இல்லை.</translation>
+</message>
+<message>
+<source>REVERTING</source>
+<translation>மீட்டமைத்தல்</translation>
+</message>
+<message>
+<source>up-to-date</source>
+<translation>புதுப்பிக்கப்பட்டது</translation>
+</message>
+<message>
+<source>ahead: %1</source>
+<translation>முன்னே: %1</translation>
+</message>
+<message>
+<source>Invalid Git Repository</source>
+<translation>செல்லுபடியாகாத Git களஞ்சியம்</translation>
+</message>
+</context>
+<context>
+<name>CommitDialog</name>
+<message>
+<source>Abort</source>
+<translation>நிறுத்து</translation>
+</message>
+<message>
+<source>Merge</source>
+<translation>இணை</translation>
+</message>
+<message>
+<source>Stash</source>
+<translation>தற்காலிகச் சேமிப்பு</translation>
+</message>
+<message>
+<source>Stash commit message</source>
+<translation>தற்காலிகச் சேமிப்பு உறுதிப்படுத்தல் செய்தி</translation>
+</message>
+<message>
+<source>Revert</source>
+<translation>மீட்டமை</translation>
+<மொழிபெயர்ப்பு>மீட்டெடு</மொழிபெயர்ப்பு>
+
+<செய்தி>
+<மூலம்>கமிட் செய்தியை மீட்டெடு</மூலம்>
+<மொழிபெயர்ப்பு>உறுதிப்படுத்தல் மீட்டெடுப்புச் செய்தி</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<செய்தி>
+<மூலம்>கமிட் செய்தியை ஒன்றிணை</மூலம்>
+<மொழிபெயர்ப்பு>இணைப்பை உறுதிப்படுத்தும் செய்தி</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<செய்தி>தேர்ந்தெடு</மொழிபெயர்ப்பு>
+
+</செய்தி>
+<செய்தி>
+<மூலம்>கமிட் செய்தியைத் தேர்ந்தெடு</மூலம்>
+
+<மொழிபெயர்ப்பு>தேர்ந்தெடுக்கப்பட்ட உறுதிப்படுத்தல் செய்தி</மொழிபெயர்ப்பு>
+
+</செய்தி>
+<சூழல்>
+<சூழல்>
+<name>PreviewWidget</name>
+<message>
+<source>Added</source>
+<translation>சேர்க்கப்பட்டது</translation>
+</message>
+<message>
+<source>Modified</source>
+<translation>மாற்றப்பட்டது</translation>
+</message>
+</context>
+<context>
+<name>ClearButton</name>
+<message>
+<source>Clear</source>
+<translation>அழி</translation>
+</message>
+</context>
+<context>
+<name>CloneDialog</name>
+<message>
+<source>Clone</source>
+<translation>நகலெடு</translation>
+</message>
+<message>
+<source>Clone Repository</source>
+<translation>களஞ்சியத்தை நகலெடு</translation>
+</message>
+<message>
+<source>Cloned repository from &apos;%1&apos; into &apos;%2&apos;</source>
+<translation>&apos;%1&apos;-லிருந்து &apos;%2&apos;-க்கு களஞ்சியம் நகலெடுக்கப்பட்டது</translation>
+</message>
+</context> en &apos;%2&apos;</translation>
+</message>
+<message>
+<source>Initialized empty repository into &apos;%1&apos;</source>
+<translation>&apos;%1&apos;-இல் காலியான களஞ்சியம் (repository) உருவாக்கப்பட்டது</translation>
+</message>
+<message>
+<source>Initialize Repository</source>
+<translation>களஞ்சியத்தை உருவாக்கு</translation>
+</message>
+<message>
+<source>Initialize</source>
+<translation>உருவாக்கு</translation>
+</message>
+</context>
+<context>
+<name>SideBar</name>
+<message>
+<source>Close</source>
+<translation>மூடு</translation>
+</message>
+<message>
+<source>Clone Repository</source>
+<translation>களஞ்சியத்தின் நகலை உருவாக்கு (Clone)</translation>
+</message>
+<message>
+<source>Filter Non-existent Paths</source>
+<translation>இல்லாத பாதைகளை வடிகட்டு</translation>
+</message>
+<message>
+<source>Remove</source>
+<translation>நீக்கு</translation>
+</message>
+<message>
+<source>&lt;p&gt;Are you sure you want to remove the remote repository association for %1?&lt;/p&gt;&lt;p&gt;The local clone itself will not be affected.&lt;/p&gt;</source>
+<translation>&lt;p&gt;%1-க்கான தொலைதூரக் களஞ்சியத் தொடர்பை நீக்க விரும்புகிறீர்களா?&lt;/p&gt;&lt;p&gt;உள்ளூர் நகல் (local clone) பாதிக்கப்படாது.&lt;/p&gt;</translation>
+</message>
+<message>
+<source>Remove Repository Association?</source>
+<translation>களஞ்சியத் தொடர்பை நீக்கவா?</translation>
+</message>
+<message>
+<source>Refresh Remote Accounts</source>
+<translation>தொலைதூரக் கணக்குகளைப் புதுப்பி</translation>
+</message>
+<message>
+<source>Initialize New Repository</source>
+<translation>புதிய களஞ்சியத்தை உருவாக்கு</translation>
+</message>
+<message>
+<source>Open களஞ்சியம்</source>
+<translation>களஞ்சியத்தைத் திற</translation>
+</message>
+<message>
+<source>Authorize</source>
+<translation>அனுமதி அளி</translation>
+</message>
+<message>
+<source>Open Existing Repository</source>
+<translation>ஏற்கனவே உள்ள களஞ்சியத்தைத் திற</translation>
+</message>
+<message>
+<source>&lt;p&gt;Are you sure you want to remove the %1 account for &apos;%2&apos;?&lt;/p&gt;&lt;p&gt;Only the account association will be removed. Remote configurations and local clones will not be affected.&lt;/p&gt;</source>
+<translation>&lt;p&gt;&apos;%2&apos;-க்கான %1 கணக்கை நீக்க விரும்புகிறீர்களா?&lt;/p&gt;&lt;p&gt;கணக்கு இணைப்பு மட்டுமே நீக்கப்படும். தொலைநிலை அமைப்புகள் மற்றும் உள்ளூர் நகல்கள் (local clones) பாதிக்கப்படாது.&lt;/p&gt;</translation> தொலைநிலை அமைப்புகள் மற்றும் உள்ளூர் களஞ்சியங்கள் பாதிக்கப்படாது.
+முழுப் பாதையைக் காட்டு
+முழுப் பெயரைக் காட்டு
+சமீபத்திய அனைத்தையும் நீக்கு
+%1 கணக்கைச் சேர்
+கணக்கை நீக்கவா?
+மேம்பட்ட தேடல் விட்ஜெட்
+தேதி:
+கோப்பு:
+பாதை:
+ஆசிரியரின் மின்னஞ்சல்
+Hunk தலைப்பு உரை
+கோப்புப் பெயர்
+கோப்புப் பாதை
+<translation>கோப்புப் பாதை</translation>
+</message>
+<message>
+<source>Diff addition (green)</source>
+<translation>சேர்க்கப்பட்ட வேறுபாடு (பச்சை)</translation>
+</message>
+<message>
+<source>Deletion:</source>
+<translation>நீக்கம்:</translation>
+</message>
+<message>
+<source>Diff deletion (red)</source>
+<translation>நீக்கப்பட்ட வேறுபாடு (சிவப்பு)</translation>
+</message>
+<message>
+<source>Commits after date</source>
+<translation>குறிப்பிட்ட தேதிக்குப் பிந்தைய பதிவுகள் (commits)</translation>
+</message>
+<message>
+<source>Specific commit date</source>
+<translation>குறிப்பிட்ட பதிவுத் தேதி</translation>
+</message>
+<message>
+<source>After:</source>
+<translation>பிறகு:</translation>
+</message>
+<message>
+<source>Email:</source>
+<translation>மின்னஞ்சல்:</translation>
+</message>
+<message>
+<source>Source code comment</source>
+<translation>மூலக் குறியீட்டுக்குறிப்பு</translation>
+</message>
+<message>
+<source>Return</source>
+<translation>திரும்பு</translation>
+</message>
+<message>
+<source>Commit message</source>
+<translation>பதிவுச் செய்தி</translation>
+</message>
+<message>
+<source>Scope:</source>
+<translation>வரம்பு:</translation>
+</message>
+<message>
+<source>Search</source>
+<translation>தேடு</translation>
+</message>
+<message>
+<source>Diff context (white)</source>
+<translation>வேறுபாட்டுச் சூழல் (வெள்ளை)</translation>
+</message>
+<message>
+<source>Author name</source>
+<translation>ஆசிரியர் பெயர்</translation>
+</message>
+<message>
+<source>Comment:</source>
+<translation>குறிப்பு:</translation>
+</message>
+<message>
+<source>Context:</source>
+<translation>சூழல்:</translation>
+</message>
+<message> 
+<source>Source code identifier</source>
+<translation>மூலக் குறியீட்டு அடையாளம்</translation>
+</message>
+<message>
+<source>Commits before date</source>
+<translation>குறிப்பிட்ட தேதிக்கு முந்தைய பதிவுகள் (commits)</translation>
+</message>
+<message>
+<source>Before:</source>
+<translation>முன்:</translation>
+</message>
+<message>
+<source>Author:</source>
+<translation>ஆசிரியர்:</translation>
+</message>
+<message>
+<source>Source code string literal</source>
+<translation>மூலக் குறியீட்டு உரைச் சரம் (string literal)</translation>
+</message>
+<message>
+<source>Identifier:</source>
+<translation>அடையாளம்:</translation>
+</message>
+<message>
+<source>String:</source>
+<translation>உரைச் சரம்:</translation>
+</message>
+<message>
+<source>Addition:</source>
+<translation>சேர்ப்பு:</translation>
+</message>
+<message>
+<source>Message:</source>
+<translation>செய்தி:</translation>
+</message>
+</context>
+<context>
+<name>MergeDialog</name>
+<message>
+<source>Merge</source>
+<translation>இணைத்தல்</translation>
+</message>
+<message>
+<source>Merge (Fast-forward Only)</source>
+<translation>இணைத்தல் (Fast-forward மட்டும்)</translation>
+</message>
+<message>
+<source>Rebase</source>
+<translation>Rebase (அடிப்படையை மாற்றுதல்)</translation>
+</message>
+<message>
+<source>No commit</source>
+<translation>பதிவு இல்லை</translation>
+</message>
+<message>
+<source>Action:</source>
+<translation>செயல்பாடு:</translation>
+</message>
+<message>
+<source>Reference:</source>
+<translation>குறிப்பு:</translation>
+</message>
+<message>
+<source>Merge (No Fast-forward)</source>
+<translation>இணைத்தல் (Fast-forward இல்லை)</translation>
+</message>
+</context>
+<context> <name>NewBranchDialog</name>
+<message>
+<source>Name:</source>
+<translation>பெயர்:</translation>
+</message>
+<message>
+<source>Start Point:</source>
+<translation>தொடக்கப் புள்ளி:</translation>
+</message>
+<message>
+<source>Upstream:</source>
+<translation>அப்ஸ்ட்ரீம் (Upstream):</translation>
+</message>
+<message>
+<source>Advanced:</source>
+<translation>மேம்பட்டவை:</translation>
+</message>
+<message>
+<source>Checkout branch</source>
+<translation>கிளையைத் தேர்ந்தெடுக்கவும் (Checkout branch)</translation>
+</message>
+<message>
+<source>Create Branch</source>
+<translation>கிளையை உருவாக்கவும்</translation>
+</message>
+</context>
+<context>
+<name>TerminalPanel</name>
+<message>
+<source>Name:</source>
+<translation>பெயர்:</translation>
+</message>
+<message>
+<source>Install</source>
+<translation>நிறுவு</translation>
+</message>
+<message>
+<s<source>Uninstall</source>
+<translation>நிறுவல் நீக்கம்</translation>
+</message>
+<message>
+<source>Location:</source>
+<translation>அமைவிடம்:</translation>
+</message>
+</context>
+<context>
+<name>RemoteCallbacks</name>
+<message>
+<source>To %1</source>
+<translation>%1-க்கு</translation>
+</message>
+<message>
+<source>authentication canceled</source>
+<translation>அங்கீகாரம் ரத்து செய்யப்பட்டது</translation>
+</message>
+<message>
+<source>failed to execute pre-push hook: %1</source>
+<translation>pre-push hook-ஐ இயக்குவதில் தோல்வி: %1</translation>
+</message>
+<message>
+<source>Passphrase:</source>
+<translation>கடவுச்சொல் சொற்றொடர்:</translation>
+</message>
+<message>
+<source>remote: %1</source>
+<translation>தொலைநிலை: %1</translation>
+</message>
+<message>
+<source>Password:</source>
+<translation>கடவுச்சொல்:</translation>
+</message>
+<message>
+<source>Username:</source>
+<translation>பயனர்பெயர்:</translation>
+</message>
+<message>
+<source>From %1</source>
+<translation>%1-லிருந்து</translation>
+</message>
+<message>
+<source>SSH Passphrase</source>
+<translation>SSH கடவுச்சொல் சொற்றொடர்</translation>
+</message>
+<message>
+<source>failed to execute pre-push hook: bash not found</source>
+<translation>pre-push hook-ஐ இயக்குவதில் தோல்வி: bash காணப்படவில்லை</translation>
+</message>
+<message>
+<source>HTTPS Credentials</source>
+<translation>HTTPS சான்றுகள்</translation>
+</message>
+</context>
+<context>
+<name>UpdateDialog</name>
+<message>
+<source>Install Update</source>
+<translation>புதுப்பிப்பை நிறுவு</translation>
+</message>
+<message>
+<source>Remind Me Later</source>
+<translation>பின்னர் நினைவூட்டு</translation>
+</message> 
+<translation>பின்னர் நினைவூட்டு</translation>
+</message>
+<message>
+<source>Skip This Version</source>
+<translation>இந்தப் பதிப்பைத் தவிர்க்கவும்</translation>
+</message>
+<message>
+<source>Automatically download and install updates</source>
+<translation>புதுப்பிப்புகளைத் தானாகவே பதிவிறக்கி நிறுவவும்</translation>
+</message>
+<message>
+<source>Update %1</source>
+<translation>%1-ஐப் புதுப்பிக்கவும்</translation>
+</message>
+<message>
+<source>&lt;h3&gt;A new version of %1 is available!&lt;/h3&gt;&lt;p&gt;%1 %2 is now available - you have %3. Would you like to download it now?&lt;/p&gt;&lt;b&gt;Release Notes:&lt;/b&gt;</source>
+<translation>&lt;h3&gt;%1-இன் புதிய பதிப்பு கிடைக்கிறது!&lt;/h3&gt;&lt;p&gt;%1 %2 இப்போது கிடைக்கிறது - உங்களிடம் %3 உள்ளது. அதை இப்போதே பதிவிறக்க விரும்புகிறீர்களா?&lt;/p&gt;&lt;b&gt;வெளியீட்டு விவரங்கள்:&lt;/b&gt;</translation>
+</message> இப்போதே பதிவிறக்க விரும்புகிறீர்களா?&lt;/p&gt;&lt;b&gt;பதிப்பு குறிப்புகள்:&lt;/b&gt;</translation>
+</message>
+</context>
+<context>
+<name>SearchPanel</name>
+<message>
+<source>lines</source>
+<translation>வரிகள்</translation>
+</message>
+<message>
+<source>terms</source>
+<translation>சொற்கள்</translation>
+</message>
+<message>
+<source>Diff context:</source>
+<translation>வேறுபாட்டுச் சூழல் (Diff context):</translation>
+</message>
+<message>
+<source>Remove Index</source>
+<translation>அட்டவணையை நீக்கு</translation>
+</message>
+<message>
+<source>Enable indexing</source>
+<translation>அட்டவணைப்படுத்தலைச் செயல்படுத்து</translation>
+</message>
+<message>
+<source>Limit commits to:</source>
+<translation>கமிட்களை (commits) இதற்குக் கட்டுப்படுத்து:</translation>
+</message>
+</context>
+<context>
+<name>GeneralPanel</name>
+<message>
+<source>Allow collection of usage data</source>
+<translation>பயன்பாட்டுத் தரவைச் சேகரிக்க அனுமதி</translation>
+</message>
+<message>
+<source>Credentials:</source>
+<translation>அங்கீகாரத் தகவல்கள்:</translation>
+</message>
+<message>
+<source>Update submodules after pull</source>
+<translation>Pull செய்த பிறகு துணைத் தொகுதிகளைப் (submodules) புதுப்பிக்கவும்</translation>
+</message>
+<message>
+<source>minutes</source>
+<translation>நிமிடங்கள்</translation>
+</message>
+<message>
+<source>User name:</source>
+<translation>பயனர் பெயர்:</translation>
+</message>
+<message>
+<source>&lt;a href=&apos;view&apos;&gt;View privacy policy&lt;/a&gt;</source>
+<translation>&lt;a href=&apos;view&apos;&gt;தனியுரிமைக் கொள்கையைப் பார்க்கவும்&lt;/a&gt;</translation>
+</message>
+<message>
+<source>Automatic actions:</source>
+<translation>தானியங்கிச் செயல்பாடுகள்:</translation>
+</message>
+<translation>தானியங்கு நடவடிக்கைகள்:</translation>
+
+<message>
+<source>பெறும்போது நீக்கு</source>
+<translation>பெறும்போது தள்ளு</translation>
+
+</message>
+
+<source>பயனர் மின்னஞ்சல்:</source>
+<translation>பயனர் மின்னஞ்சல்:</translation>
+
+</message>
+
+<source>ஒவ்வொரு கமிட்டிற்கும் பிறகு தள்ளு</source>
+
+<tranஒவ்வொரு உறுதிப்படுத்தலுக்குப் பிறகும் அனுப்பவும்
+</message>
+<message>
+<source>Store credentials in secure storage</source>
+சேற்றுச் சான்றுகளைப் பாதுகாப்பான சேமிப்பகத்தில் சேமிக்கவும்
+</message>
+<message>
+<source>Fetch every</source>
+ஒவ்வொரு முறையும் பெறவும்
+</message>
+<message>
+<source>Usage reporting:</source>
+பயன்பாட்டு அறிக்கை:
+</message>
+</context>
+<context>
+<name>CommitEditor</name>
+<message>
+<source>Update %1, %2, and %3 more files...</source>
+%1, %2 மற்றும் மேலும் %3 கோப்புகளைப் புதுப்பிக்கவும்...
+</message>
+<message>
+<source>%1 of %2 file staged</source>
+%2 கோப்புகளில் %1 தயார் செய்யப்பட்டது
+</message>
+<message>
+<source>Nothing staged</source>
+எதுவும் தயார் செய்யப்படவில்லை
+</message>
+<message>
+<source>&lt;b&gt;Commit Message:&lt;/b&gt;</source>
+&lt;b&gt;உறுதிப்படுத்தல் செய்தி:&lt;/b&gt;
+</message>
+<message>
+<source>Commit Merge</source>
+இணைப்பை உறுதிப்படுத்தவும்
+</message>
+<message>
+<source>Commit</source>
+உறுதிப்படுத்தவும்
+</message>
+<message>
+<source>all conflicts resolved</source>
+அனைத்து முரண்பாடுகளும் தீர்க்கப்பட்டன
+</message>
+<message>
+<source>%1 of %2 files staged</source>
+%2 கோப்புகளில் %1 தயார் செய்யப்பட்டது
+</message>
+<message>
+<source>Unstage All</source>
+அனைத்தையும் தயார் நிலையிலிருந்து நீக்கவும்
+</message>
+<message>
+<source>Stage All</source>
+அனைத்தையும் தயார் செய்யவும்
+</message>
+<message>
+<source>%1 கோப்புகள் பகுதியளவு தயார் நிலையில் உள்ளன</source>
+<translation>%1 கோப்புகள் பகுதியளவு தயார் நிலையில் உள்ளன</translation>
+</message>
+<message>
+<source>Update %1</source>
+<translation>%1-ஐப் புதுப்பிக்கவும்</translation>
+</message>
+<message>
+<source>%1 unresolved conflict</source>
+<translation>%1 தீர்க்கப்படாத முரண்பாடு</translation>
+</message>
+<message>
+<source>%1 file partially staged</source>
+<translation>%1 கோப்பு பகுதியளவு தயார் நிலையில் உள்ளது</translation>
+</message>
+<message>
+<source>%1 unresolved conflicts</source>
+<translation>%1 தீர்க்கப்படாத முரண்பாடுகள்</translation>
+</message>
+<message>
+<source>Update %1 and %2</source>
+<translation>%1 மற்றும் %2-ஐப் புதுப்பிக்கவும்</translation>
+</message>
+<message>
+<source>Update %1, %2, and %3</source>
+<translation>%1, %2 மற்றும் %3-ஐப் புதுப்பிக்கவும்</translation>
+</message>
+</context>
+<context>
+<name>BlameMargin</name>
+<message>
+<source>Invalid Signature</source>
+<translation>செல்லுபடியாகாத கையொப்பம்</translation>
+</message>
+<message>
+<source>Not Committed</source>
+<translation>பதிவு செய்யப்படவில்லை</translation>
+</message>
+</context>
+<context>
+<name>ExternalToolsDialog</name>
+<message>
+<source>Select Executable</source>
+<translation>இயக்கக்கூடிய கோப்பைத் தேர்ந்தெடுக்கவும்</translation>
+</message>
+<message>
+<source>User Defined Tools</source>
+<translation>பயனரால் வரையறுக்கப்பட்ட கருவிகள்</translation>
+</message>
+<message>
+<source>Detected Tools</source>
+<translation>கண்டறியப்பட்ட கருவிகள்</translation>
+</message>
+<message>
+<source>Configure External Tools</source>
+<translation>வெளிப்புறக் கருவிகளை உள்ளமைக்கவும்</translation>
+</message>
+</context>
+<context>
+<name>CommitToolBar</name>
+<message>
+<source>Show Clean Status</source>
+<translation>சுத்தமான நிலையை (Clean Status) காட்டவும்</translation>
+</message> சுத்தமான
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<செய்தி>
+
+<மூலம்>காம்பாக்ட் மோடு</மூலம்>
+
+<மொழிபெயர்ப்பு>மோடோ காம்பாக்டோ</மொழிபெயர்ப்பு>
+
+</செய்தி>
+</சூழல்>
+<சூழல்>
+
+<பெயர்>பற்றி உரையாடல்</பெயர்>
+
+<செய்தி>
+
+<மூலம்>உங்கள் வரலாற்றைப் புரிந்து கொள்ளுங்கள்!</மூலம்>
+
+<மொழிபெயர்ப்பு>¡Entiende tu historia!</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<செய்தி>
+
+<மூலம்>தனியுரிமை</மூலம்>
+
+<மொழிபெயர்ப்பு>தனியுரிமை</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<செய்தி>
+<மூலம்>மாற்றங்களின் பட்டியல்</மூலம்>
+
+<மொழிபெயர்ப்பு>
+<message>
+<source>Change Log</source>
+<translation>மாற்றங்களின் பதிவு</translation>
+</message>
+<message>
+<source>Acknowledgments</source>
+<translation>நன்றிகள்</translation>
+</message>
+<message>
+<source>About %1</source>
+<translation>%1 பற்றி</translation>
+</message>
+<message>
+<source>Usage reporting has been disabled. Restart the application for changes to take effect.</source>
+<translation>பயன்பாட்டு அறிக்கை உருவாக்கம் முடக்கப்பட்டுள்ளது. மாற்றங்கள் நடைமுறைக்கு வரச் செயலியை மறுதொடக்கம் செய்யவும்.</translation>
+</message>
+<message>
+<source>Usage Reporting Disabled</source>
+<translation>பயன்பாட்டு அறிக்கை உருவாக்கம் முடக்கப்பட்டுள்ளது</translation>
+</message>
+</context>
+<context>
+<name>Application</name>
+<message>
+<source>Failed to set up SSL session. Do you want to ignore these errors?</source>
+<translation>SSL அமர்வை அமைப்பதில் தோல்வி ஏற்பட்டது. இந்தப் பிழைகளைப் புறக்கணிக்க விரும்புகிறீர்களா?</translation>
+</message> இந்த பிழைகளைப் புறக்கணிக்க விரும்புகிறீர்களா?
+</message>
+<message>
+<source>SSL Errors</source>
+<translation>SSL பிழைகள்</translation>
+</message>
+</context>
+<context>
+<name>ToolsPanel</name>
+<message>
+<source>External diff:</source>
+<translation>வெளிப்புற diff:</translation>
+</message>
+<message>
+<source>Configure</source>
+<translation>அமைக்கவும்</translation>
+</message>
+<message>
+<source>External editor:</source>
+<translation>வெளிப்புறத் தொகுப்பி:</translation>
+</message>
+<message>
+<source>Keep backup of merge files (.orig)</source>
+<translation>இணைப்பு கோப்புகளின் (.orig) காப்புப்பிரதியை வைத்திருக்கவும்</translation>
+</message>
+<message>
+<source>External merge:</source>
+<translation>வெளிப்புற இணைப்பு (merge):</translation>
+</message>
+<message>
+<source>Backup files:</source>
+<translation>காப்புப்பிரதி கோப்புகள்:</translation>
+</message>
+</context>
+<context>
+<name>RemotesPanel</name>
+<message>
+<source>Are you sure you want to delete &apos;%1&apos;?</source>
+<translation>&apos;%1&apos;-ஐ நீக்க விரும்புகிறீர்களா?</translation>
+</message>
+<message>
+<source>Delete</source>
+<translation>நீக்கு</translation>
+</message>
+<message>
+<source>Delete Remote?</source>
+<translation>Remote-ஐ நீக்கவா?</translation>
+</message>
+</context>
+<context>
+<name>MergeTool</name>
+<message>
+<source>External Merge</source>
+<translation>வெளிப்புற இணைப்பு (Merge)</translation>
+</message>
+</context>
+<context>
+<name>ThemeDialog</name>
+<message>
+<source>Native Theme</source>
+<translation>இயல்பான தீம் (Native Theme)</translation>
+</message>
+<message>
+<source>A consistent look optimal for reducing eye strain</source>
+<translation>கண் சோர்வைக் குறைக்க ஏற்ற சீரான தோற்றம்</translation>
+</message>
+</context> காட்சி அமைப்பு</translation>
+</message>
+<message>
+<source>A flexible look matching system colors</source>
+<translation>கணினி வண்ணங்களுக்கு ஏற்றவாறு அமையும் நெகிழ்வான தோற்றம்</translation>
+</message>
+<message>
+<source>Dark Theme</source>
+<translation>இருண்ட தீம்</translation>
+</message>
+</context>
+<context>
+<name>DefaultWidget</name>
+<message>
+<source>Clone repository</source>
+<translation>களஞ்சியத்தை நகலெடு (Clone)</translation>
+</message>
+<message>
+<source>Contact us for support</source>
+<translation>ஆதரவிற்கு எங்களைத் தொடர்பு கொள்ளவும்</translation>
+</message>
+<message>
+<source>Initialize new repository</source>
+<translation>புதிய களஞ்சியத்தை உருவாக்கவும்</translation>
+</message>
+<message>
+<source>Open Repository</source>
+<translation>களஞ்சியத்தைத் திறக்கவும்</translation>
+</message>
+<message>
+<source>View getting started videos</source>
+<translation>தொடங்குவதற்கான காணொளிகளைப் பார்க்கவும்</translation>
+</message>
+<message>
+<source>Open existing repository</source>
+<translation>ஏற்கனவே உள்ள களஞ்சியத்தைத் திறக்கவும்</translation>
+</message>
+<message>
+<source>Add %1 account</source>
+<translation>%1 கணக்கைச் சேர்க்கவும்</translation>
+</message>
+</context>
+<context>
+<name>Settings</name>
+<message>
+<source>Prompt to edit commit message before merging</source>
+<translation>இணைப்பதற்கு (merge) முன் கமிட் செய்தியைத் திருத்தக் கேட்கவும்</translation>
+</message>
+<message>
+<source>Prompt to edit commit message before cherry-picking</source>
+<translation>செர்ரி-பிக்கிங் (cherry-picking) செய்வதற்கு முன் கமிட் செய்தியைத் திருத்தக் கேட்கவும்</translation>
+</message>
+<message>
+<source>Prompt to edit commit message before reverting</source>
+<translation>மீளமைப்பதற்கு (reverting) முன் கமிட் செய்தியைத் திருத்தக் கேட்கவும்</translation>
+</message>
+<message>
+<source>Prompt to edit stash message before stashing</source>
+<translation>ஸ்டாஷ் (stash) செய்வதற்கு முன் ஸ்டாஷ் செய்தியைத் திருத்தக் கேட்கவும்</translation>
+</message> காவலாளி ராபிடோ அன்டெஸ் டி ஹேக்
+erlo</translation>
+</message>
+</context>
+<context>
+<name>Header</name>
+<message>
+<source>Filter %1</source>
+<translation>%1-ஐ வடிகட்டவும்</translation>
+</message>
+</context>
+<context>
+<name>ReferenceList</name>
+<message>
+<source>Commit</source>
+<translation>Commit</translation>
+</message>
+</context>
+<context>
+<name>HostModel</name>
+<message>
+<source>Connecting</source>
+<translation>இணைக்கப்படுகிறது</translation>
+</message>
+</context>
+<context>
+<name>CommitModel</name>
+<message>
+<source>Checking for uncommitted changes</source>
+<translation>Commit செய்யப்படாத மாற்றங்கள் உள்ளனவா எனச் சரிபார்க்கப்படுகிறது</translation>
+</message>
+<message>
+<source>Uncommitted changes</source>
+<translation>Commit செய்யப்படாத மாற்றங்கள்</translation>
+</message>
+</context>
+<context>
+<name>GitHub</name>
+<message>
+<source>Failed to authenticate with GitHub!</source>
+<translation>GitHub-உடன் அங்கீகரிப்பதில் தோல்வி ஏற்பட்டது!</translation>
+</message>
+<message>
+<source>Successfully authenticated with GitHub!</source>
+<translation>GitHub-உடன் வெற்றிகரமாக அங்கீகரிக்கப்பட்டது!</translation>
+</message>
+<message>
+<source>Connection failed</source>
+<translation>இணைப்பு தோல்வியடைந்தது</translation>
+</message>
+</context>
+<context>
+<name>Repository</name>
+<message>
+<source>git-lfs not found</source>
+<translation>git-lfs காணப்படவில்லை</translation>
+</message>
+<message>
+<source>Unknown error</source>
+<translation>தெரியாத பிழை</translation>
+</message>
+</context>
+<context>
+<name>TextEdit</name>
+<message>
+<source>Ignore</source>
+<translation>புறக்கணிக்கவும்</translation>
+</message>
+</context>
+<context>
+<name>SearchField</name> 
+<message>
+<source>Search</source>
+<translation>தேடு</translation>
+</message>
+</context>
+<context>
+<name>Account</name>
+<message>
+<source>Authentication failed</source>
+<translation>அங்கீகாரம் தோல்வியடைந்தது</translation>
+</message>
+<message>
+<source>&lt;b&gt;Note:&lt;/b&gt; Basic authentication is not supported if you have two-factor authentication enabled. Use a &lt;a href=&apos;https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/&apos;&gt;personal access token&lt;/a&gt; in the password field instead.</source>
+<translation>&lt;b&gt;குறிப்பு:&lt;/b&gt; இரு-காரணி அங்கீகாரம் (two-factor authentication) இயக்கப்பட்டிருந்தால், அடிப்படை அங்கீகாரம் ஆதரிக்கப்படாது. அதற்குப் பதிலாக கடவுச்சொல் புலத்தில் &lt;a href=&apos;https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/&apos;&gt;தனிப்பட்ட அணுகல் டோக்கனை&lt;/a&gt; பயன்படுத்தவும்.</translation>
+</message>
+<message>
+<source>&lt;b&gt;Note:&lt;/b&gt; Basic authentication is not supported. Use a &lt;a href=&apos;https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html&apos;&gt;personal access token&lt;/a&gt; in the password field instead.</source>
+<translation>&lt;b&gt;குறிப்பு:&lt;/b&gt; அடிப்படை அங்கீகாரம் ஆதரிக்கப்படாது. அதற்குப் பதிலாக கடவுச்சொல் புலத்தில் &lt;a href=&apos;https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html&apos;&gt;தனிப்பட்ட அணுகல் டோக்கனை&lt;/a&gt; பயன்படுத்தவும்.</translation>
+</message> கடவுச்சொல் புலத்தில்.</translation>
+</message>
+</context>
+<context>
+<name>GitLab</name>
+<message>
+<source>Authentication failed</source>
+<translation>அங்கீகாரம் தோல்வியடைந்தது</translation>
+</message>
+<message>
+<source>Connection failed</source>
+<translation>இணைப்பு தோல்வியடைந்தது</translation>
+</message>
+</context>
+<context>
+<name>DownloadDialog</name>
+<message>
+<source>Download Complete!</source>
+<translation>பதிவிறக்கம் முடிந்தது!</translation>
+</message>
+<message>
+<source>Install and Restart</source>
+<translation>நிறுவி மறுதொடக்கம் செய்யவும்</translation>
+</message>
+<message>
+<source>Downloading %1...</source>
+<translation>%1-ஐப் பதிவிறக்குகிறது...</translation>
+</message>
+<message>
+<source>Update %1</source>
+<translation>%1-ஐப் புதுப்பிக்கவும்</translation>
+</message>
+</context>
+<context>
+<name>UpToDateDialog</name>
+<message>
+<source>Already Up-to-date</source>
+<translation>ஏற்கனவே புதுப்பிக்கப்பட்டுள்ளது</translation>
+</message>
+<message>
+<source>%1 is already up-to-date. You have version %2.</source>
+<translation>%1 ஏற்கனவே புதுப்பிக்கப்பட்டுள்ளது. உங்களிடம் %2 பதிப்பு உள்ளது.</translation>
+</message>
+</context>
+<context>
+<name>Reference</name>
+<message>
+<source>HEAD detached at %1</source>
+<translation>HEAD %1-இல் பிரிக்கப்பட்டுள்ளது</translation>
+</message>
+</context>
+<context>
+<name>Popup</name>
+<message>
+<source>Show Advanced Search</source>
+<translation>மேம்பட்ட தேடலைக் காட்டு</translation>
+</message>
+</context>
+<context>
+<name>PullRequestButton</name>
+<message>
+<<source>புல் கோரிக்கையை உருவாக்கு</source>
+
+<translation>ஒருங்கிணைப்பு கோரிக்கையை உருவாக்கு</translation>
+
+</message>
+</context>
+<context>
+<name>புதுப்பிப்புப் பலகம்</name>
+
+<message>
+<source>மென்பொருள் புதுப்பிப்பு:</source>
+
+<translation>மென்பொருள் புதுப்பிப்பு:</translation>
+
+</message>
+
+<message>
+<source>புதுப்பிப்புகளைத் தானாகப் பதிவிறக்கி நிறுவவும்</source>
+
+<translation>புதுப்பிப்புகளைத் தானாகப் பதிவிறக்கி நிறுவவும்</translation>
+
+</message>
+
+<message>
+<source>இப்போது சரிபார்க்கவும்</source>
+<translation>இப்போது சரிபார்க்கவும்</translation>
+
+</message>
+
+<source>புதுப்பிப்புகளைத் தானாகச் சரிபார்க்கவும்</source>
+
+<translation>புதுப்பிப்புகளைச் சரிபார்க்கவும் தானாகவே</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<சூழல்>
+
+<பெயர்>திருத்தி சாளரம்</பெயர்>
+
+<செய்தி>
+<மூலம்>மாற்றங்களைச் சேமிக்கவா?</மூலம்>
+
+<மொழிபெயர்ப்பு>மாற்றங்களைச் சேமிக்கவா?</மொழிபெயர்ப்பு>
+
+</செய்தி>
+
+<செய்தி>&apos;%1&apos; திருத்தப்பட்டுள்ளது. உங்கள் மாற்றங்களைச் சேமிக்க விரும்புகிறீர்களா?</மூலம்>
+
+<மொழிபெயர்ப்பு>&apos;%1&apos; ha sido modificado. உங்கள் மாற்றங்களைச் சேமிக்க விரும்புகிறீர்களா?
+
+
+புதுப்பிப்பு பொத்தான்
+
+
+புதுப்பிப்புக் கருவி
+
+
+
+வெளிப்புற எடிட்டரில் திருத்து
+
+
+வெளிப்புற எடிட்டரில் திருத்து
+
+
+வேறுபாட்டுக் காட்சி
+
+
+
+
+புதிய கோப்பைச் சேர்க்கவும்
+
+
+
+
+அல்லது கோப்புகளை இங்கே இழுத்து களஞ்சியத்தில் நகலெடுக்கவும்
+
+
+O arrastra archivos aquí para copiarlos al repositorio</translation>
+
+</message>
+
+<context>
+<name>CheckoutDialog</name>
+
+<message>
+<source>References:</source>
+
+<translation>Referencias:</translation>
+
+</message>
+
+<message>
+<source>Detach HEAD</source>
+<translation>Separar HEAD</translation>
+
+</message>
+
+<message>
+<source>Checkout</source>
+<translation>Revisar</translation>
+
+</message>
+</context>
+<context>
+
+<name>AdvancedButton</name>
+
+<message>
+<source>Advanced Search</source>
+
+<translation>Búsqueda Avanzada</translation>
+
+</செய்தி>
+</சூழல்>
+<சூழல்>
+<பெயர்>மரமாதிரி</பெயர்>
+<செய்தி>
+<மூலம்>துணைக்கூறு</மூலம்>
+<மொழிபெயர்ப்பு>துணைக்கூறு</மொழிபெயர்ப்பு>
+</செய்தி>
+</சூழல்>
+<சூழல்>காண்பிக்கும் கருவி</பெயர்>
+<செய்தி>
+<மூலம்>%1-இல் காட்டு</மூலம்>
+<மொழிபெயர்ப்பு>%1-இல் காட்டு</மொழிபெயர்ப்பு>
+</செய்தி>
+</சூழல்>
+<சூழல்>
+<பெயர்>பாதை விவரக்குறிப்பு விட்ஜெட்</பெயர்>
+<செய்தி>
+<மூலம்>பாதையின்படி வடிகட்டு</மூலம்>
+<மொழிபெயர்ப்பு>பாதையின்படி வடிகட்டு</மொழிபெயர்ப்பு>
+</செய்தி>
+</சூழல்>
+<சூழல்>
+<பெயர்>வேறுபாட்டுக் கருவி</பெயர்>
+<செய்தி>
+<மூலம்>வெளிப்புற வேறுபாடு</மூலம்>
+
+<translation>வெளிப்புற வேறுபாடு</translation>
+
+</message>
+</context>
+
+<context>
+<name>பீன்ஸ்டாக்</name>
+
+<message>
+<source>இணைப்பு தோல்வியடைந்தது</source>
+<translation>இணைப்பு தோல்வியடைந்தது</translation>
+
+</message>
+</context>
+<context>
+<name>பிட்பக்கெட்</name>
+
+<message>
+<source>இணைப்பு தோல்வியடைந்தது</source>
+<translation>இணைப்பு தோல்வியடைந்தது</translation>
+
+</message>
+</context>
+<context>
+
+<name>படங்கள்</name>
+
+<message>
+<source><b>அளவு:</b>%1</source>
+
+<translation><b>அளவு:</b> %1</translation>
+
+</message>
+</context>
+</TS>
