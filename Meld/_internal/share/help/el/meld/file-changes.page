@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-changes" lang="el">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#file-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>As a special exception, the copyright holders give you permission to copy,
+modify, and distribute the example code contained in this document under the
+terms of your choosing, without restriction.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name> Δημήτρης Σπίγγος</name><email>dmtrs32@gmail.com</email><years>2014</years></credit></info>
+
+<title>Αντιμετώπιση των αλλαγών</title>
+
+<p>Το <app>Meld</app> αντιμετωπίζει τις διαφορές μεταξύ αρχείων ως έναν κατάλογο <em>αλλαγών ομάδων</em> ή πιο απλά <em>αλλαγές</em>. Κάθε αλλαγή είναι μια ομάδα γραμμών που αντιστοιχεί στα αρχεία. Αν ενδιαφέρεστε για αυτές τις αλλαγές συνήθως, το <app>Meld</app> σας δίνει ιδιαίτερα εργαλεία για να περιηγηθείτε μεταξύ αυτών των αλλαγών και να τις επεξεργαστείτε. Μπορείτε να βρείτε αυτά τα εργαλεία στο μενού <gui style="menu">Αλλαγές</gui>.</p>
+
+
+
+<section id="change-navigation">
+<title>Περιήγηση στις αλλαγές</title>
+
+<p>
+You can navigate between changes with the previous and next change buttons in the toolbar.
+You can also use your mouse's scroll wheel to move between changes,
+by scrolling on the central change bar.
+</p>
+
+</section>
+
+
+
+<section id="change-actions">
+<title>Μεταβάλλοντας τις αλλαγές</title>
+
+<p>Πέρα από την άμεση επεξεργασία των αρχείων κειμένου, το <app>Meld</app> σας δίνει εργαλεία μετακίνησης, αντιγραφής ή διαγραφής μεμονωμένων διαφορών μεταξύ αρχείων. Η γραμμή μεταξύ των δύο αρχείων δεν σας εμφανίζει μόνο ποια μέρη των δύο αρχείων αντιστοιχούν, αλλά σας επιτρέπει επίσης να συγχωνεύσετε επιλεκτικά ή να διαγράψετε αλλαγές διαφοροποίησης πατώντας το βέλος των εικονιδίων σταυρού δίπλα σε κάθε αλλαγή.</p>
+
+<p>Η προεπιλεγμένη ενέργεια είναι <em>αντικατάσταση</em>. Αυτή η ενέργεια αντικαθιστά τα περιεχόμενα της αντίστοιχης αλλαγής με την τρέχουσα αλλαγή.</p>
+<p>Κρατήστε πατημένο το πλήκτρο <key>Shift</key> για να αλλάξετε την τρέχουσα ενέργεια σε <em>διαγραφή</em>. Αυτή η ενέργεια διαγράφει την τρέχουσα αλλαγή.</p>
+<p>Κρατήστε πατημένο το πλήκτρο <key>Ctrl</key> για να αλλάξετε την τρέχουσα ενέργεια σε <em>παρεμβολή</em>. Αυτή η ενέργεια εισάγει την τρέχουσα αλλαγή πάνω από ή κάτω από (όπως επιλέχτηκε) την αντίστοιχη αλλαγή.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-mode" lang="pl">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#file-mode"/>
+  <link type="seealso" xref="file-changes"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>W drodze specjalnego wyjątku posiadacze praw autorskich udzielają pozwolenia na kopiowanie, modyfikowanie i rozprowadzanie przykładowego kodu zawartego w tej dokumentacji na dowolnych warunkach, bez ograniczeń.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Piotr Drąg</name><email>piotrdrag@gmail.com</email><years>2018-2023</years></credit><credit type="translator copyright"><name>Aviary.pl</name><email>community-poland@mozilla.org</email><years>2018-2023</years></credit></info>
+
+<title>Pierwsze kroki porównywania plików</title>
+
+<p><app>Meld</app> umożliwia porównywanie dwóch lub trzech plików tekstowych obok siebie. Można rozpocząć nowe porównanie plików za pomocą przycisku nowego porównania na pasku narzędziowym.</p>
+
+<p>Po wybraniu plików <app>Meld</app> wyświetli je obok siebie. Różnice między plikami będą wyróżnione, aby lepiej widzieć poszczególne zmiany. Modyfikacja plików spowoduje aktualizację porównania na żywo. <link xref="file-changes"/> zawiera informacje o poruszaniu się między poszczególnymi zmianami oraz jak używać edycji na podstawie zmian.</p>
+
+<section id="file-mode-overview">
+<title>Porównania plików programu <app>Meld</app></title>
+
+<p>Porównywanie plików ma kilka różnych części. Najważniejsze to edytory, w których pliki są wyświetlane. Poza nimi, obszary wokół i między plikami zapewniają wizualny przegląd i działania pomagające pracować na zmianach między plikami.</p>
+<p>
+On the right-hand side of the window, there are small vertical
+bars showing various colored blocks. These bars are designed to give you an
+overview of all of the differences between your files. Each colored block
+represents a section that is inserted, deleted, changed or in conflict between
+your files, depending on the block's color used.
+</p>
+<p>Między każdą parą plików jest segment wyświetlający, jak zmienione sekcje między plikami się pokrywają. Można kliknąć strzałki w segmencie, aby zastąpić sekcje w jednym pliku sekcjami z drugiego. Można także usuwać, kopiować i scalać zmiany. <link xref="file-changes#change-actions"/> zawiera informacje o tym, co można robić z poszczególnymi segmentami zmian.</p>
+
+</section>
+
+
+<section id="file-mode-saving">
+<title>Zapisywanie zmian</title>
+
+<p>Po ukończeniu modyfikowania plików należy zapisać każdy zmieniony plik.</p>
+<p>Ikona zapisu obok nazwy pliku nad każdym plikiem wskazuje, czy plik został zapisany od ostatniej zmiany. Jeśli otwarte jest więcej niż jedno porównanie, ich etykiety na kartach wyświetlają także gwiazdkę (<code>*</code>) po każdym pliku, który nie został zapisany.</p>
+<p>Można zapisać obecny plik klikając przycisk zapisu nad porównywanym plikiem lub za pomocą skrótu klawiszowego <keyseq><key>Ctrl</key><key>S</key></keyseq>.</p>
+<note>
+  <p>Zapisywanie zapisuje tylko <em>obecnie aktywny</em> plik, czyli plik zawierający kursor. Jeśli nie wiadomo, który plik jest aktywny, to można kliknąć plik, aby aktywować go przed zapisaniem.</p>
+</note>
+
+</section>
+
+</page>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-filters" lang="pl">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#folder-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>W drodze specjalnego wyjątku posiadacze praw autorskich udzielają pozwolenia na kopiowanie, modyfikowanie i rozprowadzanie przykładowego kodu zawartego w tej dokumentacji na dowolnych warunkach, bez ograniczeń.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Piotr Drąg</name><email>piotrdrag@gmail.com</email><years>2018-2023</years></credit><credit type="translator copyright"><name>Aviary.pl</name><email>community-poland@mozilla.org</email><years>2018-2023</years></credit></info>
+<title>Filtrowanie plików</title>
+
+<p>Podczas porównywania katalogów można ustawić ignorowanie pewnych plików. Na przykład, można wyświetlić tylko pliki obecne i różne w obu katalogach, ignorując te, które są takie same lub istnieją tylko w jednym katalogu. Można także ignorować wszystkie pliki w katalogu <file>.git</file> lub ignorować wszystkie obrazy.</p>
+
+<p><app>Meld</app> ma kilka sposób sterowania, które pliki i jakie rodzaje różnic są wyświetlane. Można je filtrować według <link xref="#file-state-filter">różnic między plikiem w dwóch katalogach</link> lub <link xref="#file-name-filter">nazw plików i katalogów</link>. Można także ustawić <app>Meld</app> tak, aby traktował nazwy plików <link xref="#file-case-filter">bez rozróżniania wielkości znaków</link>. Dostępne są także <link xref="text-filters">filtry tekstowe</link> do zmiany, co wyświetlają porównania katalogów i plików.</p>
+
+<note style="important">
+  <p>Wszystkie <link xref="text-filters">filtry tekstowe</link> określone przez użytkownika są <em>automatycznie zastosowywane</em> podczas porównywania katalogów. Pliki, które są identyczne po zastosowaniu wszystkich filtrów tekstowych nie są wyróżniane jako różne, ale są wyświetlane pochyloną czcionką.</p>
+</note>
+
+
+
+<section id="file-state-filter">
+<title>Filtrowanie różnic plików</title>
+
+<p>Podczas porównywania katalogów każdy wiersz zawiera jeden plik lub katalog, który jest obecny w co najmniej jednym z porównywanych katalogów. Każdy z tych wierszy jest sklasyfikowany jako <em>Zmodyfikowane</em>, <em>Nowe</em> lub <em>Takie same</em>:</p>
+<terms>
+  <item>
+    <title>Zmodyfikowane</title>
+    <p>Plik istnieje w wielu katalogach, ale pliki są różne</p>
+  </item>
+  <item>
+    <title>Nowe</title>
+    <p>Plik istnieje w jednym katalogu, ale nie w pozostałych</p>
+  </item>
+  <item>
+    <title>Takie same</title>
+    <p>Plik istnieje we wszystkich katalogach, i wszędzie jest taki sam</p>
+  </item>
+</terms>
+<p>Można zmienić, które typy różnic są wyświetlane w obecnym porównaniu za pomocą przycisku <gui style="button">Filtry plików</gui> na pasku narzędziowym.</p>
+
+<note style="tip">
+  <p>Obecnie można filtrować pliki tylko na podstawie ich stanu. Nie można w ten sposób filtrować katalogów. Na przykład, nie można ustawić programu <app>Meld</app> na ignorowanie wszystkich katalogów, które zawierają tylko nowe pliki. Katalog zawierający tylko „Nowe” pliki zostałby wyświetlony jako pusty, ale nadal obecny.</p>
+</note>
+
+</section>
+
+
+
+<section id="file-name-filter">
+<title>Filtrowanie nazw plików</title>
+
+<p><app>Meld</app> zawiera przydatny zestaw filtrów nazw plików, które umożliwiają ignorowanie nieciekawych plików i katalogów, takich jak popularne pliki kopii zapasowych i katalogi z metadanymi systemów kontroli wersji. Każdy filtr nazw plików może być oddzielnie włączony lub wyłączony przyciskiem <gui style="button">Filtry plików</gui> na pasku narzędziowym.</p>
+
+<p>Można dodawać, usunąć i zmieniać filtry nazw plików w sekcji <gui style="tab">Filtry plików</gui> okna <gui>Preferencji</gui>. Filtry nazw plików określają wzory nazw plików, które <em>nie</em> będą uwzględniane podczas wykonywania porównywania katalogów. Wszystkie pliki pasujące do włączonego filtru nie będą nawet wyświetlane w porównywaniu drzewa. Filtry nazw plików dopasowują pliki i katalogi. Jeśli katalog pasuje do filtru, to on i jego zawartość są ignorowane.</p>
+
+<p>Filtry nazw plików są dopasowywane zgodnie ze wzorami wieloznaczników powłoki. Na przykład, <code>*.jpg</code> dopasuje wszystkie nazwy plików kończące się <code>.jpg</code>. Poniższa tabela zawiera wszystkie znaki wieloznaczników powłoki rozpoznawane przez <app>Meld</app>.</p>
+
+<table frame="top bottom">
+  <title>Wzory wieloznaczników powłoki</title>
+
+  <thead>
+    <tr>
+      <td><p>Wieloznacznik</p></td><td><p>Dopasowuje</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p><code>*</code></p></td>
+      <td><p>wszystko (tzn. zero lub więcej znaków)</p></td>
+    </tr>
+    <tr>
+      <td><p><code>?</code></p></td>
+      <td><p>dokładnie jeden znak</p></td>
+    </tr>
+    <tr>
+      <td><p><code>[abc]</code></p></td>
+      <td><p>dowolny z zawartych znaków</p></td>
+    </tr>
+    <tr>
+      <td><p><code>[!abc]</code></p></td>
+      <td><p>wszystko <em>poza</em> jednym z zawartych znaków</p></td>
+    </tr>
+    <tr>
+      <td><p><code>{kot,pies}</code></p></td>
+      <td><p>„kot” lub „pies”</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<note style="tip">
+  <p>Zmiana ustawienia <gui>Aktywne</gui> w oknie <gui>Preferencji</gui> zmienia, czy ten filtr jest <em>domyślnie</em> włączony.</p>
+
+  <p>Włączenie filtru w menu lub pasku narzędziowym włącza lub wyłącza go <em>tylko dla tego porównania</em>.</p>
+</note>
+
+</section>
+
+
+
+<section id="file-case-filter">
+<title>Rozróżnianie wielkości znaków w nazwach plików</title>
+
+<p>Pliki są porównywane w dwóch katalogach zgodnie z ich nazwami. To porównanie domyślnie rozróżnia wielkość znaków, tzn. pliki <file>README</file>, <file>readme</file> i <file>ReadMe</file> są tratowane jako różne pliki.</p>
+
+<p>Podczas porównywania plików na niektórych systemach plików (np. HFS+ lub FAT) można ustawić <app>Meld</app> tak, aby nie rozróżniał wielkości znaków w nazwach plików. Można to zrobić za pomocą przycisku <gui style="button">Filtry plików</gui> na pasku narzędziowym i wybierając <gui style="menuitem">Ignorowanie wielkości liter w nazwach plików</gui>.</p>
+</section>
+
+
+
+</page>

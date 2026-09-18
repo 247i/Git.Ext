@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences" lang="pl">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#advanced"/>
+  <revision docversion="1.7" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>W drodze specjalnego wyjątku posiadacze praw autorskich udzielają pozwolenia na kopiowanie, modyfikowanie i rozprowadzanie przykładowego kodu zawartego w tej dokumentacji na dowolnych warunkach, bez ograniczeń.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2013</years>
+  </credit>
+<credit type="translator copyright"><name>Piotr Drąg</name><email>piotrdrag@gmail.com</email><years>2018-2023</years></credit><credit type="translator copyright"><name>Aviary.pl</name><email>community-poland@mozilla.org</email><years>2018-2023</years></credit></info>
+<title>Preferencje programu Meld</title>
+
+<terms>
+  <title>Preferencje edytora</title>
+  <item>
+    <title>Polecenie edytora</title>
+    <p>Nazwa polecenia wykonywanego do otwierania plików tekstowych w edytorze zewnętrznym. Może to być po prostu polecenie (np. <cmd>gedit</cmd>), w przypadku którego plik do otwarcia zostanie przekazany jako ostatni parametr. Można także dodać elementy <code>{file}</code> (plik) i <code>{line}</code> (wiersz) do polecenia, w przypadku których <app>Meld</app> zastąpi je ścieżką do pliku i numerem bieżącego wiersza (np. <cmd>gedit {file}:{line}</cmd>).</p>
+  </item>
+</terms>
+<terms>
+  <title>Preferencje porównania plików</title>
+  <item>
+    <title>Zastosowywanie filtrów tekstowych podczas porównywania katalogów</title>
+    <p>Podczas porównywania plików w trybie porównywania katalogów można zastosowywać filtry tekstowe i pozostałe opcje manipulacji tekstem do zawartości plików. Włączenie tej opcji spowoduje zastosowanie wszystkich obecnie włączonych filtrów tekstowych, zastosowanie opcji obcinania pustych wierszy w razie potrzeby oraz ignorowanie różnic w końcach wierszy.</p>
+    <p>Włączenie tej opcji oznacza, że <app>Meld</app> musi w pełni odczytać wszystkie niebinarne pliki do pamięci podczas porównania katalogów. Jeśli pliki tekstowe są duże, to może to spowolnić działanie programu i spowodować problemy z pamięcią.</p>
+    <p>Ta opcja jest uwzględniana tylko, jeśli nie włączono opcji „Porównywanie plików tylko na podstawie rozmiaru i czasu modyfikacji”.</p>
+  </item>
+</terms>
+
+</page>

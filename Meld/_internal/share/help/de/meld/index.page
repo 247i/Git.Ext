@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="index" lang="de">
+	<info>
+      <title type="link" role="trail">Handbuch zu Meld</title>
+      <title type="link">Handbuch zu Meld</title>
+      <title type="text">Handbuch zu Meld</title>
+      <revision docversion="1.6" status="draft"/>
+      <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Als besondere Ausnahme gewähren die Besitzer des Urheberrechts Erlaubnis, den Beispiel-Code in diesem Dokument zu kopieren, verändern und weiterzugeben, unter den Bedingungen Ihrer Wahl, ohne Einschränkungen.</p>
+</license>
+      <credit type="author copyright">
+        <name>Kai Willadsen</name>
+        <email>kai.willadsen@gmail.com</email>
+        <years>2012</years>
+      </credit>
+	<credit type="translator copyright"><name>Mario Blättermann</name><email>mario.blaettermann@gmail.com</email><years>2009, 2016, 2018</years></credit><credit type="translator copyright"><name>Benjamin Steinwender</name><email>b@stbe.at</email><years>2014-2015</years></credit><credit type="translator copyright"><name>Christian Kirbach</name><email>christian.kirbach@gmail.com</email><years>2014, 2016</years></credit><credit type="translator copyright"><name>Jürgen Benvenuti</name><email>gastornis@posteo.org</email><years>2023</years></credit></info>
+
+	<title><media type="image" width="48px" height="48px" its:translate="no" src="figures/Meld.svg"/> Handbuch zu Meld</title>
+
+	<section id="introduction" style="2column">
+	    <title>Einführung</title>
+	</section>
+
+	<section id="file-mode" style="2column">
+		<title>Dateien vergleichen</title>
+	</section>
+
+	<section id="folder-mode" style="2column">
+		<title>Ordner vergleichen</title>
+	</section>
+
+	<section id="vc-mode" style="2column">
+		<title>Meld für Versionskontrolle verwenden</title>
+	</section>
+
+	<section id="advanced" style="2column">
+		<title>Fortgeschrittene Verwendung</title>
+	</section>
+</page>

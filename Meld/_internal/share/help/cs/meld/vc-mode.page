@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="vc-mode" lang="cs">
+<info>
+  <title type="sort">0</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Jako zvláštní výjimka se vám držitelem autorských práv uděluje svolení kopírovat, upravovat a šířit ukázkový kód obsažený v tomto dokumentu za podmínek, které si zvolíte, bez dalších omezení.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+</info>
+
+<title>Zobrazení souborů ze správy verzí</title>
+
+<p>
+<app>Meld</app> integrates with <link xref="vc-supported">many version
+control systems</link> to let you review local changes and perform
+simple version control tasks. You can start a new version control
+comparison using the new comparison button on the toolbar, and clicking
+on the <gui style="tab">Version Control</gui> tab.
+</p>
+
+
+<section id="vc-mode-overview">
+<title>Porovnávání správy verzí</title>
+
+<p>Porovnání správy verzí zobrazuje rozdíly mezi obsahem vaší složky a aktuální verzí v repozitáři. Každý soubor ve vaší místní kopii má <link xref="#vc-state">stav</link>, který určuje, jak se liší od kopie v repozitáři.</p>
+
+<p>Když se chcete podívat na rozdíly u konkrétního souboru, můžete jej vybrat a zmáčknout <key>Enter</key> nebo na něj dvojitě kliknout a začne <link xref="file-mode">porovnávání souboru</link>. Můžete take využí funkce svého systému správy verzí přes nabídku <gui style="menu">Změny</gui>.</p>
+</section>
+
+<section id="vc-state">
+<title>Stavy správy verzí</title>
+
+<p>Každý soubor nebo složka v porovnání správy verzí má <em>stav</em> získaný přímo ze systém správy verzí. <app>Meld</app> převádí tyto různé stavy na standardní množinu stavů založené na podobném konceptu. Proto může používat mírně odlišné názvy stavů, než používá váš systém správy verzí. Možné stavy jsou:</p>
+
+
+<table frame="top bottom">
+  <title>Stavy správy verzí</title>
+
+  <thead>
+    <tr>
+      <td><p>stav</p></td>
+      <td><p>vzhled</p></td>
+      <td><p>význam</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Stejné</p></td>
+      <td>
+        <p>normální písmo</p>
+      </td>
+      <td>
+        <p>Soubor/složka jsou stejné jako verze v repozitáři.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Změněné</p></td>
+      <td>
+        <p>červené a tučné</p>
+      </td>
+      <td>
+        <p>Tento soubor se liší od verze v repozitáři.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Nové</p></td>
+      <td>
+        <p>zelené a tučné</p>
+      </td>
+      <td>
+        <p>Tento soubor/složka jsou nové a je naplánováno jejich přidání do repozitáře.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Odstraněno</p></td>
+      <td>
+        <p>přeškrtnuté červené tučné</p>
+      </td>
+      <td>
+        <p>Tento soubor/složka existují, ale je naplánováno jejich odstranění z repozitáře.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Konflikt</p></td>
+      <td>
+        <p>jasně červené a tučné</p>
+      </td>
+      <td>
+        <p>Když se pokoušíte o sloučení s repozitářem, nemusí být možné vyřešit rozdíly mezi místním souborem a repozitářem a soubor se bude nacházet v konfliktu s obsahem repozitáře.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Schází</p></td>
+      <td>
+        <p>modré tučné přeškrtnuté</p>
+      </td>
+      <td>
+        <p>Tento soubor/složka by měli existovat, ale není tomu tak.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Ignorováno</p></td>
+      <td>
+        <p>
+        Grayed out text
+<!--        <file style="color: #888888;">file.txt</file>-->
+        </p>
+      </td>
+      <td>
+        <p>Pro tento soubor/složku bylo určeno, že se mají ignorovat (tj. záznamem v <file>.gitignore</file>) a nejsou sledovány správou verzí.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Neverzováno</p></td>
+      <td>
+        <p>
+        Grayed out text
+<!--        <file style="color: #888888;">file.txt</file>-->
+        </p>
+      </td>
+      <td>
+        <p>Tento soubor není v systému správy verzí, nachází se pouze v místní kopii.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Chyba</p></td>
+      <td>
+        <p>světle červený tučný text na žlutém pozadí</p>
+      </td>
+      <td>
+        <p>Systém správy verzí oznámil problém s tímto souborem.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section id="vc-state-filtering">
+<title>Filtrování stavu ve správě verzí</title>
+
+<p>
+Most often, you will only want to see files that are identified as being
+in some way different; this is the default setting in <app>Meld</app>.
+You can change which file states you see by using the
+<gui style="button">Version Filters</gui> button on the toolbar and
+selecting <gui style="menuitem">Flatten Folders</gui> and selecting the
+<gui style="menuitem">Modified</gui>, <gui style="menuitem">Normal</gui>,
+<gui style="menuitem">Unversioned</gui> and <gui style="menuitem">Ignored</gui>
+buttons on the toolbar.
+</p>
+</section>
+
+</page>

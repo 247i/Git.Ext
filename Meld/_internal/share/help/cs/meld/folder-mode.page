@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="folder-mode" lang="cs">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#folder-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Jako zvláštní výjimka se vám držitelem autorských práv uděluje svolení kopírovat, upravovat a šířit ukázkový kód obsažený v tomto dokumentu za podmínek, které si zvolíte, bez dalších omezení.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+</info>
+
+<title>Začínáme s porovnáváním složek</title>
+
+<p>
+<app>Meld</app> lets you compare two or three folders side-by-side. You can
+start a new folder comparison using the new comparison button on the toolbar,
+and clicking on the <gui style="tab">Directory Comparison</gui>
+tab.
+</p>
+
+<p>Vybrané složky budou zobrazeny jako stromové struktury vedle sebe a rozdíly mezi soubory v každé složce budou zvýrazněny. Soubory v každé ze složek můžete kopírovat a mazat, případně si u textových souborů zobrazit rozdíly podrobně.</p>
+
+
+
+<section id="folder-mode-overview">
+<title>Zobrazení porovnání složek</title>
+
+<p>Hlavními částmi v porovnání složek jsou stromy zobrazující porovnávané složky. V těchto porovnáních se můžete snadno <link xref="#folder-navigation">pohybovat</link>, abyste našli změny, které vás zajímají. Když vyberete soubor nebo složku, na stavové liště ve spodní části okna se zobrazí podrobné informace. Zmáčknutím klávesy <key>Enter</key> na vybraném souboru nebo dvojitým kliknutím na libovolném souboru se otevře <link xref="file-mode">porovnávání souboru</link> vedle sebe v nové kartě, ale rozumné použití to má jen pro textové soubory.</p>
+
+<p>
+There are bars on the right-hand side of the window that show
+you a simple colored summary of the comparison results. Each file or
+folder in the comparison corresponds to a small section of these bars,
+though <app>Meld</app> doesn't show <em>Same</em> files so that it's
+easier to see any actually important differences. You can click anywhere
+on this bar to jump straight to that place in the comparison.
+</p>
+</section>
+
+
+
+<section id="folder-navigation">
+<title>Pohyb v porovnávání složek</title>
+
+<p>
+You can jump between changed files (that is, any files/folders that
+are <em>not</em> classified as being identical) with the previous and
+next change buttons in the toolbar.
+</p>
+<p>Pomocí kláves <key>←</key> a <key>→</key> můžete přecházet mezi složkami, které porovnáváte. To se hodí, abyste mohli vybírat jednotlivé soubory ke zkopírování nebo ke smazání.</p>
+</section>
+
+
+
+<section id="folder-mode-states">
+<title>Stavy při porovnávání složek</title>
+
+<p>Každý soubor či složka ve stromu má svůj vlastní <em>stav</em>, který vám říká, jak se liší od svého protějšku. Možné stavy jsou:</p>
+
+
+<table frame="top bottom">
+  <title>Stavy při porovnávání složek</title>
+
+  <thead>
+    <tr>
+      <td><p>stav</p></td>
+      <td><p>vzhled</p></td>
+      <td><p>význam</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Stejné</p></td>
+      <td>
+        <p>normální písmo</p>
+      </td>
+      <td>
+        <p>Soubor/složka je stejná ve všech porovnávaných složkách.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Stejné díky filtru</p></td>
+      <td>
+        <p>kurzíva</p>
+      </td>
+      <td>
+        <p>Tyto soubory se napříč složkami liší, ale díky použití <link xref="text-filters">textového filtru</link> se tyto soubory jeví jako stejné.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Změněné</p></td>
+      <td>
+        <p>modré a tučné</p>
+      </td>
+      <td>
+        <p>Tyto soubory se liší mezi složkami, které jsou porovnávány.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Nové</p></td>
+      <td>
+        <p>zelené a tučné</p>
+      </td>
+      <td>
+        <p>Tento soubor/složka existuje v této složce, ale ne v ostatních.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Schází</p></td>
+      <td>
+        <p>
+        Grayed out text with a line through the middle
+<!--        <file style="color: #888888; text-decoration: line-through;">file.txt</file>-->
+        </p>
+      </td>
+      <td>
+        <p>Tento soubor/složka neexistuje v této složce, ale v některé z ostatních ano.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Chyba</p></td>
+      <td>
+        <p>světle červený tučný text na žlutém pozadí</p>
+      </td>
+      <td>
+        <p>Při porovnávání tohoto souboru nastala chyba. Nejčastější příčinou chyb jsou oprávnění k souboru (tj. aplikaci <app>Meld</app> nebylo dovoleno soubor otevřít) a chyby v kódování názvu souboru.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Můžete odfiltrovat soubory na základě jejich stavu, například aby se zobrazovaly jen soubory, které byly <em>změněné</em>. Více si o tom můžete přečíst v kapitole <link xref="file-filters#file-state-filter"/>.</p>
+
+<p>
+The icons in some rows have emblems added to them to show additional
+information. Note that these icons may change depending on your icon theme, so
+these descriptions are only a guide.
+</p>
+
+<table frame="top bottom">
+  <title>Additional emblems</title>
+
+  <thead>
+    <tr>
+      <td><p>Emblem</p></td>
+      <td><p>vzhled</p></td>
+      <td><p>význam</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Nové</p></td>
+      <td><p>Small blue dot</p></td>
+      <td><p>Used to indicate the "newest" (i.e., most recently modified) file in the row</p></td>
+    </tr>
+
+    <tr>
+      <td><p>Symbolic link</p></td>
+      <td><p>Arrow</p></td>
+      <td><p>Shows that the row item is a symbolic link</p></td>
+    </tr>
+    <tr>
+      <td><p>Selected</p></td>
+      <td><p>Tick mark</p></td>
+      <td><p>Shows that a file has been selected for a marked comparison, used to compare differently named files across folders</p></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+</page>

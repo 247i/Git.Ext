@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="flattened-view" lang="es">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como excepción especial, los poseedores de los derechos de autor le dan permiso para copiar, modificar y distribuir el código de ejemplo contenido en este documento bajo los términos que usted elija, sin restricción.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Daniel Mustieles</name><email>daniel.mustieles@gmail.com</email><years>2014 - 2019</years></credit><credit type="translator copyright"><name>Facundo Darío Illanes</name><email>fdillanes@gmail.com</email><years>2014</years></credit></info>
+<title>Vista aplanada</title>
+
+<p>Cuando esté viendo carpetas grandes, puede estar interesado en solo unos pocos archivos entre los miles que estén en la carpeta. Por esta razón, <app>Meld</app> incluye la <em>vista aplanada</em> de una carpeta; solo se muestran los archivos que no se hayan filtrado (por ejemplo, mediante <link xref="vc-mode#vc-state-filtering"/>), y la jerarquía de la carpeta se elimina, con las direcciones de los archivos mostrados en la columna <em>Ubicación</em>.</p>
+
+<p>
+You can toggle the flattened view on or off using the
+<gui style="button">Version Filters</gui> button on the toolbar and
+selecting <gui style="menuitem">Flatten Folders</gui>.
+</p>
+</page>

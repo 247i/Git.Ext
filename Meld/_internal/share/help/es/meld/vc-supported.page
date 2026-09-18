@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="vc-supported" lang="es">
+<info>
+  <title type="sort">3</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como excepción especial, los poseedores de los derechos de autor le dan permiso para copiar, modificar y distribuir el código de ejemplo contenido en este documento bajo los términos que usted elija, sin restricción.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Daniel Mustieles</name><email>daniel.mustieles@gmail.com</email><years>2014 - 2019</years></credit><credit type="translator copyright"><name>Facundo Darío Illanes</name><email>fdillanes@gmail.com</email><years>2014</years></credit></info>
+<title>Sistemas de control de versiones controlados</title>
+
+<p><app>Meld</app> soporta un amplio rango de sistemas de control de versiones:</p>
+
+<list>
+  <item><p>Bazaar</p></item>
+  <item><p>Darcs</p></item>
+  <item><p>Git</p></item>
+  <item><p>Mercurial</p></item>
+  <item><p>SVN</p></item>
+</list>
+
+<p>Algunos sistemas de control de versiones menos comunes o configuraciones inusuales pueden no estar probadas apropiadamente; informe de los errores de soporte de cualquier control de versiones en <link href="https://gitlab.gnome.org/GNOME/meld/issues">Gestor de errores de Meld</link>.</p>
+
+</page>

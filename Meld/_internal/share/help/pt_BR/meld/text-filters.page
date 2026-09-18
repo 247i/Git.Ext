@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="text-filters" lang="pt_BR">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#file-mode"/>
+  <link type="seealso" xref="file-filters"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como uma exceção especial, os detentores dos direitos autorais dão-lhe permissão para copiar, modificar e distribuir o código de exemplo contido neste documento sob os termos de sua escolha, sem qualquer restrição.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Rafael Fontenelle</name><email>rafaelff@gnome.org</email><years>2025</years></credit></info>
+
+<title>Filtrando texto</title>
+
+<p>Ao comparar vários arquivos, você pode ter seções de texto onde as diferenças não são realmente importantes. Por exemplo, você pode querer focar em seções alteradas de código e ignorar quaisquer alterações em linhas de comentários. Com filtros de texto, você pode dizer ao <app>Meld</app> para ignorar texto que corresponda a um padrão (por exemplo, uma expressão regular) ao mostrar diferenças entre arquivos.</p>
+
+<note style="important">
+  <p>Filtros de texto não afetam apenas comparações de arquivos, mas também comparações de pastas. Verifique as <link xref="file-filters">notas sobre filtragem de arquivos</link> para mais detalhes.</p>
+</note>
+
+
+<section id="text-filter-creation">
+<title>Adicionando e usando filtros de texto</title>
+
+<p>Você pode ativar ou desativar filtros de texto na aba <gui>Filtros de texto</gui> na caixa de diálogo <gui>Preferências</gui>. O <app>Meld</app> vem com alguns filtros simples que você pode achar úteis, mas você também pode adicionar os seus.</p>
+
+<p>No <app>Meld</app>, filtros de texto são expressões regulares que são comparadas com o texto dos arquivos que você está comparando. Qualquer texto que seja correspondido é ignorado durante a comparação; você ainda verá esse texto na visualização de comparação, mas ele não será levado em consideração ao encontrar diferenças. Os filtros de texto são aplicados em ordem, então é possível que o primeiro filtro remova o texto que agora faz o segundo filtro corresponder, e assim por diante.</p>
+
+<note style="tip">
+  <p>Se você não estiver familiarizado com expressões regulares, talvez queira verificar o <link href="http://docs.python.org/pt-br/3/howto/regex.html">"Como fazer" de expressões regulares</link> do Python.</p>
+</note>
+
+</section>
+
+
+
+<section id="text-filter-problems">
+<title>Obtendo filtros de texto corretos</title>
+
+<p>É fácil errar na filtragem de texto, e o suporte do Meld para filtragem não é completo. Em particular, um filtro de texto não pode alterar o número de linhas em um arquivo. Por exemplo, se tivéssemos o filtro <gui>Comentário de script</gui> integrado habilitado e comparássemos os seguintes arquivos:</p>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <listing>
+          <title><file>comentário1.txt</file></title>
+          <code>
+a
+b#comentário
+c
+d</code>
+        </listing>
+      </td>
+      <td>
+        <listing>
+          <title><file>comentário2.txt</file></title>
+          <code>
+a
+b
+c
+#comentário</code>
+        </listing>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>então as linhas começando com <code>b</code> seriam mostradas como idênticas (o comentário é removido), mas a linha <code>d</code> seria mostrada como diferente da linha de comentário à direita. Isso acontece porque o <code>#comentário</code> é removido do lado direito, mas a linha em si não pode ser removida; o <app>Meld</app> mostrará a linha <code>d</code> como sendo diferente do que ele vê como uma linha em branco no outro lado.</p>
+
+</section>
+
+
+<section id="text-filter-blank-lines">
+<title>Linhas em branco e filtros</title>
+
+<p>A preferência <gui>Ignorar alterações que inserem ou excluem linhas em branco</gui> na aba <gui>Filtros de texto</gui> requer uma explicação especial. Se esse filtro especial estiver habilitado, qualquer alteração que consista apenas em linhas em branco será completamente ignorada. Isso pode ocorrer porque houve uma alteração real de espaço em branco no texto, mas também pode surgir se seus filtros de texto ativos removeram todo o outro conteúdo de uma alteração, deixando apenas linhas em branco.</p>
+
+<p>Você pode usar essa opção para contornar alguns dos <link xref="#text-filter-problems">problemas e limitações</link> resultantes de filtros que não conseguem remover linhas inteiras, mas também pode ser útil por si só.</p>
+
+</section>
+
+</page>

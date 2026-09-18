@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="vc-mode" lang="pl">
+<info>
+  <title type="sort">0</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>W drodze specjalnego wyjątku posiadacze praw autorskich udzielają pozwolenia na kopiowanie, modyfikowanie i rozprowadzanie przykładowego kodu zawartego w tej dokumentacji na dowolnych warunkach, bez ograniczeń.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Piotr Drąg</name><email>piotrdrag@gmail.com</email><years>2018-2023</years></credit><credit type="translator copyright"><name>Aviary.pl</name><email>community-poland@mozilla.org</email><years>2018-2023</years></credit></info>
+
+<title>Wyświetlanie plików w kontroli wersji</title>
+
+<p><app>Meld</app> integruje się z <link xref="vc-supported">wieloma systemami kontroli wersji</link>, aby umożliwiać przeglądanie lokalnych zmian i wykonywanie prostych zadań kontroli wersji. Można rozpocząć nowe porównanie kontroli wersji za pomocą przycisku nowego porównania na pasku narzędziowym i klikając kartę <gui style="tab">System kontroli wersji</gui>.</p>
+
+
+<section id="vc-mode-overview">
+<title>Porównania kontroli wersji</title>
+
+<p>Porównania kontroli wersji wyświetlają różnice między zawartością katalogu a obecną wersją w repozytorium. Każdy plik w lokalnej kopii ma <link xref="#vc-state">stan</link> wskazujący, jak różni się od kopii w repozytorium.</p>
+
+<p>Aby wyświetlić różnice danego pliku, można zaznaczyć go i nacisnąć klawisz <key>Enter</key> lub podwójnie kliknąć plik, aby rozpocząć <link xref="file-mode">porównanie plików</link>. Można także działać na systemie kontroli wersji za pomocą menu <gui style="menu">Zmiany</gui>.</p>
+</section>
+
+<section id="vc-state">
+<title>Stany kontroli wersji</title>
+
+<p>Każdy plik lub katalog w porównaniu kontroli wersji ma <em>stan</em>, uzyskany z systemu kontroli wersji. <app>Meld</app> odzwierciedla te różne stany na standardowy zestaw bardzo podobnych pojęć. Z tego powodu <app>Meld</app> może używać trochę innych nazw dla stanów niż używany system kontroli wersji. Możliwe stany:</p>
+
+
+<table frame="top bottom">
+  <title>Stany kontroli wersji</title>
+
+  <thead>
+    <tr>
+      <td><p>Stan</p></td>
+      <td><p>Wygląd</p></td>
+      <td><p>Znaczenie</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Takie same</p></td>
+      <td>
+        <p>Zwykła czcionka</p>
+      </td>
+      <td>
+        <p>Plik/katalog jest taki sam, jak w wersji w repozytorium.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Zmodyfikowane</p></td>
+      <td>
+        <p>Czerwony i pogrubienie</p>
+      </td>
+      <td>
+        <p>Ten plik jest różny od wersji w repozytorium.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Nowe</p></td>
+      <td>
+        <p>Zielony i pogrubienie</p>
+      </td>
+      <td>
+        <p>Ten plik/katalog jest nowy, i jest zaplanowany do dodania do repozytorium.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Usunięty</p></td>
+      <td>
+        <p>Czerwony, pogrubiony i przekreślony tekst</p>
+      </td>
+      <td>
+        <p>Ten plik/katalog istniał, ale jest zaplanowany do usunięcia z repozytorium.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Konflikt</p></td>
+      <td>
+        <p>Jasnoczerwony, pogrubiony tekst</p>
+      </td>
+      <td>
+        <p>Podczas scalania w repozytorium różnice między lokalnym plikiem a repozytorium nie mogą zostać rozwiązane, a plik jest teraz sprzeczny z treścią repozytorium</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Brakujący</p></td>
+      <td>
+        <p>Niebieski, pogrubiony i przekreślony tekst</p>
+      </td>
+      <td>
+        <p>Ten plik/katalog powinien być obecny, ale nie jest.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Zignorowane</p></td>
+      <td>
+        <p>
+        Grayed out text
+<!--        <file style="color: #888888;">file.txt</file>-->
+        </p>
+      </td>
+      <td>
+        <p>Ten plik/katalog jest ignorowany (np. przez wpis w pliku <file>.gitignore</file>) i nie podlega kontroli wersji.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Poza systemem kontroli wersji</p></td>
+      <td>
+        <p>
+        Grayed out text
+<!--        <file style="color: #888888;">file.txt</file>-->
+        </p>
+      </td>
+      <td>
+        <p>Ten plik nie jest w systemie kontroli wersji, a tylko w lokalnej kopii.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Błąd</p></td>
+      <td>
+        <p>Jasnoczerwony z żółtym tłem i pogrubienie</p>
+      </td>
+      <td>
+        <p>System kontroli wersji zgłosił problem z tym plikiem.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section id="vc-state-filtering">
+<title>Filtrowanie stanów kontroli wersji</title>
+
+<p>Najczęściej potrzebne jest wyświetlanie tylko plików, które zostały zidentyfikowane jako w jakiś sposób różne. To domyślne ustawienie programu <app>Meld</app>. Można zmienić, które stany plików są wyświetlane za pomocą przycisku <gui style="button">Filtry wersji</gui> na pasku narzędziowym i wybierając <gui style="menuitem">Uprość wyświetlaną strukturę katalogów</gui> oraz przyciski <gui style="menuitem">Zmodyfikowane</gui>, <gui style="menuitem">Zwykłe</gui>, <gui style="menuitem">Poza systemem kontroli wersji</gui> i <gui style="menuitem">Zignorowane</gui> na pasku narzędziowym.</p>
+</section>
+
+</page>

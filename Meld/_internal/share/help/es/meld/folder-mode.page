@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="folder-mode" lang="es">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#folder-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como excepción especial, los poseedores de los derechos de autor le dan permiso para copiar, modificar y distribuir el código de ejemplo contenido en este documento bajo los términos que usted elija, sin restricción.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Daniel Mustieles</name><email>daniel.mustieles@gmail.com</email><years>2014 - 2019</years></credit><credit type="translator copyright"><name>Facundo Darío Illanes</name><email>fdillanes@gmail.com</email><years>2014</years></credit></info>
+
+<title>Primeros pasos para comparar carpetas</title>
+
+<p>
+<app>Meld</app> lets you compare two or three folders side-by-side. You can
+start a new folder comparison using the new comparison button on the toolbar,
+and clicking on the <gui style="tab">Directory Comparison</gui>
+tab.
+</p>
+
+<p>Las carpetas elegidas se mostrarán una junto a la otra como árboles, con las diferencias entre archivos resaltadas en cada carpeta. Puede copiar o eliminar archivos de cada carpeta, o comparar con más detalle archivos de texto individualmente.</p>
+
+
+
+<section id="folder-mode-overview">
+<title>La vista de comparación de carpetas</title>
+
+<p>Lo principal en una comparación de carpetas son los árboles que muestran las carpetas comparadas. Puede <link xref="#folder-navigation">moverse entre</link> estas comparaciones fácilmente para encontrar los cambios de su interés. Al elegir un archivo o carpeta, se le brindará información más detallada en la barra de estado en la parte de abajo de la ventana. Presionando <key>Intro</key> en el archivo elegido, o pulsando dos veces con el ratón en cualquier archivo del árbol se abrirá en una nueva pestaña una <link xref="file-mode">comparación de archivos</link> uno junto al otro, pero esta opción solo funcionará apropiadamente si son archivos de texto.</p>
+
+<p>
+There are bars on the right-hand side of the window that show
+you a simple colored summary of the comparison results. Each file or
+folder in the comparison corresponds to a small section of these bars,
+though <app>Meld</app> doesn't show <em>Same</em> files so that it's
+easier to see any actually important differences. You can click anywhere
+on this bar to jump straight to that place in the comparison.
+</p>
+</section>
+
+
+
+<section id="folder-navigation">
+<title>Navegar entre comparaciones</title>
+
+<p>
+You can jump between changed files (that is, any files/folders that
+are <em>not</em> classified as being identical) with the previous and
+next change buttons in the toolbar.
+</p>
+<p>Puede usar las teclas <key>Izquierda</key> y <key>Derecha</key> para moverse entre las carpetas comparadas. Esto es útil para poder elegir los archivos para copiar o eliminar.</p>
+</section>
+
+
+
+<section id="folder-mode-states">
+<title>Estados en la comparación de carpetas</title>
+
+<p>Cada archivo o carpeta en un árbol tiene su propio <em>estado</em>, que dice címo difiere del correspondiente archivo/carpeta. Los posibles estados son:</p>
+
+
+<table frame="top bottom">
+  <title>Estados de la comparación de carpetas</title>
+
+  <thead>
+    <tr>
+      <td><p>Estado</p></td>
+      <td><p>Apariencia</p></td>
+      <td><p>Significado</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>El mismo</p></td>
+      <td>
+        <p>Tipografía normal</p>
+      </td>
+      <td>
+        <p>El archivo/carpeta es igual en todas las carpetas comparadas.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Igual cuando se filtró</p></td>
+      <td>
+        <p>Cursivas</p>
+      </td>
+      <td>
+        <p>Estos archivos son diferentes en las carpetas, pero una vez aplicados los <link xref="text-filters">filtros de texto</link>, se han vuelto idénticos.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Modificado</p></td>
+      <td>
+        <p>Azul y en negrita</p>
+      </td>
+      <td>
+        <p>Estos archivos difieren entre las carpetas comparadas.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Nuevo</p></td>
+      <td>
+        <p>Verde y en negrita</p>
+      </td>
+      <td>
+        <p>Este archivo/carpeta existe en esta carpeta, pero no en las otras.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Faltante</p></td>
+      <td>
+        <p>
+        Grayed out text with a line through the middle
+<!--        <file style="color: #888888; text-decoration: line-through;">file.txt</file>-->
+        </p>
+      </td>
+      <td>
+        <p>Este archivo/carpeta no existe en esta carpeta, pero se encuentra en otra.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Error</p></td>
+      <td>
+        <p>Rojo brillante con un fondo amarillo y negrita</p>
+      </td>
+      <td>
+        <p>Hubo un error al comparar este archivo. La causa de error más común son los permisos (esto es, <app>Meld</app> no pudo abrir el archivo) y los errores en la codificación del nombre de archivo.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Es posible filtrar archivos en base a sus estados, por ejemplo, mostrar solo los archivos <em>Modificados</em>. Puede leer más sobre esto en la <link xref="file-filters#file-state-filter"/>.</p>
+
+<p>
+The icons in some rows have emblems added to them to show additional
+information. Note that these icons may change depending on your icon theme, so
+these descriptions are only a guide.
+</p>
+
+<table frame="top bottom">
+  <title>Additional emblems</title>
+
+  <thead>
+    <tr>
+      <td><p>Emblem</p></td>
+      <td><p>Apariencia</p></td>
+      <td><p>Significado</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Nuevo</p></td>
+      <td><p>Small blue dot</p></td>
+      <td><p>Used to indicate the "newest" (i.e., most recently modified) file in the row</p></td>
+    </tr>
+
+    <tr>
+      <td><p>Symbolic link</p></td>
+      <td><p>Arrow</p></td>
+      <td><p>Shows that the row item is a symbolic link</p></td>
+    </tr>
+    <tr>
+      <td><p>Selected</p></td>
+      <td><p>Tick mark</p></td>
+      <td><p>Shows that a file has been selected for a marked comparison, used to compare differently named files across folders</p></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+</page>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="missing-functionality" lang="es">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#advanced"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como excepción especial, los poseedores de los derechos de autor le dan permiso para copiar, modificar y distribuir el código de ejemplo contenido en este documento bajo los términos que usted elija, sin restricción.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Daniel Mustieles</name><email>daniel.mustieles@gmail.com</email><years>2014 - 2019</years></credit><credit type="translator copyright"><name>Facundo Darío Illanes</name><email>fdillanes@gmail.com</email><years>2014</years></credit></info>
+<title>Cosas que <app>Meld</app> no hace</title>
+
+<p>¿Nunca ha perdido media hora investigando una aplicación intentando ver cómo hacer algo, pensando que <em>seguramente</em> debe haber una opción para eso?</p>
+
+<p>Esta sección lista unas pocas cosas comunes que <app>Meld</app> <em>no</em> hace, ya sea por una decisión deliberada, o porque nos faltó tiempo.</p>
+
+<section id="missing-change-fixed-alignment">
+<title>Alinear los cambios al agregar líneas</title>
+<p>Cuando <app>Meld</app> muestra diferencias entre archivos, muestra ambos de la manera en que aparecerían en un editor de textos normal. <em>No</em> inserta líneas adicionales de manera que los lados derecho e izquierdo de un cambio en particular sean del mismo tamaño. No existe una opción para esto.</p>
+</section>
+
+
+</page>

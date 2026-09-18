@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="vc-mode" lang="el">
+<info>
+  <title type="sort">0</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>As a special exception, the copyright holders give you permission to copy,
+modify, and distribute the example code contained in this document under the
+terms of your choosing, without restriction.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name> Δημήτρης Σπίγγος</name><email>dmtrs32@gmail.com</email><years>2014</years></credit></info>
+
+<title>Προβολή αρχείων ελεγχόμενης έκδοσης</title>
+
+<p>
+<app>Meld</app> integrates with <link xref="vc-supported">many version
+control systems</link> to let you review local changes and perform
+simple version control tasks. You can start a new version control
+comparison using the new comparison button on the toolbar, and clicking
+on the <gui style="tab">Version Control</gui> tab.
+</p>
+
+
+<section id="vc-mode-overview">
+<title>Συγκρίσεις ελέγχου εκδόσεων</title>
+
+<p>Οι συγκρίσεις ελέγχου εκδόσεων εμφανίζουν τις διαφορές μεταξύ των περιεχομένων του φακέλου σας και της τρέχουσας έκδοσης αποθετηρίου. Κάθε αρχείο στο τοπικό σας αντίγραφο έχει μια <link xref="#vc-state">κατάσταση</link> που δείχνει πώς διαφέρει από το αντίγραφο του αποθετηρίου.</p>
+
+<p>Αν θέλετε να κοιτάξετε τις διαφορές ενός συγκεκριμένου αρχείου, μπορείτε να το επιλέξετε και να πατήσετε <key>Εισαγωγή</key>, ή να διπλοπατήσετε το αρχείο για να αρχίσετε μια <link xref="file-mode">σύγκριση αρχείων</link>. Μπορείτε επίσης να αλληλεπιδράσετε με το σύστημα ελέγχου εκδόσεων χρησιμοποιώντας το μενού <gui style="menu">Αλλαγές</gui>.</p>
+</section>
+
+<section id="vc-state">
+<title>Καταστάσεις ελέγχου εκδόσεων</title>
+
+<p>Κάθε αρχείο ή φάκελος σε μια σύγκριση ελέγχου εκδόσεων έχει μια <em>κατάσταση</em>, που ελήφθη από το ίδιο το σύστημα ελέγχου εκδόσεων. Το <app>Meld</app> απεικονίζει αυτές τις διαφορετικές καταστάσεις σε ένα τυπικό σύνολο πολύ παρόμοιων εννοιών. Ως τέτοιο, το <app>Meld</app> μπορεί να χρησιμοποιήσει ελαφρά διαφορετικά ονόματα για καταστάσεις από ότι κάνει το σύστημα ελέγχου εκδόσεων. Οι πιθανές καταστάσεις είναι:</p>
+
+
+<table frame="top bottom">
+  <title>Καταστάσεις ελέγχου εκδόσεων</title>
+
+  <thead>
+    <tr>
+      <td><p>Κατάσταση</p></td>
+      <td><p>Εμφάνιση</p></td>
+      <td><p>Σημασία</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Ίδιο</p></td>
+      <td>
+        <p>Κανονική γραμματοσειρά</p>
+      </td>
+      <td>
+        <p>Το αρχείο/φάκελος είναι το ίδιο με την έκδοση αποθετηρίου.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Τροποποιημένο</p></td>
+      <td>
+        <p>Κόκκινο και έντονο</p>
+      </td>
+      <td>
+        <p>Αυτό το αρχείο είναι διαφορετικό από την έκδοση αποθετηρίου.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Νέο</p></td>
+      <td>
+        <p>Πράσινο και έντονο</p>
+      </td>
+      <td>
+        <p>Αυτό το αρχείο/φάκελος είναι νέο και προγραμματισμένο για να προστεθεί στο αποθετήριο.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Αφαιρέθηκε</p></td>
+      <td>
+        <p>Κόκκινο έντονο κείμενο με μια γραμμή στη μέση</p>
+      </td>
+      <td>
+        <p>Αυτό το αρχείο/φάκελος υπάρχει, αλλά είναι προγραμματισμένο να αφαιρεθεί από το αποθετήριο.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Διένεξη</p></td>
+      <td>
+        <p>Ανοιχτό κόκκινο έντονο κείμενο</p>
+      </td>
+      <td>
+        <p>Όταν προσπαθείτε να συγχωνεύσετε το αποθετήριο, οι διαφορές μεταξύ του τοπικού αρχείου και του αποθετηρίου δεν μπόρεσαν να επιλυθούν και το αρχείο είναι τώρα σε διένεξη με τα περιεχόμενα του αποθετηρίου</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Λείπει</p></td>
+      <td>
+        <p>Κυανό έντονο κείμενο με μια γραμμή στη μέση</p>
+      </td>
+      <td>
+        <p>Αυτό το αρχείο/φάκελος πρέπει να είναι παρόν, αλλά δεν είναι.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Αγνοημένο</p></td>
+      <td>
+        <p>
+        Grayed out text
+<!--        <file style="color: #888888;">file.txt</file>-->
+        </p>
+      </td>
+      <td>
+        <p>Αυτό το αρχείο/φάκελος έχει ρητά αγνοηθεί (π.χ., από μια καταχώριση στο <file>.gitignore</file>) και δεν παρακολουθείται από τον έλεγχο εκδόσεων.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Unversioned</p></td>
+      <td>
+        <p>
+        Grayed out text
+<!--        <file style="color: #888888;">file.txt</file>-->
+        </p>
+      </td>
+      <td>
+        <p>Αυτό το αρχείο δεν είναι στο σύστημα ελέγχου εκδόσεων· είναι μόνο στο τοπικό αντίγραφο.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Σφάλμα</p></td>
+      <td>
+        <p>Ανοιχτό κόκκινο με κίτρινο παρασκήνιο και έντονο</p>
+      </td>
+      <td>
+        <p>Το σύστημα ελέγχου εκδόσεων έχει αναφέρει ένα πρόβλημα με αυτό το αρχείο.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section id="vc-state-filtering">
+<title>Φιλτράρισμα της κατάστασης ελέγχου εκδόσεων</title>
+
+<p>
+Most often, you will only want to see files that are identified as being
+in some way different; this is the default setting in <app>Meld</app>.
+You can change which file states you see by using the
+<gui style="button">Version Filters</gui> button on the toolbar and
+selecting <gui style="menuitem">Flatten Folders</gui> and selecting the
+<gui style="menuitem">Modified</gui>, <gui style="menuitem">Normal</gui>,
+<gui style="menuitem">Unversioned</gui> and <gui style="menuitem">Ignored</gui>
+buttons on the toolbar.
+</p>
+</section>
+
+</page>

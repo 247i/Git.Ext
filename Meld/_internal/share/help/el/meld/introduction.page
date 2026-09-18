@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" lang="el">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#introduction"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>As a special exception, the copyright holders give you permission to copy,
+modify, and distribute the example code contained in this document under the
+terms of your choosing, without restriction.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name> Δημήτρης Σπίγγος</name><email>dmtrs32@gmail.com</email><years>2014</years></credit></info>
+<title>Τι είναι το Meld;</title>
+<p>Το <app>Meld</app> είναι ένα εργαλείο σύγκρισης αρχείων και καταλόγων και για την επίλυση διαφορών μεταξύ τους. Είναι επίσης χρήσιμο για σύγκριση αλλαγών που ελήφθησαν από συστήματα ελέγχου εκδόσεων.</p>
+
+<p>
+<app>Meld</app> shows differences between two or three files (or two or three
+directories) and allows you to move content between them, or edit the files
+manually. <app>Meld</app>'s focus is on helping developers compare and merge
+source files, and get a visual overview of changes in their favorite version
+control system.
+</p>
+
+</page>

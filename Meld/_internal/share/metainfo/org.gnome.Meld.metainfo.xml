@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2013-2014 Kai Willadsen <kai.willadsen@gmail.com> -->
+<component type="desktop-application">
+  <id>org.gnome.Meld.desktop</id>
+  <provides>
+    <id>org.gnome.meld.desktop</id>
+  </provides>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>Meld</name>
+  <name xml:lang="zh-Hant-TW">Meld</name>
+  <name xml:lang="zh-Hans-CN">Meld</name>
+  <name xml:lang="uk">Meld</name>
+  <name xml:lang="vi">Meld</name>
+  <name xml:lang="tr">Meld</name>
+  <name xml:lang="sv">Meld</name>
+  <name xml:lang="sr-Latn">Meld</name>
+  <name xml:lang="sr-Cyrl">Мелд</name>
+  <name xml:lang="sq">Meld</name>
+  <name xml:lang="sl">Meld</name>
+  <name xml:lang="sk">Meld</name>
+  <name xml:lang="ru">Meld</name>
+  <name xml:lang="ro">Meld</name>
+  <name xml:lang="pt-BR">Meld</name>
+  <name xml:lang="pt">Meld</name>
+  <name xml:lang="pl">Meld</name>
+  <name xml:lang="pa">Meld</name>
+  <name xml:lang="oc">Meld</name>
+  <name xml:lang="nl">Meld</name>
+  <name xml:lang="ne">मेल्ड</name>
+  <name xml:lang="nb">Meld</name>
+  <name xml:lang="ko">Meld</name>
+  <name xml:lang="kk-Cyrl">Meld</name>
+  <name xml:lang="ka">Meld</name>
+  <name xml:lang="ja">Meld</name>
+  <name xml:lang="it">Meld</name>
+  <name xml:lang="id">Meld</name>
+  <name xml:lang="hu">Meld</name>
+  <name xml:lang="hi">मेल्ड</name>
+  <name xml:lang="he">‏Meld</name>
+  <name xml:lang="gl">Meld</name>
+  <name xml:lang="fr">Meld</name>
+  <name xml:lang="fi">Meld</name>
+  <name xml:lang="fa">ملد</name>
+  <name xml:lang="eu">Meld</name>
+  <name xml:lang="es">Meld</name>
+  <name xml:lang="eo">Meldo</name>
+  <name xml:lang="en-GB">Meld</name>
+  <name xml:lang="en-CA">Meld</name>
+  <name xml:lang="el">Meld</name>
+  <name xml:lang="dz">མེལཌི་</name>
+  <name xml:lang="de">Meld</name>
+  <name xml:lang="da">Meld</name>
+  <name xml:lang="cs">Meld</name>
+  <name xml:lang="ca-valencia">Meld</name>
+  <name xml:lang="ca">Meld</name>
+  <name xml:lang="bs-Latn">Meld</name>
+  <name xml:lang="bg">Meld</name>
+  <summary>Compare and merge your files</summary>
+  <summary xml:lang="zh-Hant-TW">比對及合併您的檔案</summary>
+  <summary xml:lang="zh-Hans-CN">比较和合并您的文件</summary>
+  <summary xml:lang="uk">Порівняйте й обʼєднайте свої файли</summary>
+  <summary xml:lang="vi">So sánh và trộn các tập tin của bạn</summary>
+  <summary xml:lang="tr">Dosyalarınızı karşılaştırın ve birleştirin</summary>
+  <summary xml:lang="sv">Jämför och sammanfoga dina filer</summary>
+  <summary xml:lang="sr-Latn">Upoređujte i spajajte vaše datoteke</summary>
+  <summary xml:lang="sr-Cyrl">Упоређујте и спајајте ваше датотеке</summary>
+  <summary xml:lang="sl">Primerjava in združevanje datotek</summary>
+  <summary xml:lang="sk">Porovná a zlúči vaše súbory</summary>
+  <summary xml:lang="ru">Сравнение и объединение файлов</summary>
+  <summary xml:lang="ro">Comparați-vă și combinati-vă fișierele</summary>
+  <summary xml:lang="pt-BR">Compare e mescle seus arquivos</summary>
+  <summary xml:lang="pt">Compare e una os seus ficheiros</summary>
+  <summary xml:lang="pl">Porównywanie i scalanie plików</summary>
+  <summary xml:lang="oc">Comparar e fusionar de fichièrs</summary>
+  <summary xml:lang="nb">Sammenligne og flett sammen dine filer</summary>
+  <summary xml:lang="kk-Cyrl">Файлдарды салыстыру және біріктіру</summary>
+  <summary xml:lang="ja">複数のファイルを比較したりマージしたりします</summary>
+  <summary xml:lang="it">Confronta e unisce file</summary>
+  <summary xml:lang="id">Membandingkan dan menggabung berkas-berkas Anda</summary>
+  <summary xml:lang="hu">Fájlok összehasonlítása és összefésülése</summary>
+  <summary xml:lang="hi">अपनी फाइलों की तुलना करें और विलय करें</summary>
+  <summary xml:lang="he">השוואה ומיזוג של קבצים</summary>
+  <summary xml:lang="gl">Compare e combine os seus ficheiros</summary>
+  <summary xml:lang="fr">Comparer et fusionner des fichiers</summary>
+  <summary xml:lang="fi">Vertaa ja yhdistä tiedostoja</summary>
+  <summary xml:lang="fa">مقایسه و ادغام پرونده‌ّایتان</summary>
+  <summary xml:lang="eu">Konparatu eta konbinatu fitxategiak</summary>
+  <summary xml:lang="es">Compare y combine sus archivos</summary>
+  <summary xml:lang="eo">Kompari kaj kunfandi dosierojn</summary>
+  <summary xml:lang="en-GB">Compare and merge your files</summary>
+  <summary xml:lang="el">Σύγκριση και συγχώνευση των αρχείων σας</summary>
+  <summary xml:lang="de">Dateien vergleichen und zusammenführen</summary>
+  <summary xml:lang="da">Sammenlign og flet dine filer</summary>
+  <summary xml:lang="cs">Porovnává a slučuje soubory</summary>
+  <summary xml:lang="ca-valencia">Compareu i fusioneu fitxers</summary>
+  <summary xml:lang="ca">Compareu i fusioneu fitxers</summary>
+  <summary xml:lang="bs-Latn">Poredite i združite svoje datoteke</summary>
+  <summary xml:lang="bg">Сравняване и сливане на файлове</summary>
+  <description>
+    <p>
+      Meld is a visual diff and merge tool targeted at developers.
+      Meld helps you compare files, directories, and version controlled projects.
+      It provides two- and three-way comparison of both files and directories,
+      and supports many version control systems including Git, Mercurial,
+      Bazaar and Subversion.
+    </p>
+    <p xml:lang="zh-Hant-TW">Meld 是針對開發人員的視覺化差異和合併工具。Meld 可以幫助您比對檔案、資料夾和版本控制的專案。它提供檔案和資料夾的雙向和三向比對，並支援許多版本控制系統，包括 Git、Mercurial、Bazaar 和 Subversion。</p>
+    <p xml:lang="zh-Hans-CN">Meld 是一款面向开发者的可视化差异和合并工具。Meld 能帮助您比较文件、目录和有版本控制的项目。它对文件和目录都提供了二方和三方比较功能，并且还支持包括 Git、Mercurial、Bazaar 和 Subversion 在内的版本控制系统。</p>
+    <p xml:lang="uk">Meld — програма для візуального порівняння і об'єднання файлів і тек. Її призначено для розробників. Meld допоможе вам порівняти файли, каталоги та модифікації у проєктах із керуванням версіями. У програмі передбачено можливості порівняння двох або трьох файлів чи каталогів, а також підтримку багатьох систем керування версіями, зокрема Git, Mercurial, Bazaar і Subversion.</p>
+    <p xml:lang="tr">Meld, geliştiricileri hedefleyen görsel fark gösterme ve birleştirme aracıdır. Meld dosyaları, dizinleri ve sürüm denetimi yapılan projeleri karşılaştırmanıza yardımcı olur. Hem dosya hem de dizinleri iki ve üç yollu karşılaştırmayı sağlar. Git, Mercurial, Bazaar ve Subversion gibi sürüm denetim sistemlerinin çoğunu destekler.</p>
+    <p xml:lang="sv">Meld är ett visuellt diff- och sammanfogningsverktyg riktat till utvecklare. Meld hjälper dig att jämföra filer, kataloger och versionshanterade projekt. Det erbjuder två- och trevägsjämförelser av både filer och kataloger samt stöder många versionshanteringssystem som Git, Mercurial, Bazaar och Subversion.</p>
+    <p xml:lang="sr-Latn">Meld je grafički alat za razlike i stapanje namenjen programerima. Pomaže vam da poredite datoteke, direktorijume, i projekte upravljanja izdanjima. Obezbeđuje dvostruko i trostruko poređenje i datoteka i direktorijuma, i podržava mnoge sisteme upravljanja izdanjima uključujući Git, Merkurijal, Bazar i Subverziju.</p>
+    <p xml:lang="sr-Cyrl">Мелд је графички алат за разлике и стапање намењен програмерима. Помаже вам да поредите датотеке, директоријуме, и пројекте управљања издањима. Обезбеђује двоструко и троструко поређење и датотека и директоријума, и подржава многе системе управљања издањима укључујући Гит, Меркуријал, Базар и Субверзију.</p>
+    <p xml:lang="sl">Meld je napredno orodje za primerjavo in združevanje sprememb vsebine v različnih virih. Omogoča primerjavo datotek, map in virov sistema nadzora različic. Omogoča dvojno in trojno primerjavo datotek in map, podpira pa tudi različne sisteme za nadzov različic, vključno z Git, Mercurial, Bazaar in Subversion.</p>
+    <p xml:lang="sk">Meld je nástroj na vizuálne porovnávanie a zlučovanie určené pre vývojárov. Pomôže vám porovnať súbory, adresáre a verzie projektov s kontrolovanou verziou. Poskytuje dvoj a trojcestné porovnanie tak súborov, ako aj adresárov a podporuje viacero systémov s kontrolou verzie vrátane Git, Mercurial, Bazaar a Subversion.</p>
+    <p xml:lang="ru">Meld — это приложение для визуального сравнения различий, предназначенная для разработчиков. Meld помогает сравнивать файлы, каталоги и контролировать версии проектов. Она обеспечивает двух- и трёхстороннее сравнение обоих файлов/каталогов, а также имеет поддержку многих популярных систем контроля версий, в том числе Git, Mercurial, Bazaar и Subversion.</p>
+    <p xml:lang="ro">Meld este o unealtă de diferențe vizuală destinată dezvoltatorilor. Meld vă ajută să comparați fișiere, directoare, și proiecte versionate. Oferă comparație între două sau trei fișiere sau directoare, și suportă multe sisteme de control ale versiunilor incluzând Git, Mercurial, Bazaar și Subversion.</p>
+    <p xml:lang="pt-BR">Meld é uma ferramenta de mesclagem e comparação visual destinada a desenvolvedores. Meld auxilia você na comparação de arquivos, diretórios e projetos controlados por versão. Ele fornece comparação de duas- e três-vias de ambos arquivos e diretórios, e tem suporte a sistemas de controle de versão incluindo Git, Mercurial, Bazaar e Subversion.</p>
+    <p xml:lang="pt">O Meld é uma ferramenta visual de diferenciação e união, destinada a programadores. O Meld ajuda-o a comparar ficheiros, pastas e projetos com controlo de versão. Fornece comparação de duas e três vias, tanto de ficheiros como de pastas. Suporta vários sistemas de controlo de versão, incluindo Git, Mercurial, Bazaar e Subversion.</p>
+    <p xml:lang="pl">Meld jest narzędziem do wizualnego porównywania i scalania plików przeznaczonym dla programistów. Program Meld pomaga porównywać pliki, katalogi i projekty systemów kontroli wersji. Umożliwia on porównywanie dwóch lub trzech plików i katalogów, i obsługuje wiele systemów kontroli wersji, w tym Git, Mercurial, Bazaar i Subversion.</p>
+    <p xml:lang="nb">Meld er et visuelt endrings- og fletteverktøy som er rettet mot utviklere. Meld kan sammenligne filer, mapper og versjonskontrollerte prosjekter. Meld tilbyr to- og treveissammenligninger av både filer og mapper, og støtter mange versjonskontrollsystemer, bl.a. Git, Mercurial, Bazaar og Subversion.</p>
+    <p xml:lang="kk-Cyrl">Meld — әзірлеушілерге арналған визуалды айырмашылықтарды қарау және біріктіру сайманы. Meld файлдарды, бумаларды және нұсқаны басқару жүйесіндегі жобаларды салыстыруға көмектеседі. Ол файлдар мен бумалардың екі және үш жақты салыстыруын ұсынады және Git, Mercurial, Bazaar және Subversion сияқты көптеген нұсқаны басқару жүйелерін қолдайды.</p>
+    <p xml:lang="it">Meld è un visualizzatore grafico di differenze e uno strumento per l'unione di file. Consente di confrontare file, directory e progetti in un sistema di controllo della versione. Fornisce confronti a due e tre vie sia di file che di directory e supporta diversi sistemi di controllo come Git, Mercurial, Bazaar e Subversion.</p>
+    <p xml:lang="id">Meld adalah alat diff dan merge visual yang ditujukan bagi para pengembang. Meld membantu Anda membandingkan berkas, direktori, dan projek yang dikendalikan versinya. Ini menyediakan perbandingan dua dan tiga arah bagi berkas dan direktori, dan mendukung banyak kendali sistem versi termasuk Git, Mercurial, Bazaar, dan Subversion.</p>
+    <p xml:lang="hu">A Meld egy vizuális diff- és összefésülő eszköz fejlesztőknek. A Meld segít fájlok, könyvtárak és verziókövetőt használó projektek összehasonlításában. Két- és háromutas összehasonlítást biztosít fájlokhoz és könyvtárakhoz, és sok verziókövető rendszert is támogat, beleértve a Git, Mercurial, Bazaar és Subversion rendszereket.</p>
+    <p xml:lang="hi">मेल्ड एक दृष्यमान अंतर और विलय टूल है जो डेवलपर्स को ध्यान में रखकर बनाया गया है। मेल्ड आपको फाइलों, निर्देशिकाओं और संस्करण नियंत्रित परियोजनाओं की तुलना करने में मदद करता है। यह फाइलों और निर्देशिकाओं दोनों की दो- और तीन-तरफा तुलना प्रदान करता है, और Git, Mercurial, Bazaar और Subversion सहित कई संस्करण नियंत्रण प्रणालियों का समर्थन करता है।</p>
+    <p xml:lang="he">‏Meld הוא כלי להצגת הבדל בין קבצים ולמיזוג קבצים, המוכוון למפתחים. Meld מסייע בהשוואת קבצים, תיקיות ופרויקטים עם בקרת גרסות. הוא מאפשר השוואה בין שניים ובין שלושה (three-way) קבצים או תיקיות, ותומך במערכות בקרת גרסות רבות, כולל Git, ‏Mercurial, ‏Bazaar ו־Subversion.</p>
+    <p xml:lang="gl">Meld é un comparador visual e unha ferramenta para combinar dirixida aos desenvolvedores. Meld axuda coa comparación de ficheiros, cartafoles e proxectos con controis de versión. Proporciona comparacións a dúas e tres bandas tanto entre ficheiros como entre cartafoles e acepta moitos sistemas de control de versións como Git, Bazaar e Subversion.</p>
+    <p xml:lang="fr">Meld est un visionneur de différences et un outil de fusion destiné à des développeurs. Il aide à comparer des fichiers, des dossiers et des projets dépendants d’un gestionnaire de versions. Il permet des comparaisons de 2 ou 3 fichiers ou dossiers, et prend en charge de nombreux gestionnaires de versions, dont Git, Mercurial, Bazaar et Subversion.</p>
+    <p xml:lang="fi">Meld on visuaalinen työkalu eroavaisuuksien (diff) vertailuun ja yhdistämiseen (merge). Sovelluksen kohderyhmänä on sovelluskehittäjät. Meld auttaa vertailemaan tiedostoja, kansioita ja versiohallittuja projekteja. Meld tarjoaa kaksi- ja kolmisuuntaisen vertailun tiedostoille ja kansioille. Versionhallintajärjestelmistä tuettuina ovat muun muassa Git, Mercurial, Bazaar ja Subversion.</p>
+    <p xml:lang="fa">ملد ابزار بصری تغییرات و ادغام برای توسعه‌هندگان است. ملد می‌گذارد پرونده‌ها، شاخه‌ها و پروژه‌های واپایش نگارش شده را مقایسه کنید. این برنامه مقایسهٔ دو و سه طرفه را برای پرونده‌ّا و شاخه‌ها فراهم کرده و سامانه‌های واپایش نگارش زیادی جون گیت، مرکوریال، بازار و ساب‌ورژن را پشتیبانی می‌کند.</p>
+    <p xml:lang="eu">Meld aplikazioak garatzaileentzako 'diff' eta 'merge' tresna bisuala da. Meld-ek fitxategiak, direktorioak eta bertsio-kontrola daramaten proiektuak konparatzen lagunduko dizu. Bai fitxategi bai direktorioen bi eta hiru elementuen arteko konparazioa eskaintzen ditu. Bertsio-kontrola daramaten hainbat sistema onartzen ditu, Git, Mercurial, Bazaar eta Subversion barne.</p>
+    <p xml:lang="es">Meld es una herramienta para ver diferencias y mezclar archivos orientada a desarrolladores. Meld le ayuda a comparar archivos, carpetas y proyectos con control de versiones. Proporciona una comparación de 2 y 3 vías para archivos y carpetas y soporta muchos sistemas de control de versiones, incluyendo Git, Mercurial, Bazaar y Subversion.</p>
+    <p xml:lang="en-GB">Meld is a visual diff and merge tool targeted at developers. Meld helps you compare files, directories, and version controlled projects. It provides two- and three-way comparison of both files and directories, and supports many version control systems including Git, Mercurial, Bazaar and Subversion.</p>
+    <p xml:lang="el">Το Meld είναι ένα οπτικό εργαλείο διαφορών και συγχώνευσης προοριζόμενο για προγραμματιστές. Το Meld σας βοηθά να συγκρίνετε αρχεία, καταλόγους και ελεγχόμενες εκδόσεις έργων. Παρέχει σύγκριση δύο ή τριών τρόπων και για αρχεία και για καταλόγους και υποστηρίζει πολλά συστήματα ελέγχου έκδοσης συμπεριλαμβανομένων των Git, Mercurial, Bazaar και Subversion.</p>
+    <p xml:lang="de">Meld ist ein grafisch unterstütztes Vergleichs- und Zusammenführungsprogramm, das an Entwickler gerichtet ist. Meld hilft Ihnen beim Vergleichen von Dateien, Ordnern und versionierten Projekten. Es stellt Zwei- und Drei-Wege-Vergleiche für Dateien und Ordner zur Verfügung. Die Versionsverwaltungssysteme Git, Mercurial, Bazaar und Subversion werden unterstützt.</p>
+    <p xml:lang="da">Meld er et visuelt værktøj til diff og flet, som er rettet mod udviklere. Meld hjælper dig med at sammenligne filer, mapper og versionsstyrede projekter. Der er to- og trevejssammenligning af både filer og mapper, og mange versionsstyringssystemer, bl.a. Git, Mercurial, Bazaar og Subversion, er understøttede.</p>
+    <p xml:lang="cs">Meld je vizuální nástroj pro práci s rozdíly (diff) a slučování (merge). Míří na vývojáře, kterým pomáhá porovnávat soubory, složky a projekty používající správu verzí. Poskytuje dvou a třícestné porovnání jak souborů, tak složek a podporuje řadu systémů pro správu verzí, včetně Git, Mercurial, Bazaar a Subversion.</p>
+    <p xml:lang="ca-valencia">El Meld és una eina visual per veure diferències i fer fusions pensat per desenvolupadors. El Meld vos permet comparar fitxers, directoris i projectes amb control de versions. Ofereix comparacions entre dos i tres fitxers i/o directoris, a més a més de visualitzar molts sistemes de control de versió incloent Git, Mercurial, Bazaar i Subversion.</p>
+    <p xml:lang="ca">El Meld és una eina visual per a veure diferències i fer fusions pensat per a desenvolupadors. El Meld us permet comparar fitxers, directoris i projectes amb control de versions. Ofereix comparacions entre dos i tres fitxers i/o directoris, a més a més de visualitzar molts sistemes de control de versió incloent Git, Mercurial, Bazaar i Subversion.</p>
+    <p xml:lang="bs-Latn">Meld je alat za vizuelne razlike i spajanje koji cilja na programere. On vam pomaže pri usporedbi datoteka, direktorija i projekata za kontrolu verzija. Pruža dvosmjernu i trosmjernu usporedbu sa datotekama i direktorijima, te podržava mnoge sisteme kontrolnih verzija uključujući i Git, Mercurial, Bazaar i Subversion.</p>
+    <p xml:lang="bg">Meld е визуален инструмент за сравняване и сливане за разработчици. С Meld може да сравнявате файлове, папки и проекти под контрол на версиите. Програмата поддържа двойно и тройно сравняване и поддържа множество системи за контрол на версиите като: Git, Mercurial, Bazaar и Subversion.</p>
+    <p>
+      Meld helps you review code changes, understand patches, and makes enormous
+      merge conflicts slightly less painful.
+    </p>
+    <p xml:lang="zh-Hant-TW">Meld 可以幫助您查看代碼變更、理解修正檔，並可以減輕您在大型合併衝突中的痛苦。</p>
+    <p xml:lang="zh-Hans-CN">Meld 可帮助您检查代码变更、理解补丁，并且稍微减轻巨量的合并冲突带来的痛苦。</p>
+    <p xml:lang="uk">За допомогою Meld ви зможете рецензувати зміни у коді, розбиратися із латками та спростити розв'язання складних конфліктів об'єднання.</p>
+    <p xml:lang="tr">Meld; kod değişikliklerinizi yeniden incelemenize, yamaları anlamanıza ve çok büyük birleştirme çatışmalarını daha sorunsuz çözmenize yardımcı olur.</p>
+    <p xml:lang="sv">Meld hjälper dig att granska kodändringar, förstå programfixar och göra enorma sammanfogningskonflikter något mindre smärtsamma.</p>
+    <p xml:lang="sr-Latn">Meld vam pomaže da pregledate izmene u kodu, da razumete zakrpe, i ogromne sukobe stapanja čini manje bolnim.</p>
+    <p xml:lang="sr-Cyrl">Мелд вам помаже да прегледате измене у коду, да разумете закрпе, и огромне сукобе стапања чини мање болним.</p>
+    <p xml:lang="sl">Meld vam pomaga pregledati spremembe kode, razumeti popravke in naredi spore pri gromozanskem spajanju nekoliko manj boleče.</p>
+    <p xml:lang="sk">Meld vám pomôže prezerať zmeny v kóde, porozumieť záplatám a urobí veľké konflikty v zlučovaní kódov jednoduchšími.</p>
+    <p xml:lang="ru">Meld помогает просматривать изменения кода, разбираться в патчах и предотвращать конфликты при слиянии кода.</p>
+    <p xml:lang="ro">Meld vă ajută să revizuiți schimbări ale codului, să înțelegeți petice, și face conflictele de combinații imense mai puțin dureroase.</p>
+    <p xml:lang="pt-BR">Meld auxilia você a revisar alterações no código, entender patches e tornar enormes conflitos de mesclagem um pouco menos dolorosos.</p>
+    <p xml:lang="pt">O Meld ajuda-o a rever alterações de código, a compreender patches e a tornar enormes conflitos de união em algo menos doloroso.</p>
+    <p xml:lang="pl">Program Meld pomaga przeglądać zmiany w kodzie, rozumieć poprawki i choć trochę ułatwić olbrzymie konflikty scalania.</p>
+    <p xml:lang="nb">Meld lar deg gjennomgå kodeforandringer, oppdateringsfiler («patcher») og gjør svære flettekonflikter litt lettere.</p>
+    <p xml:lang="kk-Cyrl">Meld кодтағы өзгерістерді қарап шығуға, патчтарды түсінуге және өте үлкен біріктіру қақтығыстарын аздап болса да жеңілдетуге көмектеседі.</p>
+    <p xml:lang="it">Meld aiuta nella revisione delle modifiche al codice, consente di comprendere le patch e rende più facile l'unione di file in presenza di conflitti.</p>
+    <p xml:lang="id">Meld membantu Anda meninjau perubahan kode, memahami patch, dan membuat konflik merge yang besar sedikit lebih mudah.</p>
+    <p xml:lang="hu">A Meld segít kódváltozások áttekintésében, foltok megértésében és a hatalmas összefésülési ütközéseket valamivel fájdalommentesebbé teszi.</p>
+    <p xml:lang="hi">मेल्ड आपको कोड परिवर्तनों की समीक्षा करने, पैच को समझने में मदद करता है, तथा बड़े विलय टकरावों को थोड़ा कम कष्टदायक बनाता है।</p>
+    <p xml:lang="he">‏Meld מסייע בסקירת השינויים בקוד ובהבנת טלאים, ומקל על פתירת התנגשויות מיזוג גדולות.</p>
+    <p xml:lang="gl">Meld axuda a revisar os cambios no código, a entender os parches e ademais fai os enormes conflitos das fusións lixeiramente menos dorosos.</p>
+    <p xml:lang="fr">Meld aide à réviser les modifications de code, à comprendre les correctifs et permet de rendre d’énormes conflits de fusion un peu moins pénibles à fusionner.</p>
+    <p xml:lang="fi">Meld helpottaa tarkastelemaan koodimuutoksia ja ymmärtämään paikkatiedostoja samalla helpottaen mahdollisia suuria yhdistämiseen liittyviä ristiriitoja.</p>
+    <p xml:lang="fa">ملد می‌گذارد تغییرات کدتان را بازبینی کنید؛ وصله‌ها را درک کرده و درد مغایرت‌های ادغام بزرگ را کم‌تر کنید.</p>
+    <p xml:lang="eu">Meld-ek zure kodearen aldaketak gainbegiratzen, adabakiak ulertzen lagunduko dizu. Kode handiak batzean gerta daitezkeen gatazkak sortzen dituzte buruhausteak leunduz.</p>
+    <p xml:lang="es">Meld le ayuda a revisar cambios en el código, entender parches y resolver problemas de mezcla de archivos de manera sencilla.</p>
+    <p xml:lang="en-GB">Meld helps you review code changes, understand patches, and makes enormous merge conflicts slightly less painful.</p>
+    <p xml:lang="el">Το Meld σας βοηθά να επισκοπήσετε αλλαγές κώδικα, κατανοεί αρχεία διορθώσεων και κάνει τεράστιες συγκρούσεις συγχώνευσης λιγότερο δύσκολες.</p>
+    <p xml:lang="de">Meld hilft Ihnen, Quelltextänderungen zu prüfen, Patches zu verstehen und lindert bei großen Zusammenführungskonflikten Ihre Kopfschmerzen etwas.</p>
+    <p xml:lang="da">Meld hjælper dig med at gennemgå kodeændringer, forstå rettelser (patches) og gør enorme flettekonflikter mindre besværlige.</p>
+    <p xml:lang="cs">Pomocí aplikace Meld můžete kontrolovat změny kódu, pochopit jednotlivé záplaty a řešit konflikty při rozsáhlém slučování více bezbolestně.</p>
+    <p xml:lang="ca-valencia">El Meld vos ajuda a revisar els canvis de codi, entendre els pedaços, i fer que els enormes conflictes quan es fusionen fitxers siguen menys difícils de solucionar.</p>
+    <p xml:lang="ca">El Meld us ajuda a revisar els canvis de codi, entendre els pedaços, i fer que els enormes conflictes quan es fusionen fitxers siguin menys difícils de solucionar.</p>
+    <p xml:lang="bs-Latn">Meld vam pomaže pregledati promjene kodova, razumijevanje zakrpi i čini brojne konflikte kod spajanja manje bolnim.</p>
+    <p xml:lang="bg">Meld ви помага да преглеждате промените по кода, да работите с кръпки и прави корекциите на големи конфликти при сливане поносими.</p>
+  </description>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>HighContrast</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <screenshots>
+    <screenshot type="default" height="736" width="1132">
+      <image>https://meld.app/images/filediff.png</image>
+    </screenshot>
+    <screenshot height="736" width="1132">
+      <image>https://meld.app/images/dirdiff.png</image>
+    </screenshot>
+    <screenshot height="736" width="1132">
+      <image>https://meld.app/images/vcview.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://meld.app/</url>
+  <url type="help">https://meld.app/help/</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/meld/issues</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="translate">https://l10n.gnome.org/module/meld/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/meld</url>
+  <update_contact>kai.willadsen@gmail.com</update_contact>
+  <project_group>GNOME</project_group>
+  <developer_name>Kai Willadsen</developer_name>
+  <developer_name xml:lang="zh-Hant-TW">Kai Willadsen</developer_name>
+  <developer_name xml:lang="zh-Hans-CN">Kai Willadsen</developer_name>
+  <developer_name xml:lang="uk">Кай Вілладсен</developer_name>
+  <developer_name xml:lang="tr">Kai Willadsen</developer_name>
+  <developer_name xml:lang="sv">Kai Willadsen</developer_name>
+  <developer_name xml:lang="sr-Cyrl">Каи Виладсен</developer_name>
+  <developer_name xml:lang="sl">Kai Willadsen</developer_name>
+  <developer_name xml:lang="ru">Кай Вилладсен (Kai Willadsen)</developer_name>
+  <developer_name xml:lang="ro">Kai Willadsen</developer_name>
+  <developer_name xml:lang="pt-BR">Kai Willadsen</developer_name>
+  <developer_name xml:lang="pt">Kai Willadsen</developer_name>
+  <developer_name xml:lang="pl">Kai Willadsen</developer_name>
+  <developer_name xml:lang="nb">Kai Willadsen</developer_name>
+  <developer_name xml:lang="kk-Cyrl">Kai Willadsen</developer_name>
+  <developer_name xml:lang="ka">Kai Willadsen</developer_name>
+  <developer_name xml:lang="id">Kai Willadsen</developer_name>
+  <developer_name xml:lang="hu">Kai Willadsen</developer_name>
+  <developer_name xml:lang="hi">काई विलाडसेन</developer_name>
+  <developer_name xml:lang="gl">Kai Willadsen</developer_name>
+  <developer_name xml:lang="fr">Kai Willadsen</developer_name>
+  <developer_name xml:lang="fi">Kai Willadsen</developer_name>
+  <developer_name xml:lang="fa">کای ویلادسن</developer_name>
+  <developer_name xml:lang="eu">Kai Willadsen</developer_name>
+  <developer_name xml:lang="es">Kai Willadsen</developer_name>
+  <developer_name xml:lang="en-GB">Kai Willadsen</developer_name>
+  <developer_name xml:lang="de">Kai Willadsen</developer_name>
+  <developer_name xml:lang="da">Kai Willadsen</developer_name>
+  <developer_name xml:lang="cs">Kai Willadsen</developer_name>
+  <developer_name xml:lang="bg">Kai Willadsen</developer_name>
+  <translation type="gettext">meld</translation>
+  <launchable type="desktop-id">org.gnome.Meld.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release date="2026-06-20" version="3.24.0">
+      <description>
+        <p>
+          This is a new stable release series. Notable changes compared to 3.22 include:
+        </p>
+        <ul>
+          <li>Added support for macOS and Python wheel building, and an updated Windows build pipeline</li>
+          <li>Side-by-side image comparison</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2025-12-31" version="3.23.1">
+      <description>
+        <p>
+          This is an unstable release in the 3.23 development series.
+        </p>
+        <ul>
+          <li>Updated Windows build pipeline</li>
+          <li>macOS build pipeline updates</li>
+          <li>Fix crash on image comparison with admin:// scheme</li>
+          <li>Fix starting a subfolder comparison</li>
+          <li>Fix action duplication without cursor movement</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2025-03-23" version="3.23.0">
+      <description>
+        <p>
+          This is an unstable release in the 3.23 development series.
+        </p>
+        <ul>
+          <li>New side-by-side image file comparison</li>
+          <li>CI build support for macOS</li>
+          <li>Version control support for Git unstaging</li>
+          <li>New folder comparison option for size-only comparisons</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2022-09-04" version="3.22.0">
+      <description>
+        <p>
+          This is a new stable release series. Notable changes compared to 3.20 include:
+        </p>
+        <ul>
+          <li>A big UI refresh to better follow modern GNOME style</li>
+          <li>A new widget for displaying comparison paths with better information and manipulation</li>
+          <li>Support for comparing different files across panes in folder comparison</li>
+          <li>Many minor improvements to actions for manipulating documents, dealing with synchronisation points, rearranging panes, etc.</li>
+          <li>Improved support for dark themes</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2022-08-13" version="3.21.3">
+      <description>
+        <p>
+          This is an unstable release in the 3.21 development series.
+        </p>
+        <ul>
+          <li>Open Externally now has a keyboard shortcut</li>
+          <li>The new path label display shows more useful information</li>
+          <li>Windows binary builds have been fixed</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2022-06-18" version="3.21.2">
+      <description>
+        <p>
+          This is an unstable release in the 3.21 development series.
+        </p>
+        <ul>
+          <li>Folder comparison now supports comparing differently-named files across panes</li>
+          <li>Synchronization points are now significantly easier to use</li>
+          <li>Unicode normalisation form differences in paths can be ignored</li>
+          <li>Order of comparison panes can now be swapped after loading</li>
+          <li>In-progress scans are more clearly shown in folder comparisons</li>
+          <li>Folder comparison has an optional ISO-format time column</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2022-01-07" version="3.21.1">
+      <description>
+        <p>
+          This is an unstable release in the 3.21 development series.
+        </p>
+        <ul>
+          <li>New location display for comparison panes</li>
+          <li>New action bar layout for version control comparisons</li>
+          <li>Dark theme can be toggled in preferences</li>
+          <li>Various improvements to find bar, comparison notifications, and keyboard ergonomics</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2020-04-19" version="3.21.0">
+      <description>
+        <p>
+          This is an unstable release in the 3.21 development series.
+        </p>
+        <ul>
+          <li>Complete UI update to modern GNOME style</li>
+          <li>Improved change movement and scrolling</li>
+          <li>New support for CVS in version control comparisons</li>
+          <li>Better handling for dark themes</li>
+          <li>Many fixes for new Windows distribution</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2019-01-06" version="3.20.0">
+      <description>
+        <p>
+          This is a new stable release series. Notable changes compared to 3.18 include:
+        </p>
+        <ul>
+          <li>Support comparing remote files</li>
+          <li>Much faster comparisons for folders with lots of files</li>
+          <li>Better handling of encoding failures during file load and save</li>
+          <li>New status bar for view-specific editor settings</li>
+          <li>Support user-selected file encodings in dialogs and the new status bar</li>
+          <li>New automated Windows builds using GNOME Gitlab CI</li>
+          <li>Improved support for Flatpak builds</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>

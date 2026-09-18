@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="index" lang="sv">
+	<info>
+      <title type="link" role="trail">Hjälp för Meld</title>
+      <title type="link">Hjälp för Meld</title>
+      <title type="text">Hjälp för Meld</title>
+      <revision docversion="1.6" status="draft"/>
+      <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Som ett speciellt undantag ger upphovsrättsinnehavarna dig rätten att kopiera, ändra och distribuera exempelkoden i detta dokument under de villkor du väljer, utan restriktioner.</p>
+</license>
+      <credit type="author copyright">
+        <name>Kai Willadsen</name>
+        <email>kai.willadsen@gmail.com</email>
+        <years>2012</years>
+      </credit>
+	<credit type="translator copyright"><name>Josef Andersson</name><email>josef.andersson@fripost.org</email><years>2015</years></credit><credit type="translator copyright"><name>Anders Jonsson</name><email>anders.jonsson@norsjovallen.se</email><years>2023</years></credit></info>
+
+	<title><media type="image" width="48px" height="48px" its:translate="no" src="figures/Meld.svg"/> Hjälp för Meld</title>
+
+	<section id="introduction" style="2column">
+	    <title>Introduktion</title>
+	</section>
+
+	<section id="file-mode" style="2column">
+		<title>Jämföra filer</title>
+	</section>
+
+	<section id="folder-mode" style="2column">
+		<title>Jämföra mappar</title>
+	</section>
+
+	<section id="vc-mode" style="2column">
+		<title>Använda Meld med versionshantering</title>
+	</section>
+
+	<section id="advanced" style="2column">
+		<title>Avancerad användning</title>
+	</section>
+</page>

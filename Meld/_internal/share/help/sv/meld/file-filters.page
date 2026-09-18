@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-filters" lang="sv">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#folder-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Som ett speciellt undantag ger upphovsrättsinnehavarna dig rätten att kopiera, ändra och distribuera exempelkoden i detta dokument under de villkor du väljer, utan restriktioner.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Josef Andersson</name><email>josef.andersson@fripost.org</email><years>2015</years></credit><credit type="translator copyright"><name>Anders Jonsson</name><email>anders.jonsson@norsjovallen.se</email><years>2023</years></credit></info>
+<title>Filtrera filer</title>
+
+<p>När du jämför mappar kanske du vill ignorera en del filer. Till exempel kanske du bara vill se filer som finns i båda mapparna och skiljer sig åt. Alternativt kanske du vill ignorera alla filerna i din <file>.git</file>-katalog eller ignorera alla bilder.</p>
+
+<p><app>Meld</app> har flera olika sätt att kontrollera vilka filer och skillnader du kan se. Du kan filtrera baserat på <link xref="#file-state-filter">skillnader på en fil över mappar</link> eller <link xref="#file-name-filter">fil- och mappnamn</link>. Du kan också beordra <app>Meld</app> att hantera filnamn som <link xref="#file-case-filter">icke-skiftlägeskänsliga</link>. Slutligen kan du använda <link xref="text-filters">textfilter</link> för att ändra vad både mapp- och filjämförelser ser.</p>
+
+<note style="important">
+  <p>En del <link xref="text-filters">textfilter</link> du definierat <em>verkställs automatiskt</em> vid mappjämförelse. Filer som är identiska efter att alla textfilter verkställts markeras inte som olika, men visas i kursiv stil.</p>
+</note>
+
+
+
+<section id="file-state-filter">
+<title>Filskillnadsfiltrering</title>
+
+<p>Vid en mappjämförelse innehåller varje rad en enskild fil eller mapp som existerar i minst en av mapparna som jämförs. Var och en av dessa rader är klassificerade som antingen <em>Ändrad</em>, <em>Ny</em> eller <em>Samma</em>:</p>
+<terms>
+  <item>
+    <title>Ändrad</title>
+    <p>Filen existerar i flera mappar, men filerna har skillnader</p>
+  </item>
+  <item>
+    <title>Ny</title>
+    <p>Filen existerar i en mapp men inte i de andra</p>
+  </item>
+  <item>
+    <title>Samma</title>
+    <p>Filen existerar i alla mappar, och är densamma överallt</p>
+  </item>
+</terms>
+<p>Du kan ändra de typer av skillnader du ser i nuvarande jämförelse genom att använda knappen <gui style="button">Filfilter</gui> i verktygsfältet.</p>
+
+<note style="tip">
+  <p>För närvarande kan du bara filtrera filer baserat på dessa tillstånd; mappar kan inte filtreras på detta sätt. Till exempel kan du inte beordra <app>Meld</app> att ignorera alla mappar som innehåller endast nya filer. En mapp innehållandes endast ”Nya” filer skulle bara visas som tom, men ändå finnas med.</p>
+</note>
+
+</section>
+
+
+
+<section id="file-name-filter">
+<title>Filnamnsfiltrering</title>
+
+<p><app>Meld</app> kommer med en användbar samling filnamnsfilter som låter dig ignorera ointressanta filer och mappar som vanliga säkerhetskopior och metadatamapparna för versionshanteringssystem. Varje filnamnsfilter kan aktiveras eller inaktiveras enskilt från knappen <gui style="button">Filfilter</gui> i verktygsfältet.</p>
+
+<p>Du kan lägga till, ta bort eller ändra filnamnsfilter från avsnittet <gui style="tab">Filfilter</gui> i dialogen <gui>Inställningar</gui>. Filnamnsfilter specificerar mönster av filnamn som <em>inte</em> kommer att behandlas vid en mappjämförelse. Filer som matchar ett aktivt filnamnsfilter kommer inte ens att visas i trädjämförelsen. Filnamnsfilter matchar både filer och mappar; om en mapp matchar ett filter kommer den och dess innehåll att ignoreras.</p>
+
+<p>Filnamnsfilter matchar utefter skal-glob-mönster. Till exempel matchar <code>*.jpg</code> alla filnamn som slutar på <code>.jpg</code>. Följande tabell listar alla skal-glob-tecken som <app>Meld</app> känner igen.</p>
+
+<table frame="top bottom">
+  <title>Skal-glob-mönster</title>
+
+  <thead>
+    <tr>
+      <td><p>Jokertecken</p></td><td><p>Matchar</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p><code>*</code></p></td>
+      <td><p>vad som helst (d.v.s. inget eller flera tecken)</p></td>
+    </tr>
+    <tr>
+      <td><p><code>?</code></p></td>
+      <td><p>precis ett tecken</p></td>
+    </tr>
+    <tr>
+      <td><p><code>[abc]</code></p></td>
+      <td><p>vilket som helst av de listade tecknen</p></td>
+    </tr>
+    <tr>
+      <td><p><code>[!abc]</code></p></td>
+      <td><p>vad som helst <em>utom</em> de listade tecknen</p></td>
+    </tr>
+    <tr>
+      <td><p><code>{katt,hund}</code></p></td>
+      <td><p>antingen ”katt” eller ”hund”</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<note style="tip">
+  <p>Att ändra ett filters <gui>Aktiv</gui>-inställning i dialogen <gui>Inställningar</gui> ändrar huruvida det filtret är aktivt <em>som standard</em>.</p>
+
+  <p>Att aktivera ett filter från menyn eller verktygsfältet slår av eller på filtret <em>endast för denna jämförelse</em>.</p>
+</note>
+
+</section>
+
+
+
+<section id="file-case-filter">
+<title>Ej skiftlägeskänsliga filnamn</title>
+
+<p>Filer jämförs över kataloger efter deras namn. Denna jämförelse är skiftlägeskänslig som standard; exempelvis skulle filerna <file>README</file>, <file>readme</file> och <file>ReadMe</file> ses som olika.</p>
+
+<p>När jämförelse av mappar sker på vissa filsystem (t.ex. HFS+ eller FAT) kan du vilja be <app>Meld</app> hantera filnamn som icke skiftlägeskänsliga. Du kan göra detta genom att använda knappen <gui style="button">Filfilter</gui> i verktygsfältet och välja <gui style="menuitem">Ignorera skiftlägeskänslighet för filnamn</gui>.</p>
+</section>
+
+
+
+</page>

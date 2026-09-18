@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="vc-mode" lang="pt_BR">
+<info>
+  <title type="sort">0</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como uma exceção especial, os detentores dos direitos autorais dão-lhe permissão para copiar, modificar e distribuir o código de exemplo contido neste documento sob os termos de sua escolha, sem qualquer restrição.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Rafael Fontenelle</name><email>rafaelff@gnome.org</email><years>2025</years></credit></info>
+
+<title>Visualizando arquivos de controle por versão</title>
+
+<p><app>Meld</app> integra-se com <link xref="vc-supported">muitos sistemas de controle de versão</link> para permitir que você revise alterações locais e execute tarefas simples de controle de versão. Você pode iniciar uma nova comparação de controle de versão usando o novo botão de comparação na barra de ferramentas e clicando na aba <gui style="tab">Controle de versão</gui>.</p>
+
+
+<section id="vc-mode-overview">
+<title>Comparações de controle de versão</title>
+
+<p>As comparações de controle de versão mostram as diferenças entre o conteúdo da sua pasta e a versão atual do repositório. Cada arquivo na sua cópia local tem um <link xref="#vc-state">estado</link> que indica como ele difere da cópia do repositório.</p>
+
+<p>Se você quiser ver as diferenças de um arquivo em particular, você pode selecioná-lo e pressionar <key>Enter</key>, ou clicar duas vezes no arquivo para iniciar uma <link xref="file-mode">comparação de arquivos</link>. Você também pode interagir com seu sistema de controle de versão usando o menu <gui style="menu">Alterações</gui>.</p>
+</section>
+
+<section id="vc-state">
+<title>Estados de controle de versão</title>
+
+<p>Cada arquivo ou pasta em uma comparação de controle de versão tem um <em>estado</em>, obtido do próprio sistema de controle de versão. O <app>Meld</app> mapeia esses diferentes estados em um conjunto padrão de conceitos muito semelhantes. Como tal, o <app>Meld</app> pode usar nomes ligeiramente diferentes para estados do que seu sistema de controle de versão. Os estados possíveis são:</p>
+
+
+<table frame="top bottom">
+  <title>Estados de controle de versão</title>
+
+  <thead>
+    <tr>
+      <td><p>Estado</p></td>
+      <td><p>Aparência</p></td>
+      <td><p>Significado</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Igual</p></td>
+      <td>
+        <p>Fonte normal</p>
+      </td>
+      <td>
+        <p>O arquivo/pasta é o mesmo que a versão do repositório.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Modificado</p></td>
+      <td>
+        <p>Vermelho e negrito</p>
+      </td>
+      <td>
+        <p>Este arquivo é diferente da versão do repositório.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Novo</p></td>
+      <td>
+        <p>Verde e negrito</p>
+      </td>
+      <td>
+        <p>Este arquivo/pasta é novo e está programado para ser adicionado ao repositório.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Removido</p></td>
+      <td>
+        <p>Texto em negrito vermelho com uma linha no meio</p>
+      </td>
+      <td>
+        <p>Este arquivo/pasta existia, mas está programado para ser removido do repositório.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Conflito</p></td>
+      <td>
+        <p>Texto em negrito vermelho brilhante</p>
+      </td>
+      <td>
+        <p>Ao tentar mesclar com o repositório, as diferenças entre o arquivo local e o repositório não puderam ser resolvidas, e o arquivo agora está em conflito com o conteúdo do repositório</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Ausente</p></td>
+      <td>
+        <p>Texto em negrito azul com uma linha no meio</p>
+      </td>
+      <td>
+        <p>Este arquivo/pasta deveria estar presente, mas não está.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Ignorado</p></td>
+      <td>
+        <p>Texto esmaecido</p>
+      </td>
+      <td>
+        <p>Este arquivo/pasta foi explicitamente ignorado (por exemplo, por uma entrada em <file>.gitignore</file>) e não está sendo rastreado pelo controle de versão.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Não versionado</p></td>
+      <td>
+        <p>Texto esmaecido</p>
+      </td>
+      <td>
+        <p>Este arquivo não está no sistema de controle de versão; ele está apenas na cópia local.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Erro</p></td>
+      <td>
+        <p>Vermelho brilhante com fundo amarelo e negrito</p>
+      </td>
+      <td>
+        <p>O sistema de controle de versão relatou um problema com este arquivo.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section id="vc-state-filtering">
+<title>Filtragem de estado de controle de versão</title>
+
+<p>Na maioria das vezes, você só desejará ver arquivos que são identificados como sendo de alguma forma diferentes; esta é a configuração padrão em <app>Meld</app>. Você pode alterar quais estados de arquivo você vê usando o botão <gui style="button">Filtros de versão</gui> na barra de ferramentas e selecionando <gui style="menuitem">Achatar pastas</gui> e selecionando os botões <gui style="menuitem">Modificado</gui>, <gui style="menuitem">Normal</gui>, <gui style="menuitem">Sem controle de versão</gui> e <gui style="menuitem">Ignorado</gui> na barra de ferramentas.</p>
+</section>
+
+</page>

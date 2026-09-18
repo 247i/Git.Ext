@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" lang="de">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#introduction"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Als besondere Ausnahme gewähren die Besitzer des Urheberrechts Erlaubnis, den Beispiel-Code in diesem Dokument zu kopieren, verändern und weiterzugeben, unter den Bedingungen Ihrer Wahl, ohne Einschränkungen.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Mario Blättermann</name><email>mario.blaettermann@gmail.com</email><years>2009, 2016, 2018</years></credit><credit type="translator copyright"><name>Benjamin Steinwender</name><email>b@stbe.at</email><years>2014-2015</years></credit><credit type="translator copyright"><name>Christian Kirbach</name><email>christian.kirbach@gmail.com</email><years>2014, 2016</years></credit><credit type="translator copyright"><name>Jürgen Benvenuti</name><email>gastornis@posteo.org</email><years>2023</years></credit></info>
+<title>Was is Meld?</title>
+<p><app>Meld</app> ist ein Werkzeug zum Vergleichen von Dateien und Ordnern und zum Auflösen von Unterschieden zwischen solchen. Es ist nützlich zum Betrachten von Änderungen, die von Versionskontrollsystemen erfasst werden.</p>
+
+<p>
+<app>Meld</app> shows differences between two or three files (or two or three
+directories) and allows you to move content between them, or edit the files
+manually. <app>Meld</app>'s focus is on helping developers compare and merge
+source files, and get a visual overview of changes in their favorite version
+control system.
+</p>
+
+</page>

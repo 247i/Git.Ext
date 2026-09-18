@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="command-line" lang="pt_BR">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#advanced"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como uma exceção especial, os detentores dos direitos autorais dão-lhe permissão para copiar, modificar e distribuir o código de exemplo contido neste documento sob os termos de sua escolha, sem qualquer restrição.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Rafael Fontenelle</name><email>rafaelff@gnome.org</email><years>2025</years></credit></info>
+<title>Uso da linha de comando</title>
+
+<p>Se você iniciar o <app>Meld</app> na linha de comando, poderá dizer o que fazer quando ele iniciar.</p>
+<p>Para uma <link xref="file-mode">comparação de arquivos</link> de duas ou três vias, inicie o <app>Meld</app> com <cmd>meld <var>arquivo1</var> <var>arquivo2</var></cmd> ou <cmd>meld <var>arquivo1</var> <var>arquivo2</var> <var>arquivo3</var></cmd> respectivamente.</p>
+
+<p>Para uma <link xref="folder-mode">comparação de diretórios</link> de duas ou três vias, inicie o <app>Meld</app> com <cmd>meld <var>dir1</var> <var>dir2</var></cmd> ou <cmd>meld <var>dir1</var> <var>dir2</var> <var>dir3</var></cmd>.</p>
+
+<p>Você pode iniciar uma comparação de <link xref="vc-mode">controle de versão</link> fornecendo apenas um único argumento; se esse arquivo ou diretório for gerenciado por um <link xref="vc-supported">sistema de controle de versão reconhecido</link>, ele iniciará uma comparação de controle de versão nesse argumento. Por exemplo, <cmd>meld .</cmd> iniciaria uma visualização de controle de versão do diretório atual.</p>
+
+<note>
+<p>Execute <cmd>meld --help</cmd> para obter uma lista de todas as opções de linha de comando.</p>
+</note>
+
+</page>

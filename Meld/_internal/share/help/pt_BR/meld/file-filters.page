@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-filters" lang="pt_BR">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#folder-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como uma exceção especial, os detentores dos direitos autorais dão-lhe permissão para copiar, modificar e distribuir o código de exemplo contido neste documento sob os termos de sua escolha, sem qualquer restrição.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Rafael Fontenelle</name><email>rafaelff@gnome.org</email><years>2025</years></credit></info>
+<title>Filtrando arquivos</title>
+
+<p>Ao comparar pastas, você pode querer ignorar alguns arquivos. Por exemplo, você pode querer ver apenas arquivos que estão presentes e são diferentes em ambas as pastas, ignorando aqueles que são iguais ou existem apenas em uma pasta. Como alternativa, você pode querer ignorar todos os arquivos no seu diretório <file>.git</file> ou ignorar todas as imagens.</p>
+
+<p>O <app>Meld</app> tem várias maneiras diferentes de controlar quais arquivos e que tipo de diferenças você vê. Você pode filtrar com base em <link xref="#file-state-filter">diferenças entre um arquivo entre pastas</link> ou <link xref="#file-name-filter">nomes de arquivos e pastas</link>. Você também pode dizer ao <app>Meld</app> para tratar nomes de arquivos de forma a <link xref="#file-case-filter">ignorar maiúsculas/minúsculas</link>. Finalmente, você pode usar <link xref="text-filters">filtros de texto</link> para alterar o que as comparações de pastas e arquivos veem.</p>
+
+<note style="important">
+  <p>Quaisquer <link xref="text-filters">filtros de texto</link> que você definiu <em>se aplicam automaticamente</em> ao comparar pastas. Arquivos que são idênticos após todos os filtros de texto serem aplicados não são destacados como diferentes, mas são mostrados em itálico.</p>
+</note>
+
+
+
+<section id="file-state-filter">
+<title>Filtragem de diferenças de arquivo</title>
+
+<p>Em uma comparação de pastas, cada linha contém um único arquivo ou pasta que está presente em pelo menos uma das pastas que estão sendo comparadas. Cada uma dessas linhas é classificada com <em>Modificado</em>, <em>Novo</em> ou <em>Igual</em>:</p>
+<terms>
+  <item>
+    <title>Modificado</title>
+    <p>O arquivo existe em várias pastas, mas os arquivos são diferentes</p>
+  </item>
+  <item>
+    <title>Novo</title>
+    <p>O arquivo existe em uma pasta, mas não nas outras</p>
+  </item>
+  <item>
+    <title>Igual</title>
+    <p>O arquivo existe em todas as pastas e é o mesmo em todos os lugares</p>
+  </item>
+</terms>
+<p>Você pode alterar os tipos de diferenças que vê na sua comparação atual usando o botão <gui style="button">Filtros de arquivos</gui> na barra de ferramentas.</p>
+
+<note style="tip">
+  <p>Atualmente, você só pode filtrar arquivos com base em seu estado; pastas não podem ser filtradas dessa forma. Por exemplo, você não pode dizer ao <app>Meld</app> para ignorar todas as pastas que contêm apenas arquivos novos. Uma pasta contendo apenas arquivos com classificação "Novo" seria exibida como vazia, mas ainda presente.</p>
+</note>
+
+</section>
+
+
+
+<section id="file-name-filter">
+<title>Filtragem de nome de arquivo</title>
+
+<p><app>Meld</app> vem com um conjunto útil de filtros de nome de arquivo que permitem ignorar arquivos e pastas desinteressantes, como arquivos de backup comuns e pastas de metadados de sistemas de controle de versão. Cada filtro de nome de arquivo pode ser ativado ou desativado separadamente no botão <gui style="button">Filtros de arquivo</gui> na barra de ferramentas.</p>
+
+<p>Você pode adicionar, remover ou alterar filtros de nome de arquivo na seção <gui style="tab">Filtros de arquivo</gui> da caixa de diálogo <gui>Preferências</gui>. Os filtros de nome de arquivo especificam padrões de nomes de arquivo que <em>não</em> serão observados ao executar uma comparação de pasta. Qualquer arquivo que corresponda a um filtro ativo nem aparecerá na comparação de árvore. Filtros de nome de arquivo correspondem a arquivos e pastas; se uma pasta corresponde a um filtro, ela e todo o seu conteúdo são ignorados.</p>
+
+<p>Filtros de nome de arquivo correspondem de acordo com padrões de glob de shell. Por exemplo, <code>*.jpg</code> corresponderá a todos os nomes de arquivo terminados em <code>.jpg</code>. A tabela a seguir lista todos os caracteres glob shell que o <app>Meld</app> reconhece.</p>
+
+<table frame="top bottom">
+  <title>Padrões de glob de shell</title>
+
+  <thead>
+    <tr>
+      <td><p>Curinga</p></td><td><p>Correspondências</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p><code>*</code></p></td>
+      <td><p>qualquer coisa (ou seja, zero ou mais caracteres)</p></td>
+    </tr>
+    <tr>
+      <td><p><code>?</code></p></td>
+      <td><p>exatamente um caractere</p></td>
+    </tr>
+    <tr>
+      <td><p><code>[abc]</code></p></td>
+      <td><p>qualquer um dos caracteres listados</p></td>
+    </tr>
+    <tr>
+      <td><p><code>[!abc]</code></p></td>
+      <td><p>qualquer coisa <em>exceto</em> um dos caracteres listados</p></td>
+    </tr>
+    <tr>
+      <td><p><code>{cat,dog}</code></p></td>
+      <td><p>ou "cat" ou "dog"</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<note style="tip">
+  <p>Alterar a configuração <gui>Ativo</gui> de um filtro na caixa de diálogo <gui>Preferências</gui> altera se esse filtro está ativo <em>por padrão</em>.</p>
+
+  <p>Ativar um filtro no menu ou na barra de ferramentas ativa ou desativa o filtro <em>somente para esta comparação</em>.</p>
+</note>
+
+</section>
+
+
+
+<section id="file-case-filter">
+<title>Ignorando maiúsculas e minúsculas em nomes de arquivos</title>
+
+<p>Os arquivos são comparados entre diretórios de acordo com seus nomes. Esta comparação diferencia maiúsculas de minúsculas por padrão; ou seja, os arquivos <file>README</file>, <file>readme</file> e <file>ReadMe</file> seriam vistos como arquivos diferentes.</p>
+
+<p>Ao comparar pastas em alguns sistemas de arquivos (por exemplo, HFS+ ou FAT), você pode querer fazer o <app>Meld</app> tratar nomes de arquivos sem diferenciar letras maiúsculas e minúsculas. Você pode fazer isso usando o botão <gui style="button">Filtros de arquivo</gui> na barra de ferramentas e selecionando <gui style="menuitem">Ignorar maiúsculas e minúsculas em nome de arquivo</gui>.</p>
+</section>
+
+
+
+</page>

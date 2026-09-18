@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-changes" lang="pt_BR">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#file-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como uma exceção especial, os detentores dos direitos autorais dão-lhe permissão para copiar, modificar e distribuir o código de exemplo contido neste documento sob os termos de sua escolha, sem qualquer restrição.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Rafael Fontenelle</name><email>rafaelff@gnome.org</email><years>2025</years></credit></info>
+
+<title>Lidando com alterações</title>
+
+<p><app>Meld</app> lida com diferenças entre arquivos como uma lista de <em>blocos de alteração</em> ou mais simplesmente <em>alterações</em>. Cada alteração é um grupo de linhas que correspondem entre arquivos. Como essas alterações são o que você geralmente está interessado, <app>Meld</app> fornece ferramentas específicas para navegar entre essas alterações e editá-las. Você pode encontrar essas ferramentas no menu <gui style="menu">Alterações</gui>.</p>
+
+
+
+<section id="change-navigation">
+<title>Navegando entre alterações</title>
+
+<p>Você pode navegar entre alterações com os botões de alteração anterior e próxima na barra de ferramentas. Você também pode usar a rolagem do mouse para mover entre as alterações, rolando na barra de alterações central.</p>
+
+</section>
+
+
+
+<section id="change-actions">
+<title>Alterando alterações</title>
+
+<p>Além de editar diretamente os arquivos de texto, o <app>Meld</app> fornece ferramentas para mover, copiar ou excluir diferenças individuais entre os arquivos. A barra entre dois arquivos não apenas mostra quais partes dos dois arquivos correspondem, mas também permite que você mescle ou exclua seletivamente alterações diferentes clicando nos ícones de seta ou cruz ao lado do início de cada alteração.</p>
+
+<p>A ação padrão é <em>substituir</em>. Esta ação substitui o conteúdo da alteração correspondente pela alteração atual.</p>
+<p>Mantenha pressionada a tecla <key>Shift</key> para alterar a ação atual para <em>excluir</em>. Esta ação exclui a alteração atual.</p>
+<p>Mantenha pressionada a tecla <key>Ctrl</key> para alterar a ação atual para <em>inserir</em>. Esta ação insere a alteração atual acima ou abaixo (conforme selecionado) da alteração correspondente.</p>
+
+</section>
+
+</page>

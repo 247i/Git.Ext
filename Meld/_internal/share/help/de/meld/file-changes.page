@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-changes" lang="de">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#file-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Als besondere Ausnahme gewähren die Besitzer des Urheberrechts Erlaubnis, den Beispiel-Code in diesem Dokument zu kopieren, verändern und weiterzugeben, unter den Bedingungen Ihrer Wahl, ohne Einschränkungen.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Mario Blättermann</name><email>mario.blaettermann@gmail.com</email><years>2009, 2016, 2018</years></credit><credit type="translator copyright"><name>Benjamin Steinwender</name><email>b@stbe.at</email><years>2014-2015</years></credit><credit type="translator copyright"><name>Christian Kirbach</name><email>christian.kirbach@gmail.com</email><years>2014, 2016</years></credit><credit type="translator copyright"><name>Jürgen Benvenuti</name><email>gastornis@posteo.org</email><years>2023</years></credit></info>
+
+<title>Umgang mit Änderungen</title>
+
+<p><app>Meld</app> behandelt Dateiunterschiede als Liste von <em>Änderungsblöcken</em> oder einfach <em>Änderungen</em>. Jede dieser Änderungen ist eine Zeilengruppe, die innerhalb der Dateien korrespondiert. Da genau diese Änderungen normalerweise für Sie von Bedeutung sind, stellt Ihnen <app>Meld</app> spezifische Werkzeuge zur Verfügung, um zwischen diesen Änderungen zu navigieren und sie zu bearbeiten. Sie finden diese Werkzeuge im Menü <gui style="menu">Änderungen</gui>.</p>
+
+
+
+<section id="change-navigation">
+<title>Navigieren zwischen Änderungen</title>
+
+<p>
+You can navigate between changes with the previous and next change buttons in the toolbar.
+You can also use your mouse's scroll wheel to move between changes,
+by scrolling on the central change bar.
+</p>
+
+</section>
+
+
+
+<section id="change-actions">
+<title>Bearbeiten von Änderungen</title>
+
+<p>Neben der direkten Bearbeitung von Textdateien bietet <app>Meld</app> auch Werkzeuge zum Verschieben, Kopieren oder Löschen individueller Unterschiede zwischen Dateien. Die Leiste zwischen zwei Dateien zeigt nicht nur an, welche Teile der beiden Dateien miteinander korrespondieren, sondern ermöglicht auch das selektive Zusammenführen oder Löschen sich unterscheidender Änderungen, indem Sie auf die Pfeil- oder Kreuzsymbole neben dem Beginn jeder Änderung klicken.</p>
+
+<p>Die vorgegebene Aktion ist <em>Ersetzen</em>. Damit wird der Inhalt der korrespondierenden Änderung durch die aktuelle Änderung ersetzt.</p>
+<p>Halten Sie die <key>Umschalttaste</key> gedrückt, wird die Änderung nicht ersetzt, sondern <em>gelöscht</em>.</p>
+<p>Halten Sie die <key>Strg</key>-Taste gedrückt, wird die Änderung nicht ersetzt, sondern <em>eingefügt</em>. Dadurch wird die aktuelle Änderung oberhalb oder unterhalb der korrespondierenden Änderung eingefügt (je nach Auswahl).</p>
+
+</section>
+
+</page>

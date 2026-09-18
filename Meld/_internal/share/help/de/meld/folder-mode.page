@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="folder-mode" lang="de">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#folder-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Als besondere Ausnahme gewähren die Besitzer des Urheberrechts Erlaubnis, den Beispiel-Code in diesem Dokument zu kopieren, verändern und weiterzugeben, unter den Bedingungen Ihrer Wahl, ohne Einschränkungen.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Mario Blättermann</name><email>mario.blaettermann@gmail.com</email><years>2009, 2016, 2018</years></credit><credit type="translator copyright"><name>Benjamin Steinwender</name><email>b@stbe.at</email><years>2014-2015</years></credit><credit type="translator copyright"><name>Christian Kirbach</name><email>christian.kirbach@gmail.com</email><years>2014, 2016</years></credit><credit type="translator copyright"><name>Jürgen Benvenuti</name><email>gastornis@posteo.org</email><years>2023</years></credit></info>
+
+<title>Erste Schritte beim Vergleichen von Ordnern</title>
+
+<p>
+<app>Meld</app> lets you compare two or three folders side-by-side. You can
+start a new folder comparison using the new comparison button on the toolbar,
+and clicking on the <gui style="tab">Directory Comparison</gui>
+tab.
+</p>
+
+<p>Ihre gewählten Ordner werden als nebeneinander liegende Baumansichten dargestellt, wobei die Unterschiede zwischen Dateien in jedem Ordner hervorgehoben werden. Sie aus jedem Ordner Dateien kopieren oder löschen oder einzelne Textdateien detaillierter vergleichen.</p>
+
+
+
+<section id="folder-mode-overview">
+<title>Die Ordnervergleichsansicht</title>
+
+<p>Die Hauptteile eines Ordnervergleichs sind die Baumansichten, die die Ordner anzeigen, die Sie vergleichen. Sie können leicht durch diese Vergleiche <link xref="#folder-navigation">navigieren</link>, um Änderungen zu finden, die für Sie von Interesse sind. Wenn Sie eine Datei oder einen Ordner auswählen, werden detailliertere Informationen in der Statusleiste am unteren Rand des Fensters angezeigt. Durch Drücken der <key>Eingabetaste</key> auf einer gewählten Datei oder durch Doppelklick auf eine beliebige Datei in der Baumansicht wird ein <link xref="file-mode">Dateivergleich</link> in einem neuen Reiter geöffnet. Das funktioniert allerdings nur dann, wenn es sich dabei um Textdateien handelt!</p>
+
+<p>
+There are bars on the right-hand side of the window that show
+you a simple colored summary of the comparison results. Each file or
+folder in the comparison corresponds to a small section of these bars,
+though <app>Meld</app> doesn't show <em>Same</em> files so that it's
+easier to see any actually important differences. You can click anywhere
+on this bar to jump straight to that place in the comparison.
+</p>
+</section>
+
+
+
+<section id="folder-navigation">
+<title>Navigieren im Ordnervergleich</title>
+
+<p>
+You can jump between changed files (that is, any files/folders that
+are <em>not</em> classified as being identical) with the previous and
+next change buttons in the toolbar.
+</p>
+<p>Mit den Pfeiltasten <key>Links</key> und <key>Rechts</key> können Sie zwischen den verglichenen Ordnern wechseln. So können Sie eine bestimmte Datei zum Kopieren oder Löschen auswählen.</p>
+</section>
+
+
+
+<section id="folder-mode-states">
+<title>Zustände im Ordnervergleich</title>
+
+<p>Jede Datei oder Ordner in einem Baum hat einen <em>Status</em>, der darüber Auskunft gibt, wie sie sich von den korrespondierenden Dateien oder Ordnern unterscheidet. Mögliche Status sind:</p>
+
+
+<table frame="top bottom">
+  <title>Ordnervergleichszustände</title>
+
+  <thead>
+    <tr>
+      <td><p>Status</p></td>
+      <td><p>Erscheinungsbild</p></td>
+      <td><p>Bedeutung</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Identisch</p></td>
+      <td>
+        <p>Normale Schriftart</p>
+      </td>
+      <td>
+        <p>Die Datei/der Ordner ist identisch in allen verglichenen Ordnern.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Identisch, wenn gefiltert</p></td>
+      <td>
+        <p>Kursiv</p>
+      </td>
+      <td>
+        <p>Diese Dateien sind auf die Ordner bezogen unterschiedlich, aber sobald <link xref="text-filters">Textfilter</link> eingesetzt werden, sind sie identisch.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Geändert</p></td>
+      <td>
+        <p>Blau und fett</p>
+      </td>
+      <td>
+        <p>Diese Dateien unterscheiden sich zwischen den verglichenen Ordnern.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Neu</p></td>
+      <td>
+        <p>Grün und fett</p>
+      </td>
+      <td>
+        <p>Diese Datei/der Ordner existiert in diesem Ordner, jedoch nicht in den anderen.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Fehlt</p></td>
+      <td>
+        <p>
+        Grayed out text with a line through the middle
+<!--        <file style="color: #888888; text-decoration: line-through;">file.txt</file>-->
+        </p>
+      </td>
+      <td>
+        <p>Diese Datei/dieser Ordner existiert nicht in diesem Ordner, jedoch in einem der anderen.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Fehler</p></td>
+      <td>
+        <p>Helles Rot mit einem gelben Hintergrund</p>
+      </td>
+      <td>
+        <p>Beim Vergleichen dieser Datei ist ein Fehler aufgetreten. Die häufigsten Fehlerursachen sind Zugriffsprobleme (<app>Meld</app> hat nicht die erforderlichen Rechte zum Öffnen der Datei) oder Probleme mit der Kodierung des Dateinamens.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Sie können Dateien anhand deren Status filtern, um beispielsweise nur Dateien anzuzeigen, die <em>Geändert</em> wurden. Weitere Informationen dazu finden Sie in <link xref="file-filters#file-state-filter"/>.</p>
+
+<p>Die Symbole in einigen Zeilen sind mit Emblemen versehen, um zusätzliche Informationen anzuzeigen. Beachten Sie, dass sich diese Symbole ändern können, abhängig von Ihrem Symbol-Thema. Diese Beschreibungen dienen daher nur als Anhaltspunkt.</p>
+
+<table frame="top bottom">
+  <title>Zusätzliche Embleme</title>
+
+  <thead>
+    <tr>
+      <td><p>Emblem</p></td>
+      <td><p>Erscheinungsbild</p></td>
+      <td><p>Bedeutung</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Neu</p></td>
+      <td><p>Kleiner blauer Punkt</p></td>
+      <td><p>Wird verwendet, um die »neueste« (d.h., die zuletzt geänderte) Datei in der Zeile anzuzeigen</p></td>
+    </tr>
+
+    <tr>
+      <td><p>Symbolische Verknüpfung</p></td>
+      <td><p>Pfeil</p></td>
+      <td><p>Zeigt an, dass der Eintrag in der Zeile eine symbolische Verknüpfung ist</p></td>
+    </tr>
+    <tr>
+      <td><p>Ausgewählt</p></td>
+      <td><p>Häkchen</p></td>
+      <td><p>Zeigt an, dass eine Datei für einen markierten Vergleich ausgewählt wurde. Dies wird zum Vergleichen unterschiedlich benannter Dateien in verschiedenen Ordnern verwendet.</p></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+</page>

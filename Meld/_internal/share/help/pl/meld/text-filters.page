@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="text-filters" lang="pl">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#file-mode"/>
+  <link type="seealso" xref="file-filters"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>W drodze specjalnego wyjątku posiadacze praw autorskich udzielają pozwolenia na kopiowanie, modyfikowanie i rozprowadzanie przykładowego kodu zawartego w tej dokumentacji na dowolnych warunkach, bez ograniczeń.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Piotr Drąg</name><email>piotrdrag@gmail.com</email><years>2018-2023</years></credit><credit type="translator copyright"><name>Aviary.pl</name><email>community-poland@mozilla.org</email><years>2018-2023</years></credit></info>
+
+<title>Filtrowanie tekstu</title>
+
+<p>Podczas porównywania kilku plików mogą występować sekcje tekstu, w których różnice nie są zbyt ważne. Na przykład, można skupić się na zmienionych sekcjach kodu i ignorować wszelkie zmiany w komentarzach. Za pomocą filtrów tekstowych można ustawić <app>Meld</app> tak, aby ignorował tekst pasujący do wzoru (tzn. wyrażenia regularnego) podczas wyświetlania różnic między plikami.</p>
+
+<note style="important">
+  <p>Filtry tekstowe wpływają nie tylko na porównania plików, ale także porównania katalogów. <link xref="file-filters">Uwagi o filtrowaniu plików</link> zawierają więcej informacji.</p>
+</note>
+
+
+<section id="text-filter-creation">
+<title>Dodawanie i używanie filtrów tekstowych</title>
+
+<p>Można włączać i wyłączać filtry tekstowe w karcie <gui>Filtry tekstowe</gui> okna <gui>Preferencji</gui>. <app>Meld</app> domyślnie zawiera kilka prostych filtrów, które mogą być przydatne, ale można także dodać swoje.</p>
+
+<p>W programie <app>Meld</app> filtry tekstowe są wyrażeniami regularnymi, które są dopasowywane do tekstu porównywanych plików. Każdy dopasowany tekst jest ignorowany podczas porównania. Nadal będzie on widoczny w widoku porównania, ale nie będzie uwzględniany podczas wyszukiwania różnic. Filtry tekstowe są zastosowywane w kolejności, więc to możliwe, że pierwszy filtr usunie tekst, co spowoduje dopasowanie drugiego filtru, i tak dalej.</p>
+
+<note style="tip">
+  <p><link href="https://docs.python.org/howto/regex.html">Strona o wyrażeniach regularnych języka Python</link> zawiera informacje przydatne dla osób niezaznajomionych z wyrażeniami regularnymi (w języku angielskim).</p>
+</note>
+
+</section>
+
+
+
+<section id="text-filter-problems">
+<title>Jak napisać dobry filtr tekstowy</title>
+
+<p>Łatwo jest napisać błędny filtr tekstowy, a ich obsługa w programie <app>Meld</app> jest niepełna. W szczególności należy pamiętać, że filtr tekstowy nie może zmienić liczby wierszy w pliku. Na przykład, jeśli włączono wbudowany filtr <gui>Komentarz skryptu</gui> i porównano te pliki:</p>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <listing>
+          <title><file>komentarz1.txt</file></title>
+          <code>
+a
+b#komentarz
+c
+d</code>
+        </listing>
+      </td>
+      <td>
+        <listing>
+          <title><file>komentarz2.txt</file></title>
+          <code>
+a
+b
+c
+#komentarz</code>
+        </listing>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>to wiersze zaczynające się od <code>b</code> zostałyby wyświetlane jako identyczne (komentarz został usunięty), ale wiersz <code>d</code> zostałby wyświetlony jako różny od wiersza komentarza po prawej. Dzieje się tak, ponieważ <code>#komentarz</code> jest usuwany z prawej strony, ale sam wiersz nie może zostać usunięty. <app>Meld</app> wyświetli wiersz <code>d</code> jako różny od tego, co widzi jako pusty wiersz po drugiej stronie.</p>
+
+</section>
+
+
+<section id="text-filter-blank-lines">
+<title>Puste wiersze i filtry</title>
+
+<p>Opcja <gui>Ignorowanie zmian wstawiających lub usuwających puste wiersze</gui> w karcie <gui>Filtry tekstowe</gui> wymaga specjalnego wyjaśnienia. Włączenie tego specjalnego filtru spowoduje, że każda zmiana składająca się tylko z pustych wierszy jest całkowicie ignorowana. Może się tak stać, ponieważ wystąpiła zmiana niedrukowalnych znaków w tekście, ale może też się wydarzyć, jeśli włączone filtry tekstowe usunęły pozostałą treść zmiany, pozostawiając tylko puste wiersze.</p>
+
+<p>Można użyć tej opcji, aby obejść pewne <link xref="#text-filter-problems">problemy i ograniczenia</link> powstałe, ponieważ filtry nie mogą usuwać całych wierszy, ale może także być przydatna sama w sobie.</p>
+
+</section>
+
+</page>

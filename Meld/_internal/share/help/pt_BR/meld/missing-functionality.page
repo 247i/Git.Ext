@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="missing-functionality" lang="pt_BR">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#advanced"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como uma exceção especial, os detentores dos direitos autorais dão-lhe permissão para copiar, modificar e distribuir o código de exemplo contido neste documento sob os termos de sua escolha, sem qualquer restrição.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Rafael Fontenelle</name><email>rafaelff@gnome.org</email><years>2025</years></credit></info>
+<title>Coisas que o <app>Meld</app> não faz</title>
+
+<p>Você já passou meia hora vasculhando um aplicativo tentando descobrir como fazer algo, pensando que <em>certamente</em> deve haver uma opção para isso?</p>
+
+<p>Esta seção lista algumas das coisas comuns que o <app>Meld</app> <em>não</em> faz, seja como uma escolha deliberada ou porque simplesmente não tivemos tempo.</p>
+
+<section id="missing-change-fixed-alignment">
+<title>Alinhamento de alterações adicionando linhas</title>
+<p>Quando <app>Meld</app> mostra diferenças entre arquivos, ele mostra ambos os arquivos como eles apareceriam em um editor de texto normal. Ele <em>não</em> insere linhas adicionais para que os lados esquerdo e direito de uma alteração específica tenham o mesmo tamanho. Não há opção para fazer isso.</p>
+</section>
+
+
+</page>

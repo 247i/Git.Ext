@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="flattened-view" lang="pl">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>W drodze specjalnego wyjątku posiadacze praw autorskich udzielają pozwolenia na kopiowanie, modyfikowanie i rozprowadzanie przykładowego kodu zawartego w tej dokumentacji na dowolnych warunkach, bez ograniczeń.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Piotr Drąg</name><email>piotrdrag@gmail.com</email><years>2018-2023</years></credit><credit type="translator copyright"><name>Aviary.pl</name><email>community-poland@mozilla.org</email><years>2018-2023</years></credit></info>
+<title>Uproszczony widok</title>
+
+<p>Podczas przeglądania dużych katalogów użytkownik może być zainteresowany tylko kilkoma plikami z tysięcy znajdujących się w katalogu. Z tego powodu <app>Meld</app> zawiera <em>uproszczony widok</em> katalogu. Wyświetlane są w nim tylko pliki, które nie są filtrowane (np. przez <link xref="vc-mode#vc-state-filtering"/>), a hierarchia katalogu jest usuwana z ścieżek do plików wyświetlanych w kolumnie <em>Położenie</em>.</p>
+
+<p>Można włączyć lub wyłączyć uproszczony widok za pomocą przycisku <gui style="button">Filtry wersji</gui> na pasku narzędziowym i wybierając <gui style="menuitem">Uprość wyświetlaną strukturę katalogów</gui>.</p>
+</page>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="vc-mode" lang="sv">
+<info>
+  <title type="sort">0</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Som ett speciellt undantag ger upphovsrättsinnehavarna dig rätten att kopiera, ändra och distribuera exempelkoden i detta dokument under de villkor du väljer, utan restriktioner.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Josef Andersson</name><email>josef.andersson@fripost.org</email><years>2015</years></credit><credit type="translator copyright"><name>Anders Jonsson</name><email>anders.jonsson@norsjovallen.se</email><years>2023</years></credit></info>
+
+<title>Visa versionshanterade filer</title>
+
+<p><app>Meld</app> integrerar med <link xref="vc-supported">många versionshanteringssystem</link> för att kunna låta dig se över lokala ändringar och utföra enkla versionshanteringsuppgifter. Du kan börja en ny versionshanteringsjämförelse genom att använda den nya jämförelseknappen i verktygsfältet och klicka på fliken <gui style="tab">Versionshantering</gui>.</p>
+
+
+<section id="vc-mode-overview">
+<title>Versionshanteringsjämförelse</title>
+
+<p>Versionshanteringsjämförelse visar skillnaderna mellan innehållet i din mapp och nuvarande förrådsstatus. Varje fil i din lokala kopia har ett <link xref="#vc-state">tillstånd</link> som indikerar hur den skiljer sig från förrådskopian.</p>
+
+<p>Om du vill se på en speciell fils skillnader kan du markera den och trycka <key>Retur</key> eller dubbelklicka filen för att starta en <link xref="file-mode">filjämförelse</link>. Du kan också interagera med ditt versionshanteringssystem genom menyn <gui style="menu">Ändringar</gui>.</p>
+</section>
+
+<section id="vc-state">
+<title>Versionshanteringstillstånd</title>
+
+<p>Varje fil eller mapp i ett versionshanteringsjämförelse har ett <em>tillstånd</em> hämtat från versionshanteringssystemet själv. <app>Meld</app> mappar dessa tillstånd till en standardsamling av liknande koncept. <app>Meld</app> kan därför använda något annorlunda namn för tillstånd än ditt versionshanteringssystem gör. Möjliga tillstånd är:</p>
+
+
+<table frame="top bottom">
+  <title>Versionshanteringstillstånd</title>
+
+  <thead>
+    <tr>
+      <td><p>Tillstånd</p></td>
+      <td><p>Utseende</p></td>
+      <td><p>Betyder</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Samma</p></td>
+      <td>
+        <p>Normalt typsnitt</p>
+      </td>
+      <td>
+        <p>Filen/mappen är densamma som förrådsversionen.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Ändrad</p></td>
+      <td>
+        <p>Röd och fet</p>
+      </td>
+      <td>
+        <p>Filen skiljer sig mot förrådsversionen.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Ny</p></td>
+      <td>
+        <p>Grön och fet</p>
+      </td>
+      <td>
+        <p>Filen/mappen är ny och är schemalagd att läggas till i förrådet.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Borttagen</p></td>
+      <td>
+        <p>Röd fet genomstruken text</p>
+      </td>
+      <td>
+        <p>Filen/mappen existerade, men är schemalagd till att tas bort från förrådet.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Konflikt</p></td>
+      <td>
+        <p>Ljust röd fet text</p>
+      </td>
+      <td>
+        <p>Då sammanfogning med förrådet skulle ske kunde inte skillnaderna mellan den lokala filen och förrådet lösas och filen är nu i konflikt med förrådsinnehållet</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Saknad</p></td>
+      <td>
+        <p>Blå fet genomstruken text</p>
+      </td>
+      <td>
+        <p>Denna fil/mapp ska finnas, men finns inte.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Ignorerad</p></td>
+      <td>
+        <p>Gråtonad text</p>
+      </td>
+      <td>
+        <p>Denna fil/mapp har explicit ignorerats (t.ex. genom att finnas i <file>.gitignore</file>) och spåras inte av versionshantering.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Oversionerad</p></td>
+      <td>
+        <p>Gråtonad text</p>
+      </td>
+      <td>
+        <p>Denna fil finns inte i versionshanteringssystemet; den finns endast i den lokala kopian.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Fel</p></td>
+      <td>
+        <p>Ljust röd med en gul bakgrund och fet</p>
+      </td>
+      <td>
+        <p>Versionshanteringssystemet har rapporterat att denna fil har ett problem.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section id="vc-state-filtering">
+<title>Filtrering av versionshanteringstillstånd</title>
+
+<p>Oftast vill du endast se filer som identifieras som annorlunda på något sätt; det är standardinställningen i <app>Meld</app>. Du kan ändra vilka filtillstånd du ser genom att använda knappen <gui style="button">Versionsfilter</gui> i verktygsfältet och välja <gui style="menuitem">Platta till mappar</gui> och välja knapparna <gui style="menuitem">Ändrade</gui>, <gui style="menuitem">Normala</gui>, <gui style="menuitem">Oversionerade</gui> och <gui style="menuitem">Ignorerade</gui> i verktygsfältet.</p>
+</section>
+
+</page>

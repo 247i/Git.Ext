@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" lang="pt_BR">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#introduction"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como uma exceção especial, os detentores dos direitos autorais dão-lhe permissão para copiar, modificar e distribuir o código de exemplo contido neste documento sob os termos de sua escolha, sem qualquer restrição.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Rafael Fontenelle</name><email>rafaelff@gnome.org</email><years>2025</years></credit></info>
+<title>O que é o Meld?</title>
+<p><app>Meld</app> é uma ferramenta para comparar arquivos e diretórios e para resolver diferenças entre eles. Também é útil para comparar alterações capturadas por sistemas de controle de versão.</p>
+
+<p><app>Meld</app> mostra diferenças entre dois ou três arquivos (ou dois ou três diretórios) e permite que você mova o conteúdo entre eles ou edite os arquivos manualmente. O foco do <app>Meld</app> é ajudar os desenvolvedores a comparar e mesclar arquivos fonte e obter uma visão geral das alterações em seu sistema de controle de versão favorito.</p>
+
+</page>

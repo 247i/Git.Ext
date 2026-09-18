@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="folder-mode" lang="pl">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#folder-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>W drodze specjalnego wyjątku posiadacze praw autorskich udzielają pozwolenia na kopiowanie, modyfikowanie i rozprowadzanie przykładowego kodu zawartego w tej dokumentacji na dowolnych warunkach, bez ograniczeń.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Piotr Drąg</name><email>piotrdrag@gmail.com</email><years>2018-2023</years></credit><credit type="translator copyright"><name>Aviary.pl</name><email>community-poland@mozilla.org</email><years>2018-2023</years></credit></info>
+
+<title>Pierwsze kroki porównywania katalogów</title>
+
+<p><app>Meld</app> umożliwia porównywanie dwóch lub trzech katalogów obok siebie. Można rozpocząć nowe porównanie katalogów za pomocą przycisku nowego porównania na pasku narzędziowym i klikając kartę <gui style="tab">Porównanie katalogów</gui>.</p>
+
+<p>Wybrane katalogi będą wyświetlane jako dwa drzewa obok siebie, z wyróżnionymi różnicami między plikami w każdym katalogu. Można kopiować lub usuwać pliki z każdego katalogu lub bardziej szczegółowo porównywać poszczególne pliki tekstowe.</p>
+
+
+
+<section id="folder-mode-overview">
+<title>Widok porównania katalogów</title>
+
+<p>Główne części porównania katalogów to drzewa wyświetlające porównywane katalogi. Można łatwo <link xref="#folder-navigation">poruszać się</link> między tymi porównaniami, aby wyszukiwać interesujące zmiany. Po zaznaczeniu pliku lub katalogu więcej informacji jest wyświetlanych na pasku stanu na dole okna. Naciśnięcie klawisza <key>Enter</key> na zaznaczonym pliku lub podwójne kliknięcie dowolnego pliku na drzewie otworzy <link xref="file-mode">porównanie plików</link> obok siebie w nowej karcie, ale działa to tylko na plikach tekstowych.</p>
+
+<p>
+There are bars on the right-hand side of the window that show
+you a simple colored summary of the comparison results. Each file or
+folder in the comparison corresponds to a small section of these bars,
+though <app>Meld</app> doesn't show <em>Same</em> files so that it's
+easier to see any actually important differences. You can click anywhere
+on this bar to jump straight to that place in the comparison.
+</p>
+</section>
+
+
+
+<section id="folder-navigation">
+<title>Nawigacja w porównaniach katalogów</title>
+
+<p>Można przechodzić między zmienionymi plikami (tzn. wszystkimi plikami/katalogami, które <em>nie</em> są sklasyfikowane jako identyczne) za pomocą przycisków przejścia do poprzedniej i następnej zmiany na pasku narzędziowym.</p>
+<p>Można używać klawiszy strzałek <key>W lewo</key> i <key>W prawo</key> do przechodzenia między porównywanymi katalogami. Jest to przydatne do wybierania jednego pliku do skopiowania lub usunięcia.</p>
+</section>
+
+
+
+<section id="folder-mode-states">
+<title>Stany w porównaniach katalogów</title>
+
+<p>Każdy plik lub katalog na drzewie ma swój <em>stan</em>, mówiący o tym, jak różni się on od odpowiadających mu plików/katalogów. Możliwe stany:</p>
+
+
+<table frame="top bottom">
+  <title>Stany w porównaniach plików</title>
+
+  <thead>
+    <tr>
+      <td><p>Stan</p></td>
+      <td><p>Wygląd</p></td>
+      <td><p>Znaczenie</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Takie same</p></td>
+      <td>
+        <p>Zwykła czcionka</p>
+      </td>
+      <td>
+        <p>Plik/katalog jest taki sam we wszystkich porównywanych katalogach.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Takie same po filtrowaniu</p></td>
+      <td>
+        <p>Pochylenie</p>
+      </td>
+      <td>
+        <p>Te pliki różnią się między katalogami, ale po zastosowaniu <link xref="text-filters">filtrów tekstowych</link> stają się identyczne.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Zmodyfikowane</p></td>
+      <td>
+        <p>Niebieski i pogrubienie</p>
+      </td>
+      <td>
+        <p>Te pliki różnią się między porównywanymi katalogami.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Nowe</p></td>
+      <td>
+        <p>Zielony i pogrubienie</p>
+      </td>
+      <td>
+        <p>Ten plik/katalog istnieje w tym katalogu, ale nie w pozostałych.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Brakujący</p></td>
+      <td>
+        <p>
+        Grayed out text with a line through the middle
+<!--        <file style="color: #888888; text-decoration: line-through;">file.txt</file>-->
+        </p>
+      </td>
+      <td>
+        <p>Ten plik/katalog nie istnieje w tym katalogu, ale istnieje w jednym z pozostałych.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Błąd</p></td>
+      <td>
+        <p>Jasnoczerwony z żółtym tłem i pogrubienie</p>
+      </td>
+      <td>
+        <p>Podczas porównywania tego pliku wystąpił błąd. Najczęstsze przyczyny błędów to uprawnienia plików (np. <app>Meld</app> nie ma uprawnienia do otwarcia pliku) i problemy z kodowaniem ich nazw.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Można filtrować pliki na podstawie tych stanów, na przykład, aby wyświetlać tylko <em>Zmodyfikowane</em> pliki. <link xref="file-filters#file-state-filter"/> zawiera więcej informacji na ten temat.</p>
+
+<p>Ikony w niektórych rzędach mają dodane symbole pokazujące dodatkowe informacje. Zauważ, że te ikony mogą wyglądać inaczej w zależności od motywu ikon, więc te opisy są tylko wskazówką.</p>
+
+<table frame="top bottom">
+  <title>Dodatkowe symbole</title>
+
+  <thead>
+    <tr>
+      <td><p>Symbol</p></td>
+      <td><p>Wygląd</p></td>
+      <td><p>Znaczenie</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Nowe</p></td>
+      <td><p>Mała niebieska kropka</p></td>
+      <td><p>Używana do wskazywania „najnowszego” (tzn. zmodyfikowanego jako ostatni) pliku w rzędzie</p></td>
+    </tr>
+
+    <tr>
+      <td><p>Dowiązanie symboliczne</p></td>
+      <td><p>Strzałka</p></td>
+      <td><p>Pokazuje, że element rzędu jest dowiązaniem symbolicznym</p></td>
+    </tr>
+    <tr>
+      <td><p>Zaznaczone</p></td>
+      <td><p>Znak wyboru</p></td>
+      <td><p>Pokazuje, że plik został wybrany do oznaczonego porównania, używanego do porównywania różnie nazwanych plików między katalogami</p></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+</page>

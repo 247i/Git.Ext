@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="folder-mode" lang="pt_BR">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#folder-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como uma exceção especial, os detentores dos direitos autorais dão-lhe permissão para copiar, modificar e distribuir o código de exemplo contido neste documento sob os termos de sua escolha, sem qualquer restrição.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Rafael Fontenelle</name><email>rafaelff@gnome.org</email><years>2025</years></credit></info>
+
+<title>Primeiros passos na comparação de pastas</title>
+
+<p>O <app>Meld</app> permite que você compare duas ou três pastas lado a lado. Você pode iniciar uma nova comparação de pastas usando o novo botão de comparação na barra de ferramentas e clicando na aba <gui style="tab">Comparação de diretórios</gui>.</p>
+
+<p>Suas pastas selecionadas serão mostradas como árvores lado a lado, com diferenças entre arquivos em cada pasta destacadas. Você pode copiar ou excluir arquivos de qualquer pasta ou comparar arquivos de texto individuais com mais detalhes.</p>
+
+
+
+<section id="folder-mode-overview">
+<title>A visão de comparação de pastas</title>
+
+<p>As principais partes de uma comparação de pastas são as árvores mostrando as pastas que você está comparando. Você pode facilmente <link xref="#folder-navigation">movê-las</link> por essas comparações para encontrar as alterações que lhe interessam. Quando você seleciona um arquivo ou pasta, informações mais detalhadas são fornecidas na barra de status na parte inferior da janela. Pressionar <key>Enter</key> em um arquivo selecionado ou clicar duas vezes em qualquer arquivo na árvore abrirá uma <link xref="file-mode">comparação de arquivos</link> lado a lado dos arquivos em uma nova aba, mas isso só funcionará corretamente se forem arquivos de texto!</p>
+
+<p>Há barras no lado direito da janela que mostram um resumo colorido simples dos resultados da comparação. Cada arquivo ou pasta na comparação corresponde a uma pequena seção dessas barras, embora <app>Meld</app> não mostre arquivos classificados com <em>Igual</em> para que seja mais fácil ver quaisquer diferenças realmente importantes. Você pode clicar em qualquer lugar nesta barra para pular direto para aquele lugar na comparação.</p>
+</section>
+
+
+
+<section id="folder-navigation">
+<title>Navegando por comparações de pastas</title>
+
+<p>Você pode pular entre arquivos alterados (ou seja, quaisquer arquivos/pastas que <em>não</em> sejam classificados como idênticos) com os botões de alteração anterior e seguinte na barra de ferramentas.</p>
+<p>Você pode usar as teclas de seta <key>Esquerda</key> e <key>Direita</key> para mover entre as pastas que está comparando. Isso é útil para que você possa selecionar um arquivo individual para cópia ou exclusão.</p>
+</section>
+
+
+
+<section id="folder-mode-states">
+<title>Estados em comparações de pastas</title>
+
+<p>Cada arquivo ou pasta em uma árvore tem seu próprio <em>estado</em>, informando como um é diferente de seus arquivos/pastas correspondentes. Os estados possíveis são:</p>
+
+
+<table frame="top bottom">
+  <title>Estados de comparação de pastas</title>
+
+  <thead>
+    <tr>
+      <td><p>Estado</p></td>
+      <td><p>Aparência</p></td>
+      <td><p>Significado</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Igual</p></td>
+      <td>
+        <p>Fonte normal</p>
+      </td>
+      <td>
+        <p>O arquivo/pasta é o mesmo em todas as pastas comparadas.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Igual quando filtrado</p></td>
+      <td>
+        <p>Itálico</p>
+      </td>
+      <td>
+        <p>Esses arquivos são diferentes entre as pastas, mas uma vez que <link xref="text-filters">filtros de texto</link> são aplicados, esses arquivos se tornam idênticos.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Modificado</p></td>
+      <td>
+        <p>Azul e negrito</p>
+      </td>
+      <td>
+        <p>Esses arquivos diferem entre as pastas que estão sendo comparadas.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Novo</p></td>
+      <td>
+        <p>Verde e negrito</p>
+      </td>
+      <td>
+        <p>Este arquivo/pasta existe nesta pasta, mas não nas outras.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Ausente</p></td>
+      <td>
+        <p>Texto acinzentado com uma linha no meio</p>
+      </td>
+      <td>
+        <p>Este arquivo/pasta não existe nesta pasta, mas existe em uma das outras.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Erro</p></td>
+      <td>
+        <p>Vermelho brilhante com fundo amarelo e negrito</p>
+      </td>
+      <td>
+        <p>Ao comparar este arquivo, ocorreu um erro. As causas mais comuns de erro são permissões de arquivo (por exemplo, <app>Meld</app> não tinha permissão para abrir o arquivo) e erros de codificação de nome de arquivo.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Você pode filtrar arquivos com base nesses estados, por exemplo, para mostrar apenas arquivos classificados como <em>Modificados</em>. Você pode ler mais sobre isso em <link xref="file-filters#file-state-filter"/>.</p>
+
+<p>Os ícones em algumas linhas têm emblemas adicionados a eles para mostrar informações adicionais. Observe que esses ícones podem mudar dependendo do tema do seu ícone, portanto, essas descrições são apenas uma.</p>
+
+<table frame="top bottom">
+  <title>Emblemas adicionais</title>
+
+  <thead>
+    <tr>
+      <td><p>Emblema</p></td>
+      <td><p>Aparência</p></td>
+      <td><p>Significado</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Novo</p></td>
+      <td><p>Pequeno ponto azul</p></td>
+      <td><p>Usado para indicar o arquivo "mais novo" (ou seja, modificado mais recentemente) na linha</p></td>
+    </tr>
+
+    <tr>
+      <td><p>Link simbólico</p></td>
+      <td><p>Seta</p></td>
+      <td><p>Mostra que o item da linha é um link simbólico</p></td>
+    </tr>
+    <tr>
+      <td><p>Selecionado</p></td>
+      <td><p>Marca de seleção</p></td>
+      <td><p>Mostra que um arquivo foi selecionado para uma comparação marcada, usado para comparar arquivos com nomes diferentes em pastas</p></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-changes" lang="pl">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#file-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>W drodze specjalnego wyjątku posiadacze praw autorskich udzielają pozwolenia na kopiowanie, modyfikowanie i rozprowadzanie przykładowego kodu zawartego w tej dokumentacji na dowolnych warunkach, bez ograniczeń.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Piotr Drąg</name><email>piotrdrag@gmail.com</email><years>2018-2023</years></credit><credit type="translator copyright"><name>Aviary.pl</name><email>community-poland@mozilla.org</email><years>2018-2023</years></credit></info>
+
+<title>Praca na zmianach</title>
+
+<p><app>Meld</app> traktuje różnice między plikami jako listę <em>bloków zmian</em> lub po prostu <em>zmian</em>. Każda zmiana jest grupą wierszy pokrywających się między plikami. Ponieważ użytkownik jest zwykle zainteresowany zmianami, <app>Meld</app> zapewnia narzędzia do poruszania się między tymi zmianami i ich modyfikowania. Można je znaleźć w menu <gui style="menu">Zmiany</gui>.</p>
+
+
+
+<section id="change-navigation">
+<title>Nawigacja między zmianami</title>
+
+<p>Można przechodzić między zmianami za pomocą przycisków przejścia do poprzedniej i następnej zmiany na pasku narzędziowym. Można także używać kółka przewijania myszy, aby przechodzić między zmianami przez przewijanie na środkowym pasku zmian.</p>
+
+</section>
+
+
+
+<section id="change-actions">
+<title>Zmiana zmian</title>
+
+<p>Poza bezpośrednim modyfikowaniem plików tekstowych <app>Meld</app> zapewnia narzędzia do przenoszenia, kopiowania i usuwania poszczególnych różnic między plikami. Pasek między dwoma plikami nie tylko wyświetla, które części dwóch plików się pokrywają, ale także umożliwia wybiórcze scalanie lub usuwanie różniących się zmian przez klikanie ikon strzałki lub krzyżyka obok początku każdej zmiany.</p>
+
+<p>Domyślne działanie to <em>zastąpienie</em>. To działanie zastępuje zawartość pokrywającej się zmiany obecną zmianą.</p>
+<p>Przytrzymaj klawisz <key>Shift</key>, aby zmienić obecne działanie na <em>usuwanie</em>. To działanie usuwa obecną zmianę.</p>
+<p>Przytrzymaj klawisz <key>Ctrl</key>, aby zmienić obecne działanie na <em>wstawianie</em>. To działanie wstawia obecną zmianę nad lub pod (według wyboru) pokrywającą się zmianę.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-mode" lang="es">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#file-mode"/>
+  <link type="seealso" xref="file-changes"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como excepción especial, los poseedores de los derechos de autor le dan permiso para copiar, modificar y distribuir el código de ejemplo contenido en este documento bajo los términos que usted elija, sin restricción.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Daniel Mustieles</name><email>daniel.mustieles@gmail.com</email><years>2014 - 2019</years></credit><credit type="translator copyright"><name>Facundo Darío Illanes</name><email>fdillanes@gmail.com</email><years>2014</years></credit></info>
+
+<title>Primeros pasos para comparar archivos</title>
+
+<p>
+<app>Meld</app> lets you compare two or three text files side-by-side. You can
+start a new file comparison using the new comparison button on the toolbar.
+</p>
+
+<p>Una vez que haya seleccionado sus archivos, <app>Meld</app> los mostrará uno junto a otro. Las diferencias entre los archivos se resaltarán para que cada cambio sea más fácil de ver. Editar los archivos hará que la comparación se actualice en el acto. Para obtener detalles sobre cómo navegar entre los cambios individuales, y cómo utilizar la edición basada en cambios, consulte la <link xref="file-changes"/>.</p>
+
+<section id="file-mode-overview">
+<title>Las comparaciones de archivos de <app>Meld</app></title>
+
+<p>Hay varias partes diferentes en una comparación entre archivos. La más importante son los editores en los que los archivos aparecen. Además de estos editores, las áreas alrededor y entre sus archivos brindan una visión general y acciones para ayudarle a manejar los cambios entre los archivos.</p>
+<p>
+On the right-hand side of the window, there are small vertical
+bars showing various colored blocks. These bars are designed to give you an
+overview of all of the differences between your files. Each colored block
+represents a section that is inserted, deleted, changed or in conflict between
+your files, depending on the block's color used.
+</p>
+<p>Entre cada par de archivos hay un segmento que muestra cómo cambiaron las secciones que se corresponden entre los archivos. Puede pulsar en las flechas en el segmento para reemplazar las secciones en un archivo con las del otro. También puede eliminar, copiar o mezclar cambios. Para obtener detalles sobre cómo hacer cambios en segmentos individuales, consulte la <link xref="file-changes#change-actions"/>.</p>
+
+</section>
+
+
+<section id="file-mode-saving">
+<title>Guardar los cambios</title>
+
+<p>Cuando haya terminado de editar los archivos, es necesario guardar cada archivo que se haya modificado.</p>
+<p>
+You can tell whether your files have been saved since they last changed by
+the save icon that appears next to the file name above each file. Also, if you
+have multiple comparisons open, their
+notebook labels will show an asterisk (<code>*</code>) after any file that
+hasn't been saved.
+</p>
+<p>
+You can save the current file by selecting the save button above the file being
+compared, or using the <keyseq><key>Ctrl</key><key>S</key></keyseq> keyboard
+shortcut.
+</p>
+<note>
+  <p>Guardar solo guarda el archivo <em>enfocado actualmente</em>, que es la página que contiene el cursor. Si no puede decir cual es el archivo enfocado, puede pulsar en el archivo para enfocarlo antes de guardarlo.</p>
+</note>
+
+</section>
+
+</page>

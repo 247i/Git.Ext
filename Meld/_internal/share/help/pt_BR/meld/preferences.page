@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences" lang="pt_BR">
+<info>
+  <title type="sort">1</title>
+  <link type="guide" xref="index#advanced"/>
+  <revision docversion="1.7" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Como uma exceção especial, os detentores dos direitos autorais dão-lhe permissão para copiar, modificar e distribuir o código de exemplo contido neste documento sob os termos de sua escolha, sem qualquer restrição.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2013</years>
+  </credit>
+<credit type="translator copyright"><name>Rafael Fontenelle</name><email>rafaelff@gnome.org</email><years>2025</years></credit></info>
+<title>Preferências do Meld</title>
+
+<terms>
+  <title>Preferências do editor</title>
+  <item>
+    <title>Comando do editor</title>
+    <p>O nome do comando a ser executado para abrir arquivos de texto em um editor externo. Pode ser apenas o comando (por exemplo, <cmd>gedit</cmd>), caso em que o arquivo a ser aberto será passado como o último argumento. Como alternativa, você pode adicionar os elementos <code>{file}</code> e <code>{line}</code> ao comando, nesse caso, <app>Meld</app> substituirá o caminho do arquivo e o número da linha atual, respectivamente (por exemplo, <cmd>gedit {file}:{line}</cmd>).</p>
+  </item>
+</terms>
+<terms>
+  <title>Preferências de comparação de pastas</title>
+  <item>
+    <title>Aplicar filtros de texto durante comparações de pastas</title>
+    <p>Ao comparar arquivos no modo de comparação de pastas, filtros de texto e outras opções de manipulação de texto podem ser aplicadas ao conteúdo dos arquivos. Se esta opção estiver habilitada, todos os filtros de texto habilitados no momento serão aplicados, a opção de corte de linha em branco será aplicada conforme apropriado e as diferenças nas terminações de linha serão ignoradas.</p>
+    <p>Habilitar esta opção significa que <app>Meld</app> deve ler completamente todos os arquivos não binários na memória durante a comparação de pastas. Com arquivos de texto grandes, isso pode ser lento e pode causar problemas de memória.</p>
+    <p>Esta opção só tem efeito se "Comparar arquivos baseando-se apenas no tamanho e marca de tempo" não estiver habilitado.</p>
+  </item>
+</terms>
+
+</page>

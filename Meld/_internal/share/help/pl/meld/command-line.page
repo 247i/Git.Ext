@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="command-line" lang="pl">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#advanced"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>W drodze specjalnego wyjątku posiadacze praw autorskich udzielają pozwolenia na kopiowanie, modyfikowanie i rozprowadzanie przykładowego kodu zawartego w tej dokumentacji na dowolnych warunkach, bez ograniczeń.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Piotr Drąg</name><email>piotrdrag@gmail.com</email><years>2018-2023</years></credit><credit type="translator copyright"><name>Aviary.pl</name><email>community-poland@mozilla.org</email><years>2018-2023</years></credit></info>
+<title>Użycie wiersza poleceń</title>
+
+<p>Podczas uruchamiania programu <app>Meld</app> z wiersza poleceń można określić, co program ma zrobić.</p>
+<p>Aby porównać dwa lub trzy <link xref="file-mode">pliki</link>, uruchom program <app>Meld</app> za pomocą polecenia <cmd>meld <var>plik1</var> <var>plik2</var></cmd> lub <cmd>meld <var>plik1</var> <var>plik2</var> <var>plik3</var></cmd>.</p>
+
+<p>Aby porównać dwa lub trzy <link xref="folder-mode">katalogi</link>, uruchom program <app>Meld</app> za pomocą polecenia <cmd>meld <var>katalog1</var> <var>katalog2</var></cmd> lub <cmd>meld <var>katalog1</var> <var>katalog2</var> <var>katalog3</var></cmd>.</p>
+
+<p>Można rozpocząć porównanie <link xref="vc-mode">kontroli wersji</link> podając jeden parametr, jeśli dany plik lub katalog jest zarządzany przez <link xref="vc-supported">obsługiwany system kontroli wersji</link>. Na przykład, polecenie <cmd>meld .</cmd> rozpocznie widok kontroli wersji obecnego katalogu.</p>
+
+<note>
+<p>Polecenie <cmd>meld --help</cmd> wyświetli listę wszystkich opcji wiersza poleceń.</p>
+</note>
+
+</page>

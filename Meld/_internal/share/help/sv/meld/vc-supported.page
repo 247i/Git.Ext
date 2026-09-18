@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="vc-supported" lang="sv">
+<info>
+  <title type="sort">3</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>Som ett speciellt undantag ger upphovsrättsinnehavarna dig rätten att kopiera, ändra och distribuera exempelkoden i detta dokument under de villkor du väljer, utan restriktioner.</p>
+</license>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+<credit type="translator copyright"><name>Josef Andersson</name><email>josef.andersson@fripost.org</email><years>2015</years></credit><credit type="translator copyright"><name>Anders Jonsson</name><email>anders.jonsson@norsjovallen.se</email><years>2023</years></credit></info>
+<title>Versionshanteringssystem som stöds</title>
+
+<p><app>Meld</app> stöder ett brett urval av versionshanteringssystem:</p>
+
+<list>
+  <item><p>Bazaar</p></item>
+  <item><p>Darcs</p></item>
+  <item><p>Git</p></item>
+  <item><p>Mercurial</p></item>
+  <item><p>SVN</p></item>
+</list>
+
+<p>Mindre vanliga versionshanteringssystem eller ovanliga konfigurationer är inte lika vältestade; rapportera fel till <link href="https://gitlab.gnome.org/GNOME/meld/issues">Melds ärendehanteringssystem</link>.</p>
+
+</page>
